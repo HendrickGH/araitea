@@ -4,427 +4,225 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>
-			Venta de Gatos Persas en Monterrey | Envíos Seguros | Araitea Cat's
-		</title>
+		<title>Venta de Gatos Persas en Monterrey | Envíos Seguros | Araitea Cat's</title>
 
-		<!-- Meta Etiquetas Críticas SEO Local -->
-		<meta
-			name="description"
-			content="¿Buscas venta de gatos persas en Monterrey? En Araitea Cat's criamos persas libres de PKD con envío seguro y rápido al Aeropuerto Internacional de Monterrey (MTY)."
-		/>
+		<meta name="description" content="¿Buscas venta de gatos persas en Monterrey? En Araitea Cat's criamos persas libres de PKD con envío seguro y rápido al Aeropuerto Internacional de Monterrey (MTY)." />
 
-		<!-- Open Graph (OG) -->
-		<meta
-			property="og:title"
-			content="Venta de Gatos Persas en Monterrey y Nuevo León | Araitea Cat's"
-		/>
-		<meta
-			property="og:description"
-			content="Criadero especializado de excelencia. Tu nuevo gatito persa a un vuelo de distancia hasta Monterrey. Libres de PKD y con garantías de salud."
-		/>
-		<meta
-			property="og:image"
-			content="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80"
-		/>
-		<meta
-			property="og:url"
-			content="https://gatospersas.com.mx/venta-de-gatos-persas-en-monterrey"
-		/>
-		<meta property="og:type" content="website" />
+		<meta property="og:title"       content="Venta de Gatos Persas en Monterrey y Nuevo León | Araitea Cat's" />
+		<meta property="og:description" content="Criadero especializado de excelencia. Tu nuevo gatito persa a un vuelo de distancia hasta Monterrey. Libres de PKD y con garantías de salud." />
+		<meta property="og:image"       content="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80" />
+		<meta property="og:url"         content="https://gatospersas.com.mx/venta-de-gatos-persas-en-monterrey" />
+		<meta property="og:type"        content="website" />
 
-		<!-- Optimización LCP -->
-		<link
-			rel="preload"
-			as="image"
-			href="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80"
-		/>
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80" />
 
-		<!-- Fuentes de Google -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-		<!-- Tailwind CSS vía CDN -->
 		<script src="https://cdn.tailwindcss.com"></script>
-
-		<!-- Configuración de Tailwind -->
 		<script>
 			tailwind.config = {
 				theme: {
 					extend: {
 						colors: {
-							brand: "#0081C2",
-							whatsapp: "#25D366",
-							bodybg: "#F7FAFC",
+							navy:        '#0C2340',
+							'navy-dark': '#071829',
+							gold:        '#CCA052',
+							'gold-light':'#E2C07E',
+							whatsapp:    '#25D366',
 						},
 						fontFamily: {
-							serif: ['"Playfair Display"', "serif"],
-							sans: ["Nunito", "sans-serif"],
+							serif: ['"Playfair Display"', 'serif'],
+							sans:  ['Montserrat', 'sans-serif'],
 						},
 					},
 				},
 			};
 		</script>
 
-		<!-- Íconos de Lucide -->
 		<script src="https://unpkg.com/lucide@latest"></script>
 
 		<style>
-			body {
-				background-color: #f7fafc;
-				color: #2d3748;
-			}
+			body { background-color: #0C2340; color: #fff; }
+			.nav-link { position: relative; padding-bottom: 2px; }
+			.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #CCA052; transition: width 0.2s ease; }
+			.nav-link:hover::after { width: 100%; }
 		</style>
 	</head>
-	<body class="font-sans relative min-h-screen">
-		<!-- Navbar (Sincronizado con Home y URLs actualizadas) -->
-		<nav class="bg-white py-4 px-6 shadow-sm sticky top-0 z-50">
+	<body class="font-sans bg-navy min-h-screen">
+
+		<!-- NAVBAR -->
+		<nav class="bg-navy border-b border-gold/20 py-4 px-6 sticky top-0 z-50">
 			<div class="max-w-6xl mx-auto flex justify-between items-center">
-				<div class="flex items-center gap-2">
-					<a
-						href="/"
-						class="text-2xl font-serif font-bold text-brand tracking-tight"
-						title="Volver a la página principal"
-						>Araitea Cat's</a
-					>
-				</div>
+				<a href="/" class="flex items-center gap-3">
+					<span class="font-serif text-2xl font-bold text-white tracking-tight">Araitea <span class="text-gold font-sans">Cat's</span></span>
+				</a>
 
-				<!-- Menú Desktop -->
-				<div
-					class="hidden md:flex items-center space-x-8 text-sm font-bold text-gray-600"
-				>
-					<a
-						href="/#disponibles"
-						class="hover:text-brand transition-colors"
-						title="Ver gatitos persas disponibles"
-						>Gatitos Disponibles</a
-					>
-					<a
-						href="/#colores"
-						class="hover:text-brand transition-colors"
-						title="Conoce los colores de gatos persas"
-						>Razas y Colores</a
-					>
+				<div class="hidden md:flex items-center gap-8">
+					<a href="/#disponibles" class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Gatitos</a>
+					<a href="/#colores"     class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Razas y Colores</a>
 
-					<!-- Dropdown: Principales Ubicaciones -->
 					<div class="relative group">
-						<button
-							class="text-brand flex items-center gap-1 py-2"
-							aria-label="Ver principales ubicaciones de envío"
-						>
-							Principales Ubicaciones
-							<i data-lucide="chevron-down" class="w-4 h-4"></i>
+						<button class="font-sans text-xs font-semibold uppercase tracking-widest text-gold flex items-center gap-1 py-2">
+							Ubicaciones <i data-lucide="chevron-down" class="w-3 h-3"></i>
 						</button>
-						<!-- Puente invisible para el hover -->
-						<div
-							class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
-						>
-							<div
-								class="bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden"
-							>
-								<a
-									href="/venta-de-gatos-persas-en-cdmx"
-									class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand transition-colors"
-									title="Venta de gatos persas en CDMX"
-									>Ciudad de México</a
-								>
-								<a
-									href="/venta-de-gatos-persas-en-monterrey"
-									class="block px-4 py-3 text-sm text-brand bg-blue-50 font-bold"
-									title="Venta de gatos persas en Monterrey"
-									>Monterrey</a
-								>
-								<a
-									href="/venta-de-gatos-persas-en-jalisco"
-									class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand transition-colors"
-									title="Venta de gatos persas en Guadalajara"
-									>Guadalajara</a
-								>
-								<div class="border-t border-gray-100"></div>
-								<a
-									href="/#envios"
-									class="block px-4 py-3 text-sm text-gray-500 hover:bg-gray-50 transition-colors"
-									title="Ver envíos a otros estados de México"
-									>Ver Otros Estados</a
-								>
+						<div class="absolute left-0 top-full pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+							<div class="bg-navy border border-gold/30 overflow-hidden">
+								<a href="/venta-de-gatos-persas-en-cdmx"      class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors">Ciudad de México</a>
+								<a href="/venta-de-gatos-persas-en-monterrey" class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-gold bg-navy-dark">Monterrey</a>
+								<a href="/venta-de-gatos-persas-en-jalisco"   class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors">Guadalajara</a>
+								<div class="border-t border-gold/20"></div>
+								<a href="/#presencia" class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/50 hover:text-gold hover:bg-navy-dark transition-colors">Ver otros estados</a>
 							</div>
 						</div>
 					</div>
 
-					<a
-						href="/#envios"
-						class="hover:text-brand transition-colors"
-						title="Información sobre envíos seguros en México"
-						>Envíos</a
-					>
-					<a
-						href="/#blog"
-						class="hover:text-brand transition-colors"
-						title="Leer nuestro blog sobre cuidados del gato persa"
-						>Blog Educativo</a
-					>
-					<a
-						href="https://wa.me/529992274376"
-						target="_blank"
-						class="bg-brand text-white font-bold py-2 px-5 rounded-lg hover:bg-blue-800 transition-colors shadow-md"
-						aria-label="Contáctanos por WhatsApp"
-					>
-						Contacto
-					</a>
+					<a href="/#envios" class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Envíos</a>
+					<a href="/#blog"   class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Blog</a>
+					<a href="https://wa.me/529992274376" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-semibold uppercase tracking-wide px-5 py-2.5 transition-colors duration-200">Contacto</a>
 				</div>
 
-				<!-- Botón Menú Móvil -->
-				<button
-					id="mobile-menu-btn"
-					class="md:hidden text-gray-600"
-					aria-label="Abrir menú de navegación"
-				>
+				<button id="mobile-menu-btn" class="md:hidden text-white/80" aria-label="Abrir menú">
 					<i data-lucide="menu" class="w-7 h-7"></i>
 				</button>
 			</div>
 
-			<!-- Menú Móvil Desplegable -->
-			<div
-				id="mobile-menu"
-				class="md:hidden hidden flex-col space-y-4 mt-4 pt-4 border-t border-gray-100 font-bold text-gray-600 text-center"
-			>
-				<a href="/#disponibles" class="hover:text-brand">Gatitos Disponibles</a>
-				<a href="/#colores" class="hover:text-brand">Razas y Colores</a>
-
-				<!-- Sección de Ubicaciones en Móvil -->
-				<div class="py-2 border-y border-gray-50 flex flex-col space-y-3">
-					<span class="text-brand">Principales Ubicaciones</span>
-					<a
-						href="/venta-de-gatos-persas-en-cdmx"
-						class="text-sm font-normal hover:text-brand"
-						>Ciudad de México</a
-					>
-					<a
-						href="/venta-de-gatos-persas-en-monterrey"
-						class="text-sm font-bold text-brand"
-						>Monterrey</a
-					>
-					<a
-						href="/venta-de-gatos-persas-en-jalisco"
-						class="text-sm font-normal hover:text-brand"
-						>Guadalajara</a
-					>
+			<div id="mobile-menu" class="md:hidden hidden flex-col gap-4 mt-4 pt-4 border-t border-gold/20 text-center">
+				<a href="/#disponibles" class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Gatitos</a>
+				<a href="/#colores"     class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Razas y Colores</a>
+				<div class="border-y border-gold/10 py-3 flex flex-col gap-3">
+					<span class="font-sans text-xs font-semibold uppercase tracking-widest text-gold">Ubicaciones</span>
+					<a href="/venta-de-gatos-persas-en-cdmx"      class="font-sans text-xs text-white/60 hover:text-gold">Ciudad de México</a>
+					<a href="/venta-de-gatos-persas-en-monterrey" class="font-sans text-xs text-gold font-semibold">Monterrey</a>
+					<a href="/venta-de-gatos-persas-en-jalisco"   class="font-sans text-xs text-white/60 hover:text-gold">Guadalajara</a>
 				</div>
-
-				<a href="/#envios" class="hover:text-brand">Envíos</a>
-				<a href="/#blog" class="hover:text-brand">Blog Educativo</a>
-				<a
-					href="https://wa.me/529992274376"
-					target="_blank"
-					class="bg-brand text-white py-2 px-5 rounded-lg mx-auto w-3/4"
-					>Contacto</a
-				>
+				<a href="/#envios" class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Envíos</a>
+				<a href="/#blog"   class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Blog</a>
+				<a href="https://wa.me/529992274376" class="bg-gold text-navy font-sans text-xs font-semibold uppercase tracking-wide py-3 px-6 mx-auto w-3/4">Contacto</a>
 			</div>
 		</nav>
 
 		<main>
-			<!-- 1. Hero SEO Localizado para Monterrey -->
-			<div
-				class="relative py-24 md:py-32 w-full overflow-hidden bg-gray-900 flex items-center"
-			>
-				<div class="absolute inset-0 bg-black/50 z-10"></div>
-				<img
-					src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80"
-					alt="Gatos persas en Monterrey Nuevo León - Araitea Cats"
-					class="absolute inset-0 w-full h-full object-cover z-0"
-				/>
 
-				<div class="relative z-20 px-4 max-w-4xl mx-auto text-center">
-					<span
-						class="text-white/90 font-bold tracking-widest uppercase text-sm mb-4 block"
-						>Envíos Seguros a Nuevo León</span
-					>
-					<h1
-						class="text-4xl md:text-6xl text-white font-serif font-bold mb-6 leading-tight drop-shadow-lg"
-					>
-						Venta de Gatos Persas en Monterrey
+			<!-- 1. HERO LOCALIZADO MONTERREY -->
+			<div class="relative py-32 md:py-44 w-full overflow-hidden flex items-center">
+				<div class="absolute inset-0 bg-navy/65 z-10"></div>
+				<img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80" alt="Gatos persas en Monterrey Nuevo León - Araitea Cats" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+				<div class="relative z-20 px-6 max-w-4xl mx-auto text-center">
+					<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-4">Envíos Seguros · Nuevo León</p>
+					<h1 class="font-serif text-4xl md:text-6xl text-white font-bold mb-6 leading-tight drop-shadow-lg">
+						Venta de <span class="text-gold font-sans">Gatos Persas</span><br>en Monterrey
 					</h1>
-					<p
-						class="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto font-light"
-					>
-						Más de 25 años de experiencia criando persas de excelencia. Tu nuevo
-						compañero felino a un vuelo de distancia, directo al Aeropuerto de
-						Monterrey.
+					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
+					<p class="font-sans text-lg text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+						Más de 25 años de experiencia criando persas de excelencia. Tu nuevo compañero felino a un vuelo de distancia, directo al <strong class="text-white">Aeropuerto de Monterrey (MTY)</strong>.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<a
-							href="/#disponibles"
-							class="bg-brand text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition-colors shadow-md"
-						>
+						<a href="/#disponibles" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-semibold uppercase tracking-wide px-8 py-4 transition-colors duration-200">
 							Ver Gatitos Disponibles
 						</a>
-						<a
-							href="https://wa.me/529992274376"
-							target="_blank"
-							class="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-gray-900 transition-colors shadow-md"
-						>
-							Contactar por WhatsApp
+						<a href="https://wa.me/529992274376" target="_blank" class="inline-flex items-center justify-center gap-2 border border-gold text-gold hover:bg-gold hover:text-navy font-sans text-sm font-semibold uppercase tracking-wide px-8 py-4 transition-colors duration-200">
+							<i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
 						</a>
 					</div>
 				</div>
 			</div>
 
-			<!-- 2. Contenido SEO Especializado para Monterrey -->
-			<section class="py-20 bg-white">
-				<div class="max-w-4xl mx-auto px-4">
-					<div class="prose prose-lg text-gray-600 max-w-none">
-						<h2
-							class="text-3xl font-serif font-bold text-brand mb-6 text-center"
-						>
-							Encuentra a tu Persa Ideal en Monterrey y Nuevo León
+			<!-- 2. CONTENIDO SEO MONTERREY -->
+			<section class="py-20 bg-navy border-t border-gold/20">
+				<div class="max-w-4xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-3">Criadero Certificado</p>
+						<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+							Encuentra tu <span class="text-gold font-sans">Persa Ideal</span> en Monterrey y Nuevo León
 						</h2>
-						<p class="mb-6">
-							Sabemos que encontrar un criadero especializado en la
-							<strong>venta de gatos persas en Monterrey</strong> que ofrezca
-							verdaderas garantías de salud y pureza de raza es primordial. En
-							<strong>Araitea Cat's</strong>, facilitamos la conexión entre
-							familias regiomontanas y nuestros hermosos ejemplares a través de
-							un servicio de logística VIP y seguro.
+						<div class="h-0.5 w-16 bg-gold mx-auto mt-4"></div>
+					</div>
+
+					<div class="space-y-6 font-sans text-base text-white/70 leading-relaxed">
+						<p>
+							Sabemos que encontrar un criadero especializado en la <strong class="text-white">venta de gatos persas en Monterrey</strong> que ofrezca verdaderas garantías de salud y pureza de raza es primordial. En <strong class="text-white">Araitea Cat's</strong>, facilitamos la conexión entre familias regiomontanas y nuestros hermosos ejemplares a través de un servicio de logística VIP y seguro.
 						</p>
-						<p class="mb-6">
-							Nuestros gatitos crecen en un ambiente familiar lleno de
-							atenciones, lo que se refleja en su carácter dócil, juguetón y
-							sumamente cariñoso. Ya sea que vivas en zonas residenciales de
-							<strong
-								>San Pedro Garza García, Carretera Nacional o la Zona
-								Cumbres</strong
-							>, el gato persa es la mascota de compañía perfecta para hogares y
-							departamentos, destacando siempre por su elegancia y tranquilidad.
+						<p>
+							Nuestros gatitos crecen en un ambiente familiar lleno de atenciones, lo que se refleja en su carácter dócil, juguetón y sumamente cariñoso. Ya sea que vivas en zonas residenciales de <strong class="text-white">San Pedro Garza García, Carretera Nacional o la Zona Cumbres</strong>, el gato persa es la mascota de compañía perfecta para hogares y departamentos, destacando siempre por su elegancia y tranquilidad.
 						</p>
 
-						<h3 class="text-2xl font-serif font-bold text-gray-800 mt-10 mb-4">
-							Garantía Genética: Libres de PKD
-						</h3>
-						<p class="mb-6">
-							Para nosotros, la salud de nuestros ejemplares es innegociable.
-							Cuando recibas a tu gatito en Monterrey, tendrás la total
-							tranquilidad de que proviene de líneas genéticas probadas mediante
-							estudios de ADN, garantizando que está
-							<strong
-								>100% libre de la Enfermedad Renal Poliquística (PKD)</strong
-							>. Todos nuestros pequeños se entregan con su certificado de salud
-							veterinario, desparasitación y sus vacunas iniciales al corriente.
+						<h3 class="font-serif text-2xl font-bold text-white mt-10 mb-2">Garantía Genética: Libres de <span class="text-gold font-sans">PKD</span></h3>
+						<div class="h-0.5 w-10 bg-gold mb-4"></div>
+						<p>
+							Para nosotros, la salud de nuestros ejemplares es innegociable. Cuando recibas a tu gatito en Monterrey, tendrás la total tranquilidad de que proviene de líneas genéticas probadas mediante estudios de ADN, garantizando que está <strong class="text-white">100% libre de la Enfermedad Renal Poliquística (PKD)</strong>. Todos nuestros pequeños se entregan con su certificado de salud veterinario, desparasitación y sus vacunas iniciales al corriente.
 						</p>
+					</div>
 
-						<div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-10">
-							<h4
-								class="text-xl font-bold text-brand mb-3 flex items-center gap-2"
-							>
-								<i data-lucide="thermometer-sun" class="w-5 h-5"></i> El Gato
-								Persa en el clima de Monterrey
-							</h4>
-							<p class="text-sm text-gray-700 m-0">
-								Monterrey es conocido por sus veranos calurosos.
-								Afortunadamente, los gatos persas son exclusivamente felinos de
-								interiores (*indoor*). Se adaptan de maravilla al confort del
-								hogar y disfrutan inmensamente de los ambientes con aire
-								acondicionado o clima central. Mantenerlos frescos en casa y
-								realizar un cepillado constante es todo lo que necesitan para
-								lucir su espectacular y abundante pelaje todo el año.
-							</p>
-						</div>
+					<!-- Info box -->
+					<div class="mt-10 border border-gold/30 bg-navy-dark p-7">
+						<h4 class="font-serif text-lg font-semibold text-white mb-3 flex items-center gap-3">
+							<i data-lucide="thermometer-sun" class="w-5 h-5 text-gold flex-shrink-0"></i>
+							El Gato Persa en el <span class="text-gold font-sans ml-1">clima de Monterrey</span>
+						</h4>
+						<p class="font-sans text-sm text-white/70 leading-relaxed">
+							Monterrey es conocido por sus veranos calurosos. Afortunadamente, los gatos persas son exclusivamente felinos de interiores. Se adaptan de maravilla al confort del hogar y disfrutan inmensamente de los ambientes con aire acondicionado o clima central. Mantenerlos frescos en casa y realizar un cepillado constante es todo lo que necesitan para lucir su espectacular pelaje todo el año.
+						</p>
 					</div>
 				</div>
 			</section>
 
-			<!-- 3. Logística de Envío a Monterrey -->
-			<section id="logistica" class="py-20 bg-bodybg border-t border-gray-200">
-				<div class="max-w-6xl mx-auto px-4">
-					<div class="text-center mb-16">
-						<h2
-							class="text-3xl md:text-4xl font-serif font-bold text-brand mb-4"
-						>
-							Logística y Envíos a Nuevo León
+			<!-- 3. LOGÍSTICA MONTERREY -->
+			<section id="logistica" class="py-20 bg-navy-dark border-t border-gold/20">
+				<div class="max-w-6xl mx-auto px-6">
+					<div class="text-center mb-14">
+						<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-3">Proceso de Envío</p>
+						<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+							Logística y <span class="text-gold font-sans">Envíos</span> a Nuevo León
 						</h2>
-						<p class="text-gray-600 max-w-2xl mx-auto">
-							Un proceso seguro, libre de estrés y directo a la zona de carga
-							del Aeropuerto Internacional de Monterrey (MTY).
+						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
+						<p class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
+							Un proceso seguro, libre de estrés y directo a la zona de carga del Aeropuerto Internacional de Monterrey (MTY).
 						</p>
 					</div>
 
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<!-- Paso 1 -->
-						<div
-							class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all"
-						>
-							<div
-								class="absolute -right-4 -top-4 text-9xl font-black text-gray-50 opacity-50 group-hover:text-blue-50 transition-colors"
-							>
-								1
-							</div>
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 p-8 bg-navy relative overflow-hidden">
+							<div class="absolute right-4 top-4 font-serif text-7xl font-bold text-white/5 select-none">1</div>
 							<div class="relative z-10">
-								<div
-									class="w-14 h-14 bg-blue-100 text-brand rounded-full flex items-center justify-center mb-6"
-								>
-									<i data-lucide="stethoscope" class="w-7 h-7"></i>
+								<div class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold">
+									<i data-lucide="stethoscope" class="w-6 h-6"></i>
 								</div>
-								<h3 class="text-xl font-bold mb-3">Revisión Pre-vuelo</h3>
-								<p class="text-gray-600 text-sm">
-									Antes de salir hacia Nuevo León, tu gatito recibe un chequeo
-									exhaustivo por nuestro veterinario, quien expide el
-									certificado de salud obligatorio para asegurar que viaje en
-									perfectas condiciones.
+								<h3 class="font-serif text-xl font-semibold text-white mb-3">Revisión Pre-vuelo</h3>
+								<div class="h-0.5 w-8 bg-gold mb-4"></div>
+								<p class="font-sans text-sm text-white/60 leading-relaxed">
+									Antes de salir hacia Nuevo León, tu gatito recibe un chequeo exhaustivo por nuestro veterinario, quien expide el certificado de salud obligatorio para asegurar que viaje en perfectas condiciones.
 								</p>
 							</div>
 						</div>
-
 						<!-- Paso 2 -->
-						<div
-							class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all"
-						>
-							<div
-								class="absolute -right-4 -top-4 text-9xl font-black text-gray-50 opacity-50 group-hover:text-blue-50 transition-colors"
-							>
-								2
-							</div>
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 p-8 bg-navy relative overflow-hidden">
+							<div class="absolute right-4 top-4 font-serif text-7xl font-bold text-white/5 select-none">2</div>
 							<div class="relative z-10">
-								<div
-									class="w-14 h-14 bg-blue-100 text-brand rounded-full flex items-center justify-center mb-6"
-								>
-									<i data-lucide="plane-takeoff" class="w-7 h-7"></i>
+								<div class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold">
+									<i data-lucide="plane-takeoff" class="w-6 h-6"></i>
 								</div>
-								<h3 class="text-xl font-bold mb-3">Vuelo Seguro a MTY</h3>
-								<p class="text-gray-600 text-sm">
-									Organizamos vuelos directos con aerolíneas certificadas en
-									traslado de mascotas. El vuelo es corto, viajan en zonas con
-									presión y clima controlados, utilizando transportadoras
-									aprobadas por IATA.
+								<h3 class="font-serif text-xl font-semibold text-white mb-3">Vuelo Seguro a MTY</h3>
+								<div class="h-0.5 w-8 bg-gold mb-4"></div>
+								<p class="font-sans text-sm text-white/60 leading-relaxed">
+									Organizamos vuelos directos con aerolíneas certificadas en traslado de mascotas. El vuelo es corto, viajan en zonas con presión y clima controlados, utilizando transportadoras aprobadas por IATA.
 								</p>
 							</div>
 						</div>
-
 						<!-- Paso 3 -->
-						<div
-							class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all"
-						>
-							<div
-								class="absolute -right-4 -top-4 text-9xl font-black text-gray-50 opacity-50 group-hover:text-blue-50 transition-colors"
-							>
-								3
-							</div>
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 p-8 bg-navy relative overflow-hidden">
+							<div class="absolute right-4 top-4 font-serif text-7xl font-bold text-white/5 select-none">3</div>
 							<div class="relative z-10">
-								<div
-									class="w-14 h-14 bg-blue-100 text-brand rounded-full flex items-center justify-center mb-6"
-								>
-									<i data-lucide="map-pin" class="w-7 h-7"></i>
+								<div class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold">
+									<i data-lucide="map-pin" class="w-6 h-6"></i>
 								</div>
-								<h3 class="text-xl font-bold mb-3">
-									Recolección en Aeropuerto
-								</h3>
-								<p class="text-gray-600 text-sm">
-									Con la guía de rastreo que te proporcionamos, solo debes
-									presentarte con identificación oficial en la zona de carga del
-									<strong>Aeropuerto Internacional de Monterrey (MTY)</strong>
-									para recibirlo.
+								<h3 class="font-serif text-xl font-semibold text-white mb-3">Recolección en Aeropuerto</h3>
+								<div class="h-0.5 w-8 bg-gold mb-4"></div>
+								<p class="font-sans text-sm text-white/60 leading-relaxed">
+									Con la guía de rastreo que te proporcionamos, solo debes presentarte con identificación oficial en la zona de carga del <strong class="text-white">Aeropuerto Internacional de Monterrey (MTY)</strong> para recibirlo.
 								</p>
 							</div>
 						</div>
@@ -432,101 +230,66 @@
 				</div>
 			</section>
 
-			<!-- 4. Prueba Social Exclusiva (Localizada para Monterrey) -->
-			<section class="py-20 bg-white border-t border-gray-100">
-				<div class="max-w-6xl mx-auto px-4">
-					<div class="text-center mb-16">
-						<h2
-							class="text-3xl md:text-4xl font-serif font-bold text-brand mb-4"
-						>
-							Familias Regias Felices
+			<!-- 4. TESTIMONIOS MONTERREY -->
+			<section class="py-20 bg-navy border-t border-gold/20">
+				<div class="max-w-6xl mx-auto px-6">
+					<div class="text-center mb-14">
+						<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-3">Prueba Social</p>
+						<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+							<span class="text-gold font-sans">Familias Regias</span> Felices
 						</h2>
-						<p class="text-gray-600 max-w-2xl mx-auto">
-							Estas son algunas de las familias en Nuevo León que ya disfrutan
-							de la elegancia y ternura de un Persa Araitea.
+						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
+						<p class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
+							Estas son algunas de las familias en Nuevo León que ya disfrutan de la elegancia y ternura de un Persa Araitea.
 						</p>
 					</div>
 
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-						<!-- Testimonio Monterrey 1 -->
-						<div
-							class="bg-bodybg rounded-2xl p-6 relative border border-gray-100 mt-8 md:mt-0"
-						>
-							<div class="absolute -top-8 left-1/2 -translate-x-1/2">
-								<img
-									src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=400&q=80"
-									alt="Cliente feliz con gato persa en Monterrey"
-									loading="lazy"
-									class="w-16 h-16 rounded-full border-4 border-white object-cover shadow-sm"
-								/>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+						<!-- Testimonio 1 -->
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+							<div class="aspect-[4/3] overflow-hidden">
+								<img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=800&q=80" alt="Jessica con su gatita persa Bella en Monterrey" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
-							<div class="mt-8 text-center">
-								<p class="text-gray-600 italic mb-6">
-									"Gracias a Araitea Cat's por tener tanta paciencia en
-									enseñarme todo respecto a la crianza y cuidados de Bella.
-									¡Estamos enamoradas de ella!"
+							<div class="p-7">
+								<div class="h-0.5 w-8 bg-gold mb-5"></div>
+								<p class="font-serif text-lg text-white/80 italic leading-relaxed mb-5">
+									"Gracias a Araitea Cat's por tener tanta paciencia en enseñarme todo respecto a la crianza y cuidados de Bella. ¡Estamos enamoradas de ella!"
 								</p>
-								<h4 class="font-bold text-lg">Jessica M.</h4>
-								<p
-									class="text-brand text-sm flex items-center justify-center gap-1 font-semibold mt-1"
-								>
-									<i data-lucide="map-pin" class="w-4 h-4"></i> Monterrey, N.L.
+								<h4 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Jessica M.</h4>
+								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+									<i data-lucide="map-pin" class="w-3 h-3"></i> Monterrey, N.L.
 								</p>
 							</div>
 						</div>
-
-						<!-- Testimonio Monterrey 2 -->
-						<div
-							class="bg-bodybg rounded-2xl p-6 relative border border-gray-100 mt-8 md:mt-0"
-						>
-							<div class="absolute -top-8 left-1/2 -translate-x-1/2">
-								<img
-									src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=400&q=80"
-									alt="Gato persa adaptado a departamento en San Pedro Garza García"
-									loading="lazy"
-									class="w-16 h-16 rounded-full border-4 border-white object-cover shadow-sm"
-								/>
+						<!-- Testimonio 2 -->
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+							<div class="aspect-[4/3] overflow-hidden">
+								<img src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=800&q=80" alt="Familia Garza con gato persa en San Pedro Garza García" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
-							<div class="mt-8 text-center">
-								<p class="text-gray-600 italic mb-6">
-									"Buscábamos un criadero con pruebas de PKD negativas. Al ver
-									la calidad de sus persas no dudamos. La entrega en el
-									aeropuerto fue puntual y muy profesional."
+							<div class="p-7">
+								<div class="h-0.5 w-8 bg-gold mb-5"></div>
+								<p class="font-serif text-lg text-white/80 italic leading-relaxed mb-5">
+									"Buscábamos un criadero con pruebas de PKD negativas. Al ver la calidad de sus persas no dudamos. La entrega en el aeropuerto fue puntual y muy profesional."
 								</p>
-								<h4 class="font-bold text-lg">Familia Garza T.</h4>
-								<p
-									class="text-brand text-sm flex items-center justify-center gap-1 font-semibold mt-1"
-								>
-									<i data-lucide="map-pin" class="w-4 h-4"></i> San Pedro Garza
-									García
+								<h4 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Familia Garza T.</h4>
+								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+									<i data-lucide="map-pin" class="w-3 h-3"></i> San Pedro Garza García
 								</p>
 							</div>
 						</div>
-
-						<!-- Testimonio Monterrey 3 -->
-						<div
-							class="bg-bodybg rounded-2xl p-6 relative border border-gray-100 mt-8 md:mt-0"
-						>
-							<div class="absolute -top-8 left-1/2 -translate-x-1/2">
-								<img
-									src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=400&q=80"
-									alt="Familia feliz con gatito persa en Cumbres"
-									loading="lazy"
-									class="w-16 h-16 rounded-full border-4 border-white object-cover shadow-sm"
-								/>
+						<!-- Testimonio 3 -->
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+							<div class="aspect-[4/3] overflow-hidden">
+								<img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=800&q=80" alt="Alejandro con su persa en Zona Cumbres Monterrey" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
-							<div class="mt-8 text-center">
-								<p class="text-gray-600 italic mb-6">
-									"Mi gatito llegó súper relajado y limpio. Al instante se puso
-									a explorar la casa. Definitivamente es el gatito más cariñoso
-									y hermoso que he visto."
+							<div class="p-7">
+								<div class="h-0.5 w-8 bg-gold mb-5"></div>
+								<p class="font-serif text-lg text-white/80 italic leading-relaxed mb-5">
+									"Mi gatito llegó súper relajado y limpio. Al instante se puso a explorar la casa. Definitivamente es el gatito más cariñoso y hermoso que he visto."
 								</p>
-								<h4 class="font-bold text-lg">Alejandro V.</h4>
-								<p
-									class="text-brand text-sm flex items-center justify-center gap-1 font-semibold mt-1"
-								>
-									<i data-lucide="map-pin" class="w-4 h-4"></i> Zona Cumbres,
-									MTY
+								<h4 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Alejandro V.</h4>
+								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+									<i data-lucide="map-pin" class="w-3 h-3"></i> Zona Cumbres, MTY
 								</p>
 							</div>
 						</div>
@@ -534,195 +297,82 @@
 				</div>
 			</section>
 
-			<!-- 5. CTA Final -->
-			<section class="py-20 bg-brand text-white text-center">
-				<div class="max-w-4xl mx-auto px-4">
-					<h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">
-						¿Listo para conocer a tu nuevo integrante?
+			<!-- 5. CTA FINAL -->
+			<section class="py-20 bg-navy-dark border-t border-gold/20">
+				<div class="max-w-3xl mx-auto px-6 text-center">
+					<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-4">¿Listo para dar el siguiente paso?</p>
+					<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+						Conoce a tu nuevo <span class="text-gold font-sans">integrante</span>
 					</h2>
-					<p class="text-blue-100 mb-10 text-lg">
-						Revisa nuestro catálogo de gatitos y contáctanos por WhatsApp para
-						resolver dudas, apartar a tu preferido y coordinar el vuelo hacia
-						Monterrey.
+					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
+					<p class="font-sans text-base text-white/70 mb-10 leading-relaxed">
+						Revisa nuestro catálogo de gatitos y contáctanos por WhatsApp para resolver dudas, apartar a tu preferido y coordinar el vuelo hacia Monterrey.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<a
-							href="/#disponibles"
-							title="Ver catálogo completo de gatitos"
-							class="bg-white text-brand font-bold py-4 px-10 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-lg"
-						>
+						<a href="/#disponibles" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-semibold uppercase tracking-wide px-10 py-4 transition-colors duration-200">
 							Ver Gatitos Disponibles
 						</a>
-						<a
-							href="https://wa.me/529992274376"
-							target="_blank"
-							aria-label="Escribir al WhatsApp de Araitea Cats"
-							class="bg-whatsapp text-white font-bold py-4 px-10 rounded-lg hover:bg-green-600 transition-colors shadow-lg text-lg flex items-center justify-center gap-2"
-						>
-							<i data-lucide="message-circle" class="w-6 h-6"></i> Escribir por
-							WhatsApp
+						<a href="https://wa.me/529992274376" target="_blank" class="inline-flex items-center justify-center gap-2 bg-whatsapp hover:opacity-90 text-white font-sans text-sm font-semibold uppercase tracking-wide px-10 py-4 transition-opacity duration-200">
+							<i data-lucide="message-circle" class="w-5 h-5"></i> Escribir por WhatsApp
 						</a>
 					</div>
 				</div>
 			</section>
+
 		</main>
 
-		<!-- Footer Idéntico a Base -->
-		<footer
-			id="blog"
-			class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-brand"
-		>
-			<div class="max-w-6xl mx-auto px-4">
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-					<!-- Columna 1: Marca -->
-					<div>
-						<h2 class="text-3xl font-serif mb-4 text-brand font-bold">
-							Araitea Cat's
-						</h2>
-						<p class="text-gray-400 text-sm mb-6">
-							Criadero profesional de gatos persas. Llevamos más de 25 años
-							uniendo familias con su compañero ideal en todo México.
-						</p>
-						<div class="flex space-x-4">
-							<a
-								href="#"
-								class="text-gray-400 hover:text-white transition-colors"
-								aria-label="Síguenos en Instagram"
-								><i data-lucide="instagram" class="w-6 h-6"></i
-							></a>
-							<a
-								href="#"
-								class="text-gray-400 hover:text-white transition-colors"
-								aria-label="Síguenos en Facebook"
-								><i data-lucide="facebook" class="w-6 h-6"></i
-							></a>
-						</div>
-					</div>
-
-					<!-- Columna 2: Enlaces Rápidos -->
-					<div>
-						<h3 class="text-lg font-bold mb-4 border-b border-gray-700 pb-2">
-							Enlaces Rápidos
-						</h3>
-						<ul class="space-y-2 text-gray-400 text-sm">
-							<li>
-								<a
-									href="/#disponibles"
-									class="hover:text-brand transition-colors"
-									title="Ver catálogo de gatitos"
-									>Gatitos Disponibles</a
-								>
-							</li>
-							<li>
-								<a
-									href="/#presencia"
-									class="hover:text-brand transition-colors"
-									title="Ver estados de envío"
-									>Principales Ubicaciones</a
-								>
-							</li>
-							<li>
-								<a
-									href="/#envios"
-									class="hover:text-brand transition-colors"
-									title="Ver detalles logísticos de envío"
-									>Información de Envíos</a
-								>
-							</li>
-							<li>
-								<a
-									href="/#colores"
-									class="hover:text-brand transition-colors"
-									title="Explorar los colores de la raza"
-									>Conoce los Colores</a
-								>
-							</li>
-							<li class="pt-2">
-								<a
-									href="tel:+529992274376"
-									class="hover:text-brand transition-colors font-bold text-white flex items-center gap-2"
-									title="Llamar a Araitea Cats por teléfono"
-									><i data-lucide="phone" class="w-4 h-4"></i> +52 (999) 227
-									4376</a
-								>
-							</li>
-						</ul>
-					</div>
-
-					<!-- Columna 3: Blog Educativo -->
-					<div>
-						<h3 class="text-lg font-bold mb-4 border-b border-gray-700 pb-2">
-							Blog Educativo
-						</h3>
-						<ul class="space-y-3 text-gray-400 text-sm">
-							<li>
-								<a
-									href="/blog/antes-de-comprar"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: Antes de comprar un gato persa"
-									>Antes de comprar un gato persa: Todo lo que debes saber</a
-								>
-							</li>
-							<li>
-								<a
-									href="/blog/personalidad-persa"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: Personalidad del gato persa"
-									>La Personalidad Única del Gato Persa: ¿Qué Esperar?</a
-								>
-							</li>
-							<li>
-								<a
-									href="/blog/masaje-patas"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: Por qué amasan los gatos"
-									>¿Tu Gatito te da masaje con sus patas?</a
-								>
-							</li>
-							<li>
-								<a
-									href="/blog/no-al-cascabel"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: El peligro de los cascabeles en gatos"
-									>¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a
-								>
-							</li>
-						</ul>
+		<!-- FOOTER -->
+		<footer id="blog" class="bg-navy border-t-2 border-gold">
+			<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+				<div>
+					<h2 class="font-serif text-3xl font-bold text-white mb-1">Araitea <span class="text-gold font-sans">Cat's</span></h2>
+					<div class="h-0.5 w-10 bg-gold mt-3 mb-5"></div>
+					<p class="font-sans text-sm text-white/60 leading-relaxed max-w-xs mb-6">Criadero profesional de gatos persas. Llevamos más de 25 años uniendo familias con su compañero ideal en todo México.</p>
+					<div class="flex gap-4">
+						<a href="#" class="text-white/40 hover:text-gold transition-colors" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+						<a href="#" class="text-white/40 hover:text-gold transition-colors" aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
 					</div>
 				</div>
-
-				<div
-					class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500"
-				>
-					&copy; <span id="year"></span> Araitea Cat's. Todos los derechos
-					reservados.
+				<div>
+					<h4 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-6">Navegación</h4>
+					<ul class="space-y-3">
+						<li><a href="/#disponibles" class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Gatitos Disponibles</a></li>
+						<li><a href="/#presencia"   class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Principales Ubicaciones</a></li>
+						<li><a href="/#envios"      class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Información de Envíos</a></li>
+						<li><a href="/#colores"     class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Conoce los Colores</a></li>
+						<li class="pt-2">
+							<a href="tel:+529992274376" class="font-sans text-sm text-white hover:text-gold transition-colors flex items-center gap-2 font-semibold">
+								<i data-lucide="phone" class="w-4 h-4"></i> +52 (999) 227 4376
+							</a>
+						</li>
+					</ul>
 				</div>
+				<div>
+					<h4 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-6">Blog Educativo</h4>
+					<ul class="space-y-4">
+						<li><a href="/blog/antes-de-comprar"   class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">Antes de comprar un gato persa: Todo lo que debes saber</a></li>
+						<li><a href="/blog/personalidad-persa" class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">La Personalidad Única del Gato Persa: ¿Qué Esperar?</a></li>
+						<li><a href="/blog/masaje-patas"       class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">¿Tu Gatito te da masaje con sus patas?</a></li>
+						<li><a href="/blog/no-al-cascabel"     class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="border-t border-white/10 py-5 text-center">
+				<p class="font-sans text-xs text-white/30">&copy; <span id="year"></span> Araitea Cat's · Todos los derechos reservados</p>
 			</div>
 		</footer>
 
-		<!-- Botón Flotante WhatsApp -->
-		<a
-			href="https://wa.me/529992274376"
-			target="_blank"
-			class="fixed bottom-6 right-6 p-4 rounded-full bg-whatsapp text-white shadow-xl z-50 hover:scale-110 hover:shadow-2xl transition-all duration-300 flex items-center justify-center"
-			aria-label="Contactar por WhatsApp"
-			title="Escríbenos por WhatsApp para envíos a Monterrey"
-		>
-			<i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
+		<a href="https://wa.me/529992274376" target="_blank" class="fixed bottom-6 right-6 p-4 rounded-full bg-whatsapp text-white shadow-xl z-50 hover:scale-110 hover:shadow-2xl transition-all duration-300 flex items-center justify-center" aria-label="Contactar por WhatsApp">
+			<i data-lucide="message-circle" class="w-7 h-7 fill-current"></i>
 		</a>
 
-		<!-- SCRIPTS LÓGICA -->
 		<script>
 			lucide.createIcons();
-			document.getElementById("year").textContent = new Date().getFullYear();
-
-			// LÓGICA DEL MENÚ MÓVIL
-			const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-			const mobileMenu = document.getElementById("mobile-menu");
-
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.toggle("hidden");
-				mobileMenu.classList.toggle("flex");
+			document.getElementById('year').textContent = new Date().getFullYear();
+			document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+				const m = document.getElementById('mobile-menu');
+				m.classList.toggle('hidden');
+				m.classList.toggle('flex');
 			});
 		</script>
 	</body>

@@ -4,436 +4,225 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>
-			Venta de Gatos Persas en Guadalajara | Envíos Seguros | Araitea Cat's
-		</title>
+		<title>Venta de Gatos Persas en Guadalajara | Envíos Seguros | Araitea Cat's</title>
 
-		<!-- Meta Etiquetas Críticas SEO Local -->
-		<meta
-			name="description"
-			content="¿Buscas un gato persa en Guadalajara? En Araitea Cat's criamos persas libres de PKD con envío seguro y monitoreado al Aeropuerto Internacional de Guadalajara (GDL)."
-		/>
+		<meta name="description" content="¿Buscas un gato persa en Guadalajara? En Araitea Cat's criamos persas libres de PKD con envío seguro y monitoreado al Aeropuerto Internacional de Guadalajara (GDL)." />
 
-		<!-- Open Graph (OG) -->
-		<meta
-			property="og:title"
-			content="Venta de Gatos Persas en Guadalajara | Araitea Cat's"
-		/>
-		<meta
-			property="og:description"
-			content="Criadero especializado. Tu nuevo gatito persa a un vuelo corto de distancia hasta Guadalajara, Jalisco. Libres de PKD y con garantías de salud."
-		/>
-		<meta
-			property="og:image"
-			content="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1920&q=80"
-		/>
-		<meta
-			property="og:url"
-			content="https://gatospersas.com.mx/venta-de-gatos-persas-en-jalisco"
-		/>
-		<meta property="og:type" content="website" />
+		<meta property="og:title"       content="Venta de Gatos Persas en Guadalajara | Araitea Cat's" />
+		<meta property="og:description" content="Criadero especializado. Tu nuevo gatito persa a un vuelo corto de distancia hasta Guadalajara, Jalisco. Libres de PKD y con garantías de salud." />
+		<meta property="og:image"       content="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1920&q=80" />
+		<meta property="og:url"         content="https://gatospersas.com.mx/venta-de-gatos-persas-en-jalisco" />
+		<meta property="og:type"        content="website" />
 
-		<!-- Optimización LCP -->
-		<link
-			rel="preload"
-			as="image"
-			href="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1920&q=80"
-		/>
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1920&q=80" />
 
-		<!-- Fuentes de Google -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-		<!-- Tailwind CSS vía CDN -->
 		<script src="https://cdn.tailwindcss.com"></script>
-
-		<!-- Configuración de Tailwind -->
 		<script>
 			tailwind.config = {
 				theme: {
 					extend: {
 						colors: {
-							brand: "#0081C2",
-							whatsapp: "#25D366",
-							bodybg: "#F7FAFC",
+							navy:        '#0C2340',
+							'navy-dark': '#071829',
+							gold:        '#CCA052',
+							'gold-light':'#E2C07E',
+							whatsapp:    '#25D366',
 						},
 						fontFamily: {
-							serif: ['"Playfair Display"', "serif"],
-							sans: ["Nunito", "sans-serif"],
+							serif: ['"Playfair Display"', 'serif'],
+							sans:  ['Montserrat', 'sans-serif'],
 						},
 					},
 				},
 			};
 		</script>
 
-		<!-- Íconos de Lucide -->
 		<script src="https://unpkg.com/lucide@latest"></script>
 
 		<style>
-			body {
-				background-color: #f7fafc;
-				color: #2d3748;
-			}
-			.faq-content {
-				transition:
-					max-height 0.3s ease-in-out,
-					opacity 0.3s ease-in-out;
-				max-height: 0;
-				opacity: 0;
-				overflow: hidden;
-			}
+			body { background-color: #0C2340; color: #fff; }
+			.nav-link { position: relative; padding-bottom: 2px; }
+			.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #CCA052; transition: width 0.2s ease; }
+			.nav-link:hover::after { width: 100%; }
 		</style>
 	</head>
-	<body class="font-sans relative min-h-screen">
-		<!-- Navbar (Sincronizado con Home) -->
-		<nav class="bg-white py-4 px-6 shadow-sm sticky top-0 z-50">
+	<body class="font-sans bg-navy min-h-screen">
+
+		<!-- NAVBAR -->
+		<nav class="bg-navy border-b border-gold/20 py-4 px-6 sticky top-0 z-50">
 			<div class="max-w-6xl mx-auto flex justify-between items-center">
-				<div class="flex items-center gap-2">
-					<a
-						href="/"
-						class="text-2xl font-serif font-bold text-brand tracking-tight"
-						title="Volver a la página principal"
-						>Araitea Cat's</a
-					>
-				</div>
+				<a href="/" class="flex items-center gap-3">
+					<span class="font-serif text-2xl font-bold text-white tracking-tight">Araitea <span class="text-gold font-sans">Cat's</span></span>
+				</a>
 
-				<!-- Menú Desktop -->
-				<div
-					class="hidden md:flex items-center space-x-8 text-sm font-bold text-gray-600"
-				>
-					<a
-						href="/#disponibles"
-						class="hover:text-brand transition-colors"
-						title="Ver gatitos persas disponibles"
-						>Gatitos Disponibles</a
-					>
-					<a
-						href="/#colores"
-						class="hover:text-brand transition-colors"
-						title="Conoce los colores de gatos persas"
-						>Razas y Colores</a
-					>
+				<div class="hidden md:flex items-center gap-8">
+					<a href="/#disponibles" class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Gatitos</a>
+					<a href="/#colores"     class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Razas y Colores</a>
 
-					<!-- Nuevo Dropdown: Principales Ubicaciones -->
 					<div class="relative group">
-						<button
-							class="hover:text-brand transition-colors flex items-center gap-1 py-2"
-							aria-label="Ver principales ubicaciones de envío"
-						>
-							Principales Ubicaciones
-							<i data-lucide="chevron-down" class="w-4 h-4"></i>
+						<button class="font-sans text-xs font-semibold uppercase tracking-widest text-gold flex items-center gap-1 py-2">
+							Ubicaciones <i data-lucide="chevron-down" class="w-3 h-3"></i>
 						</button>
-						<!-- Puente invisible para el hover -->
-						<div
-							class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
-						>
-							<div
-								class="bg-white border border-gray-100 rounded-lg shadow-lg overflow-hidden"
-							>
-								<a
-									href="/venta-de-gatos-persas-en-cdmx"
-									class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand transition-colors"
-									title="Envío de gatos persas a CDMX"
-									>Ciudad de México</a
-								>
-								<a
-									href="/venta-de-gatos-persas-en-monterrey"
-									class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand transition-colors"
-									title="Envío de gatos persas a Monterrey"
-									>Monterrey</a
-								>
-								<a
-									href="/venta-de-gatos-persas-en-jalisco"
-									class="block px-4 py-3 text-sm text-brand bg-blue-50 font-bold"
-									title="Envío de gatos persas a Guadalajara"
-									>Guadalajara</a
-								>
-								<div class="border-t border-gray-100"></div>
-								<a
-									href="/#envios"
-									class="block px-4 py-3 text-sm text-gray-500 hover:bg-gray-50 transition-colors"
-									title="Ver envíos a otros estados de México"
-									>Ver Otros Estados</a
-								>
+						<div class="absolute left-0 top-full pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+							<div class="bg-navy border border-gold/30 overflow-hidden">
+								<a href="/venta-de-gatos-persas-en-cdmx"      class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors">Ciudad de México</a>
+								<a href="/venta-de-gatos-persas-en-monterrey" class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors">Monterrey</a>
+								<a href="/venta-de-gatos-persas-en-jalisco"   class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-gold bg-navy-dark">Guadalajara</a>
+								<div class="border-t border-gold/20"></div>
+								<a href="/#presencia" class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/50 hover:text-gold hover:bg-navy-dark transition-colors">Ver otros estados</a>
 							</div>
 						</div>
 					</div>
 
-					<a
-						href="/#envios"
-						class="hover:text-brand transition-colors"
-						title="Información sobre envíos seguros en México"
-						>Envíos</a
-					>
-					<a
-						href="/#blog"
-						class="hover:text-brand transition-colors"
-						title="Leer nuestro blog sobre cuidados del gato persa"
-						>Blog Educativo</a
-					>
-					<a
-						href="https://wa.me/529992274376"
-						target="_blank"
-						class="bg-brand text-white font-bold py-2 px-5 rounded-lg hover:bg-blue-800 transition-colors shadow-md"
-						aria-label="Contáctanos"
-					>
-						Contacto
-					</a>
+					<a href="/#envios" class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Envíos</a>
+					<a href="/#blog"   class="nav-link font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Blog</a>
+					<a href="https://wa.me/529992274376" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-semibold uppercase tracking-wide px-5 py-2.5 transition-colors duration-200">Contacto</a>
 				</div>
 
-				<!-- Botón Menú Móvil -->
-				<button
-					id="mobile-menu-btn"
-					class="md:hidden text-gray-600"
-					aria-label="Abrir menú de navegación"
-				>
+				<button id="mobile-menu-btn" class="md:hidden text-white/80" aria-label="Abrir menú">
 					<i data-lucide="menu" class="w-7 h-7"></i>
 				</button>
 			</div>
 
-			<!-- Menú Móvil Desplegable -->
-			<div
-				id="mobile-menu"
-				class="md:hidden hidden flex-col space-y-4 mt-4 pt-4 border-t border-gray-100 font-bold text-gray-600 text-center"
-			>
-				<a href="/#disponibles" class="hover:text-brand">Gatitos Disponibles</a>
-				<a href="/#colores" class="hover:text-brand">Razas y Colores</a>
-
-				<!-- Nueva Sección de Ubicaciones en Móvil -->
-				<div class="py-2 border-y border-gray-50 flex flex-col space-y-3">
-					<span class="text-brand">Principales Ubicaciones</span>
-					<a
-						href="/venta-de-gatos-persas-en-cdmx"
-						class="text-sm font-normal hover:text-brand"
-						>Ciudad de México</a
-					>
-					<a
-						href="/venta-de-gatos-persas-en-monterrey"
-						class="text-sm font-normal hover:text-brand"
-						>Monterrey</a
-					>
-					<a
-						href="/venta-de-gatos-persas-en-jalisco"
-						class="text-sm font-bold text-brand"
-						>Guadalajara</a
-					>
+			<div id="mobile-menu" class="md:hidden hidden flex-col gap-4 mt-4 pt-4 border-t border-gold/20 text-center">
+				<a href="/#disponibles" class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Gatitos</a>
+				<a href="/#colores"     class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Razas y Colores</a>
+				<div class="border-y border-gold/10 py-3 flex flex-col gap-3">
+					<span class="font-sans text-xs font-semibold uppercase tracking-widest text-gold">Ubicaciones</span>
+					<a href="/venta-de-gatos-persas-en-cdmx"      class="font-sans text-xs text-white/60 hover:text-gold">Ciudad de México</a>
+					<a href="/venta-de-gatos-persas-en-monterrey" class="font-sans text-xs text-white/60 hover:text-gold">Monterrey</a>
+					<a href="/venta-de-gatos-persas-en-jalisco"   class="font-sans text-xs text-gold font-semibold">Guadalajara</a>
 				</div>
-
-				<a href="/#envios" class="hover:text-brand">Envíos</a>
-				<a href="/#blog" class="hover:text-brand">Blog Educativo</a>
-				<a
-					href="https://wa.me/529992274376"
-					target="_blank"
-					class="bg-brand text-white py-2 px-5 rounded-lg mx-auto w-3/4"
-					>Contacto</a
-				>
+				<a href="/#envios" class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Envíos</a>
+				<a href="/#blog"   class="font-sans text-xs font-semibold uppercase tracking-widest text-white/80 hover:text-gold">Blog</a>
+				<a href="https://wa.me/529992274376" class="bg-gold text-navy font-sans text-xs font-semibold uppercase tracking-wide py-3 px-6 mx-auto w-3/4">Contacto</a>
 			</div>
 		</nav>
 
 		<main>
-			<!-- 1. Hero SEO Localizado -->
-			<div
-				class="relative py-24 md:py-32 w-full overflow-hidden bg-gray-900 flex items-center"
-			>
-				<div class="absolute inset-0 bg-black/50 z-10"></div>
-				<img
-					src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1920&q=80"
-					alt="Gatos persas en Guadalajara Jalisco - Araitea Cats"
-					class="absolute inset-0 w-full h-full object-cover z-0"
-				/>
 
-				<div class="relative z-20 px-4 max-w-4xl mx-auto text-center">
-					<span
-						class="text-white/90 font-bold tracking-widest uppercase text-sm mb-4 block"
-						>Envíos Seguros a Jalisco</span
-					>
-					<h1
-						class="text-4xl md:text-6xl text-white font-serif font-bold mb-6 leading-tight drop-shadow-lg"
-					>
-						Encuentra tu Gato Persa Ideal en Guadalajara
+			<!-- 1. HERO LOCALIZADO JALISCO -->
+			<div class="relative py-32 md:py-44 w-full overflow-hidden flex items-center">
+				<div class="absolute inset-0 bg-navy/65 z-10"></div>
+				<img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1920&q=80" alt="Gatos persas en Guadalajara Jalisco - Araitea Cats" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+				<div class="relative z-20 px-6 max-w-4xl mx-auto text-center">
+					<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-4">Envíos Seguros · Jalisco y Área Metropolitana</p>
+					<h1 class="font-serif text-4xl md:text-6xl text-white font-bold mb-6 leading-tight drop-shadow-lg">
+						Venta de <span class="text-gold font-sans">Gatos Persas</span><br>en Guadalajara
 					</h1>
-					<p
-						class="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto font-light"
-					>
-						Más de 25 años de experiencia criando persas de excelencia.
-						Conectamos a nuestros gatitos con familias tapatías a través de un
-						servicio de envío VIP, directo y sin estrés.
+					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
+					<p class="font-sans text-lg text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+						Más de 25 años criando persas de excelencia. Tu nuevo compañero felino a un vuelo corto de distancia, con entrega directa en el <strong class="text-white">Aeropuerto de Guadalajara (GDL)</strong>.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<a
-							href="/#disponibles"
-							title="Revisar el catálogo de gatitos"
-							class="bg-brand text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition-colors shadow-md"
-						>
+						<a href="/#disponibles" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-semibold uppercase tracking-wide px-8 py-4 transition-colors duration-200">
 							Ver Gatitos Disponibles
 						</a>
-						<a
-							href="https://wa.me/529992274376"
-							target="_blank"
-							aria-label="Contactar por WhatsApp"
-							class="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-gray-900 transition-colors shadow-md"
-						>
-							Contactar por WhatsApp
+						<a href="https://wa.me/529992274376" target="_blank" class="inline-flex items-center justify-center gap-2 border border-gold text-gold hover:bg-gold hover:text-navy font-sans text-sm font-semibold uppercase tracking-wide px-8 py-4 transition-colors duration-200">
+							<i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
 						</a>
 					</div>
 				</div>
 			</div>
 
-			<!-- 2. Contenido SEO Especializado (El texto de valor para Google) -->
-			<section class="py-20 bg-white">
-				<div class="max-w-4xl mx-auto px-4">
-					<div class="prose prose-lg text-gray-600 max-w-none">
-						<h2
-							class="text-3xl font-serif font-bold text-brand mb-6 text-center"
-						>
-							Venta de Gatos Persas Exclusivos para Jalisco
+			<!-- 2. CONTENIDO SEO JALISCO -->
+			<section class="py-20 bg-navy border-t border-gold/20">
+				<div class="max-w-4xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-3">Criadero Certificado</p>
+						<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+							Encuentra tu <span class="text-gold font-sans">Persa Ideal</span> en Guadalajara y Jalisco
 						</h2>
-						<p class="mb-6">
-							Sabemos que encontrar un
-							<strong
-								>criadero de gatos persas de confianza en Guadalajara</strong
-							>
-							puede ser un desafío. La búsqueda de un compañero felino de raza
-							pura requiere garantías de salud, genética impecable y, sobre
-							todo, una crianza llena de amor. En
-							<strong>Araitea Cat's</strong>, rompemos las barreras de la
-							distancia para llevar a la puerta de tu corazón a los ejemplares
-							más hermosos de México.
+						<div class="h-0.5 w-16 bg-gold mx-auto mt-4"></div>
+					</div>
+
+					<div class="space-y-6 font-sans text-base text-white/70 leading-relaxed">
+						<p>
+							Sabemos que encontrar un criadero especializado en la <strong class="text-white">venta de gatos persas en Guadalajara</strong> que garantice salud, pureza racial y una crianza responsable es esencial. En <strong class="text-white">Araitea Cat's</strong> llevamos más de 25 años perfeccionando nuestra logística VIP para llevar ejemplares de primer nivel a familias tapatías.
 						</p>
-						<p class="mb-6">
-							Nuestro compromiso es entregarte no solo una mascota, sino un
-							miembro de la familia saludable. Todos nuestros gatitos persas
-							crecen en un ambiente familiar libre de jaulas, lo que garantiza
-							un carácter dócil, juguetón y sumamente cariñoso, ideal para
-							convivir en departamentos o casas en zonas residenciales de
-							Zapopan, Tlaquepaque o cualquier punto de la Perla Tapatía.
+						<p>
+							Nuestros gatitos nacen y crecen en casa, bajo un ambiente lleno de amor y estimulación temprana. Si vives en <strong class="text-white">Zapopan, Providencia, Tlaquepaque o Chapalita</strong>, el temperamento tranquilo, silencioso y profundamente cariñoso del persa lo convierte en el compañero perfecto para la vida en departamento o en casa dentro del área metropolitana de Guadalajara.
 						</p>
 
-						<h3 class="text-2xl font-serif font-bold text-gray-800 mt-10 mb-4">
-							Garantía de Salud: Libres de PKD
-						</h3>
-						<p class="mb-6">
-							Una de las mayores preocupaciones al comprar un gato persa es la
-							Enfermedad Renal Poliquística (PKD). En Araitea Cat's,
-							garantizamos que todos nuestros felinos son descendientes de
-							líneas genéticas probadas por ADN y están
-							<strong>100% libres de PKD</strong>. Tu gatito viajará a Jalisco
-							con su certificado médico expedido por nuestro veterinario
-							especialista, primera vacuna, y desparasitación al corriente.
+						<h3 class="font-serif text-2xl font-bold text-white mt-10 mb-2">Garantía Genética: Libres de <span class="text-gold font-sans">PKD</span></h3>
+						<div class="h-0.5 w-10 bg-gold mb-4"></div>
+						<p>
+							La salud es nuestra prioridad innegociable. Cuando recibas a tu gatito en Guadalajara, tendrás la certeza de que proviene de líneas de sangre probadas por ADN, garantizando que está <strong class="text-white">100% libre de la Enfermedad Renal Poliquística (PKD)</strong>. Todos nuestros ejemplares se entregan con desparasitación al corriente, vacunas iniciales y certificado de salud expedido por nuestro veterinario experto.
 						</p>
+					</div>
 
-						<div class="bg-blue-50 p-6 rounded-xl border border-blue-100 my-10">
-							<h4
-								class="text-xl font-bold text-brand mb-3 flex items-center gap-2"
-							>
-								<i data-lucide="sun" class="w-5 h-5"></i> Adaptación al clima de
-								Guadalajara
-							</h4>
-							<p class="text-sm text-gray-700 m-0">
-								El clima templado de Guadalajara es excelente para el gato
-								persa. Al ser una raza de interior (*indoor*), tu felino se
-								adaptará perfectamente a la vida en tu hogar. Solo recomendamos
-								cepillado diario y mantener un ambiente fresco durante los meses
-								más cálidos de mayo y junio para cuidar su abundante y hermoso
-								pelaje.
-							</p>
-						</div>
+					<!-- Info box -->
+					<div class="mt-10 border border-gold/30 bg-navy-dark p-7">
+						<h4 class="font-serif text-lg font-semibold text-white mb-3 flex items-center gap-3">
+							<i data-lucide="sun" class="w-5 h-5 text-gold flex-shrink-0"></i>
+							El Persa en la <span class="text-gold font-sans ml-1">Perla Tapatía</span>
+						</h4>
+						<p class="font-sans text-sm text-white/70 leading-relaxed">
+							Guadalajara disfruta de un clima templado casi todo el año, ideal para los persas. Al ser felinos 100% de interiores, se adaptan perfectamente al estilo de vida urbano de Jalisco. Su naturaleza serena y su pelaje espectacular los convierten en el complemento perfecto para hogares modernos, tanto en colonias residenciales como en los nuevos desarrollos verticales de la ciudad.
+						</p>
 					</div>
 				</div>
 			</section>
 
-			<!-- 3. Logística de Envío a GDL (Transparencia para el cliente) -->
-			<section id="logistica" class="py-20 bg-bodybg border-t border-gray-200">
-				<div class="max-w-6xl mx-auto px-4">
-					<div class="text-center mb-16">
-						<h2
-							class="text-3xl md:text-4xl font-serif font-bold text-brand mb-4"
-						>
-							¿Cómo enviamos a Guadalajara?
+			<!-- 3. LOGÍSTICA JALISCO -->
+			<section id="logistica" class="py-20 bg-navy-dark border-t border-gold/20">
+				<div class="max-w-6xl mx-auto px-6">
+					<div class="text-center mb-14">
+						<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-3">Proceso de Envío</p>
+						<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+							Logística y <span class="text-gold font-sans">Envíos</span> a Jalisco
 						</h2>
-						<p class="text-gray-600 max-w-2xl mx-auto">
-							Un proceso logístico VIP, diseñado exclusivamente para el
-							bienestar y la seguridad de tu felino hasta el Aeropuerto
-							Internacional de Guadalajara.
+						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
+						<p class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
+							Un proceso seguro, monitoreado y directo al Aeropuerto Internacional de Guadalajara (GDL), con tiempos de vuelo reducidos.
 						</p>
 					</div>
 
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<!-- Paso 1 -->
-						<div
-							class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all"
-						>
-							<div
-								class="absolute -right-4 -top-4 text-9xl font-black text-gray-50 opacity-50 group-hover:text-blue-50 transition-colors"
-							>
-								1
-							</div>
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 p-8 bg-navy relative overflow-hidden">
+							<div class="absolute right-4 top-4 font-serif text-7xl font-bold text-white/5 select-none">1</div>
 							<div class="relative z-10">
-								<div
-									class="w-14 h-14 bg-blue-100 text-brand rounded-full flex items-center justify-center mb-6"
-								>
-									<i data-lucide="stethoscope" class="w-7 h-7"></i>
+								<div class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold">
+									<i data-lucide="stethoscope" class="w-6 h-6"></i>
 								</div>
-								<h3 class="text-xl font-bold mb-3">Preparación Médica</h3>
-								<p class="text-gray-600 text-sm">
-									Antes de volar a Jalisco, tu gatito pasa por una revisión
-									exhaustiva donde se emite un certificado de salud apto para
-									volar, garantizando que está en perfectas condiciones.
+								<h3 class="font-serif text-xl font-semibold text-white mb-3">Revisión Pre-vuelo</h3>
+								<div class="h-0.5 w-8 bg-gold mb-4"></div>
+								<p class="font-sans text-sm text-white/60 leading-relaxed">
+									Antes de partir hacia Jalisco, nuestro veterinario realiza un chequeo completo y emite el certificado de salud oficial, garantizando que tu gatito viaje en óptimas condiciones físicas y emocionales.
 								</p>
 							</div>
 						</div>
-
 						<!-- Paso 2 -->
-						<div
-							class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all"
-						>
-							<div
-								class="absolute -right-4 -top-4 text-9xl font-black text-gray-50 opacity-50 group-hover:text-blue-50 transition-colors"
-							>
-								2
-							</div>
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 p-8 bg-navy relative overflow-hidden">
+							<div class="absolute right-4 top-4 font-serif text-7xl font-bold text-white/5 select-none">2</div>
 							<div class="relative z-10">
-								<div
-									class="w-14 h-14 bg-blue-100 text-brand rounded-full flex items-center justify-center mb-6"
-								>
-									<i data-lucide="plane-takeoff" class="w-7 h-7"></i>
+								<div class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold">
+									<i data-lucide="plane-takeoff" class="w-6 h-6"></i>
 								</div>
-								<h3 class="text-xl font-bold mb-3">Vuelo Seguro</h3>
-								<p class="text-gray-600 text-sm">
-									Gestionamos el vuelo con aerolíneas certificadas en el
-									traslado de mascotas. Viaja en cabina presurizada o en
-									transportadora rígida aprobada por IATA, con tiempos de vuelo
-									reducidos.
+								<h3 class="font-serif text-xl font-semibold text-white mb-3">Vuelo Directo a GDL</h3>
+								<div class="h-0.5 w-8 bg-gold mb-4"></div>
+								<p class="font-sans text-sm text-white/60 leading-relaxed">
+									Coordinamos vuelos directos con aerolíneas certificadas en traslado de mascotas. Tu persa viaja en cabina climatizada con transportadora aprobada por IATA, monitoreado en todo momento.
 								</p>
 							</div>
 						</div>
-
 						<!-- Paso 3 -->
-						<div
-							class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden group hover:shadow-lg transition-all"
-						>
-							<div
-								class="absolute -right-4 -top-4 text-9xl font-black text-gray-50 opacity-50 group-hover:text-blue-50 transition-colors"
-							>
-								3
-							</div>
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 p-8 bg-navy relative overflow-hidden">
+							<div class="absolute right-4 top-4 font-serif text-7xl font-bold text-white/5 select-none">3</div>
 							<div class="relative z-10">
-								<div
-									class="w-14 h-14 bg-blue-100 text-brand rounded-full flex items-center justify-center mb-6"
-								>
-									<i data-lucide="map-pin" class="w-7 h-7"></i>
+								<div class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold">
+									<i data-lucide="map-pin" class="w-6 h-6"></i>
 								</div>
-								<h3 class="text-xl font-bold mb-3">Recepción en GDL</h3>
-								<p class="text-gray-600 text-sm">
-									Te enviamos la guía de rastreo anticipadamente. Solo debes
-									presentarte con tu identificación oficial en la zona de carga
-									del
-									<strong>Aeropuerto Internacional de Guadalajara (GDL)</strong>
-									para recibirlo.
+								<h3 class="font-serif text-xl font-semibold text-white mb-3">Recolección en GDL</h3>
+								<div class="h-0.5 w-8 bg-gold mb-4"></div>
+								<p class="font-sans text-sm text-white/60 leading-relaxed">
+									Con tu guía de rastreo en mano, solo debes presentarte con identificación oficial en la zona de carga del <strong class="text-white">Aeropuerto Internacional Miguel Hidalgo y Costilla (GDL)</strong> para recibirlo.
 								</p>
 							</div>
 						</div>
@@ -441,101 +230,66 @@
 				</div>
 			</section>
 
-			<!-- 4. Prueba Social Exclusiva (Localizada para Jalisco) -->
-			<section class="py-20 bg-white border-t border-gray-100">
-				<div class="max-w-6xl mx-auto px-4">
-					<div class="text-center mb-16">
-						<h2
-							class="text-3xl md:text-4xl font-serif font-bold text-brand mb-4"
-						>
-							Familias Tapatías Felices
+			<!-- 4. TESTIMONIOS JALISCO -->
+			<section class="py-20 bg-navy border-t border-gold/20">
+				<div class="max-w-6xl mx-auto px-6">
+					<div class="text-center mb-14">
+						<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-3">Prueba Social</p>
+						<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+							<span class="text-gold font-sans">Familias Tapatías</span> Felices
 						</h2>
-						<p class="text-gray-600 max-w-2xl mx-auto">
-							Ellos ya confiaron en nosotros y hoy disfrutan del amor
-							incondicional de un Persa Araitea en Jalisco.
+						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
+						<p class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
+							Estas son algunas de las familias en Jalisco que ya comparten su vida con un Persa Araitea.
 						</p>
 					</div>
 
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-						<!-- Testimonio GDL 1 -->
-						<div
-							class="bg-bodybg rounded-2xl p-6 relative border border-gray-100 mt-8 md:mt-0"
-						>
-							<div class="absolute -top-8 left-1/2 -translate-x-1/2">
-								<img
-									src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=400&q=80"
-									alt="Gato persa adoptado en Guadalajara"
-									loading="lazy"
-									class="w-16 h-16 rounded-full border-4 border-white object-cover shadow-sm"
-								/>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+						<!-- Testimonio 1 -->
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+							<div class="aspect-[4/3] overflow-hidden">
+								<img src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=800&q=80" alt="Familia Villaseñor con su gato persa en Guadalajara Jalisco" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
-							<div class="mt-8 text-center">
-								<p class="text-gray-600 italic mb-6">
-									"Fue amor a primera vista. Verlo crecer, jugar y dormir es una
-									experiencia inigualable. El envío al aeropuerto fue rapidísimo
-									y sin contratiempos."
+							<div class="p-7">
+								<div class="h-0.5 w-8 bg-gold mb-5"></div>
+								<p class="font-serif text-lg text-white/80 italic leading-relaxed mb-5">
+									"Fue amor a primera vista. Verlo crecer, jugar y dormir en nuestra casa de Zapopan es una experiencia inigualable."
 								</p>
-								<h4 class="font-bold text-lg">Familia Villaseñor Sánchez</h4>
-								<p
-									class="text-brand text-sm flex items-center justify-center gap-1 font-semibold mt-1"
-								>
-									<i data-lucide="map-pin" class="w-4 h-4"></i> Guadalajara,
-									Jal.
+								<h4 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Familia Villaseñor</h4>
+								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+									<i data-lucide="map-pin" class="w-3 h-3"></i> Zapopan, Jalisco
 								</p>
 							</div>
 						</div>
-
-						<!-- Testimonio GDL 2 -->
-						<div
-							class="bg-bodybg rounded-2xl p-6 relative border border-gray-100 mt-8 md:mt-0"
-						>
-							<div class="absolute -top-8 left-1/2 -translate-x-1/2">
-								<img
-									src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=400&q=80"
-									alt="Cliente feliz en Zapopan con su gato persa"
-									loading="lazy"
-									class="w-16 h-16 rounded-full border-4 border-white object-cover shadow-sm"
-								/>
+						<!-- Testimonio 2 -->
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+							<div class="aspect-[4/3] overflow-hidden">
+								<img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=800&q=80" alt="Familia en Providencia Guadalajara con gato persa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
-							<div class="mt-8 text-center">
-								<p class="text-gray-600 italic mb-6">
-									"Tenía miedo de comprar en otro estado, pero el equipo de
-									Araitea me dio confianza desde el día 1. Mi gatito llegó en
-									perfectas condiciones, muy limpio y juguetón."
+							<div class="p-7">
+								<div class="h-0.5 w-8 bg-gold mb-5"></div>
+								<p class="font-serif text-lg text-white/80 italic leading-relaxed mb-5">
+									"Araitea nos acompañó en todo el proceso. La comunicación fue excelente y el gatito llegó súper bien al aeropuerto de GDL."
 								</p>
-								<h4 class="font-bold text-lg">Mariana L.</h4>
-								<p
-									class="text-brand text-sm flex items-center justify-center gap-1 font-semibold mt-1"
-								>
-									<i data-lucide="map-pin" class="w-4 h-4"></i> Zapopan, Jal.
+								<h4 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Mariana y Carlos P.</h4>
+								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+									<i data-lucide="map-pin" class="w-3 h-3"></i> Providencia, GDL
 								</p>
 							</div>
 						</div>
-
-						<!-- Testimonio GDL 3 -->
-						<div
-							class="bg-bodybg rounded-2xl p-6 relative border border-gray-100 mt-8 md:mt-0"
-						>
-							<div class="absolute -top-8 left-1/2 -translate-x-1/2">
-								<img
-									src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=400&q=80"
-									alt="Familia feliz en Tlaquepaque gato persa"
-									loading="lazy"
-									class="w-16 h-16 rounded-full border-4 border-white object-cover shadow-sm"
-								/>
+						<!-- Testimonio 3 -->
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+							<div class="aspect-[4/3] overflow-hidden">
+								<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80" alt="Familia en Tlaquepaque con su gatito persa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
-							<div class="mt-8 text-center">
-								<p class="text-gray-600 italic mb-6">
-									"La genética se nota. Mi gato es hermoso, sano y el
-									veterinario aquí en Guadalajara me felicitó por el buen estado
-									en el que venía."
+							<div class="p-7">
+								<div class="h-0.5 w-8 bg-gold mb-5"></div>
+								<p class="font-serif text-lg text-white/80 italic leading-relaxed mb-5">
+									"Nuestros persas son los reyes de la casa. Su pelaje, su carácter tan dulce y la tranquilidad de saber que son PKD-negativo no tiene precio."
 								</p>
-								<h4 class="font-bold text-lg">Roberto Carlos P.</h4>
-								<p
-									class="text-brand text-sm flex items-center justify-center gap-1 font-semibold mt-1"
-								>
-									<i data-lucide="map-pin" class="w-4 h-4"></i> Tlaquepaque,
-									Jal.
+								<h4 class="font-sans text-sm font-semibold uppercase tracking-widest text-white">Sofía R.</h4>
+								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+									<i data-lucide="map-pin" class="w-3 h-3"></i> Tlaquepaque, JAL
 								</p>
 							</div>
 						</div>
@@ -543,197 +297,82 @@
 				</div>
 			</section>
 
-			<!-- 5. CTA Final -->
-			<section class="py-20 bg-brand text-white text-center">
-				<div class="max-w-4xl mx-auto px-4">
-					<h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">
-						¿Listo para conocer a tu nuevo mejor amigo?
+			<!-- 5. CTA FINAL -->
+			<section class="py-20 bg-navy-dark border-t border-gold/20">
+				<div class="max-w-3xl mx-auto px-6 text-center">
+					<p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-4">¿Listo para dar el siguiente paso?</p>
+					<h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+						Conoce a tu nuevo <span class="text-gold font-sans">integrante</span>
 					</h2>
-					<p class="text-blue-100 mb-10 text-lg">
-						Revisa nuestro catálogo actual de gatitos. Contáctanos por WhatsApp
-						para resolver dudas, apartar a tu preferido y coordinar el vuelo
-						hacia Guadalajara.
+					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
+					<p class="font-sans text-base text-white/70 mb-10 leading-relaxed">
+						Revisa nuestro catálogo de gatitos y contáctanos por WhatsApp para resolver dudas, apartar a tu preferido y coordinar el vuelo hacia Guadalajara.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<a
-							href="/#disponibles"
-							title="Ver catálogo completo de gatitos"
-							class="bg-white text-brand font-bold py-4 px-10 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-lg"
-						>
+						<a href="/#disponibles" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-semibold uppercase tracking-wide px-10 py-4 transition-colors duration-200">
 							Ver Gatitos Disponibles
 						</a>
-						<a
-							href="https://wa.me/529992274376"
-							target="_blank"
-							aria-label="Escribir al WhatsApp de Araitea Cats"
-							class="bg-whatsapp text-white font-bold py-4 px-10 rounded-lg hover:bg-green-600 transition-colors shadow-lg text-lg flex items-center justify-center gap-2"
-						>
-							<i data-lucide="message-circle" class="w-6 h-6"></i> Escribir por
-							WhatsApp
+						<a href="https://wa.me/529992274376" target="_blank" class="inline-flex items-center justify-center gap-2 bg-whatsapp hover:opacity-90 text-white font-sans text-sm font-semibold uppercase tracking-wide px-10 py-4 transition-opacity duration-200">
+							<i data-lucide="message-circle" class="w-5 h-5"></i> Escribir por WhatsApp
 						</a>
 					</div>
 				</div>
 			</section>
+
 		</main>
 
-		<!-- Footer (Sincronizado con Home) -->
-		<footer
-			id="blog"
-			class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-brand"
-		>
-			<div class="max-w-6xl mx-auto px-4">
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-					<!-- Columna 1: Marca -->
-					<div>
-						<h2 class="text-3xl font-serif mb-4 text-brand font-bold">
-							Araitea Cat's
-						</h2>
-						<p class="text-gray-400 text-sm mb-6">
-							Criadero profesional de gatos persas. Llevamos más de 25 años
-							uniendo familias con su compañero ideal en todo México.
-						</p>
-						<div class="flex space-x-4">
-							<a
-								href="#"
-								class="text-gray-400 hover:text-white transition-colors"
-								aria-label="Síguenos en Instagram"
-							>
-								<i data-lucide="instagram" class="w-6 h-6"></i>
-							</a>
-							<a
-								href="#"
-								class="text-gray-400 hover:text-white transition-colors"
-								aria-label="Síguenos en Facebook"
-							>
-								<i data-lucide="facebook" class="w-6 h-6"></i>
-							</a>
-						</div>
-					</div>
-
-					<!-- Columna 2: Enlaces Rápidos -->
-					<div>
-						<h3 class="text-lg font-bold mb-4 border-b border-gray-700 pb-2">
-							Enlaces Rápidos
-						</h3>
-						<ul class="space-y-2 text-gray-400 text-sm">
-							<li>
-								<a
-									href="/#disponibles"
-									class="hover:text-brand transition-colors"
-									title="Ver catálogo de gatitos"
-									>Gatitos Disponibles</a
-								>
-							</li>
-							<li>
-								<a
-									href="/#presencia"
-									class="hover:text-brand transition-colors"
-									title="Ver estados de envío"
-									>Principales Ubicaciones</a
-								>
-							</li>
-							<li>
-								<a
-									href="/#envios"
-									class="hover:text-brand transition-colors"
-									title="Ver detalles logísticos de envío"
-									>Información de Envíos</a
-								>
-							</li>
-							<li>
-								<a
-									href="/#colores"
-									class="hover:text-brand transition-colors"
-									title="Explorar los colores de la raza"
-									>Conoce los Colores</a
-								>
-							</li>
-							<li class="pt-2">
-								<a
-									href="tel:+529992274376"
-									class="hover:text-brand transition-colors font-bold text-white flex items-center gap-2"
-									title="Llamar a Araitea Cats por teléfono"
-								>
-									<i data-lucide="phone" class="w-4 h-4"></i> +52 (999) 227 4376
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<!-- Columna 3: Blog Educativo -->
-					<div>
-						<h3 class="text-lg font-bold mb-4 border-b border-gray-700 pb-2">
-							Blog Educativo
-						</h3>
-						<ul class="space-y-3 text-gray-400 text-sm">
-							<li>
-								<a
-									href="/blog/antes-de-comprar"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: Antes de comprar un gato persa"
-									>Antes de comprar un gato persa: Todo lo que debes saber</a
-								>
-							</li>
-							<li>
-								<a
-									href="/blog/personalidad-persa"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: Personalidad del gato persa"
-									>La Personalidad Única del Gato Persa: ¿Qué Esperar?</a
-								>
-							</li>
-							<li>
-								<a
-									href="/blog/masaje-patas"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: Por qué amasan los gatos"
-									>¿Tu Gatito te da masaje con sus patas?</a
-								>
-							</li>
-							<li>
-								<a
-									href="/blog/no-al-cascabel"
-									class="hover:text-brand transition-colors block leading-tight"
-									title="Leer: El peligro de los cascabeles en gatos"
-									>¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a
-								>
-							</li>
-						</ul>
+		<!-- FOOTER -->
+		<footer id="blog" class="bg-navy border-t-2 border-gold">
+			<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+				<div>
+					<h2 class="font-serif text-3xl font-bold text-white mb-1">Araitea <span class="text-gold font-sans">Cat's</span></h2>
+					<div class="h-0.5 w-10 bg-gold mt-3 mb-5"></div>
+					<p class="font-sans text-sm text-white/60 leading-relaxed max-w-xs mb-6">Criadero profesional de gatos persas. Llevamos más de 25 años uniendo familias con su compañero ideal en todo México.</p>
+					<div class="flex gap-4">
+						<a href="#" class="text-white/40 hover:text-gold transition-colors" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+						<a href="#" class="text-white/40 hover:text-gold transition-colors" aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
 					</div>
 				</div>
-
-				<div
-					class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500"
-				>
-					&copy; <span id="year"></span> Araitea Cat's. Todos los derechos
-					reservados.
+				<div>
+					<h4 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-6">Navegación</h4>
+					<ul class="space-y-3">
+						<li><a href="/#disponibles" class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Gatitos Disponibles</a></li>
+						<li><a href="/#presencia"   class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Principales Ubicaciones</a></li>
+						<li><a href="/#envios"      class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Información de Envíos</a></li>
+						<li><a href="/#colores"     class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Conoce los Colores</a></li>
+						<li class="pt-2">
+							<a href="tel:+529992274376" class="font-sans text-sm text-white hover:text-gold transition-colors flex items-center gap-2 font-semibold">
+								<i data-lucide="phone" class="w-4 h-4"></i> +52 (999) 227 4376
+							</a>
+						</li>
+					</ul>
 				</div>
+				<div>
+					<h4 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-6">Blog Educativo</h4>
+					<ul class="space-y-4">
+						<li><a href="/blog/antes-de-comprar"   class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">Antes de comprar un gato persa: Todo lo que debes saber</a></li>
+						<li><a href="/blog/personalidad-persa" class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">La Personalidad Única del Gato Persa: ¿Qué Esperar?</a></li>
+						<li><a href="/blog/masaje-patas"       class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">¿Tu Gatito te da masaje con sus patas?</a></li>
+						<li><a href="/blog/no-al-cascabel"     class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="border-t border-white/10 py-5 text-center">
+				<p class="font-sans text-xs text-white/30">&copy; <span id="year"></span> Araitea Cat's · Todos los derechos reservados</p>
 			</div>
 		</footer>
 
-		<!-- Botón Flotante WhatsApp -->
-		<a
-			href="https://wa.me/529992274376"
-			target="_blank"
-			class="fixed bottom-6 right-6 p-4 rounded-full bg-whatsapp text-white shadow-xl z-50 hover:scale-110 hover:shadow-2xl transition-all duration-300 flex items-center justify-center"
-			aria-label="Contactar por WhatsApp"
-			title="Escríbenos por WhatsApp para envíos a Guadalajara"
-		>
-			<i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
+		<a href="https://wa.me/529992274376" target="_blank" class="fixed bottom-6 right-6 p-4 rounded-full bg-whatsapp text-white shadow-xl z-50 hover:scale-110 hover:shadow-2xl transition-all duration-300 flex items-center justify-center" aria-label="Contactar por WhatsApp">
+			<i data-lucide="message-circle" class="w-7 h-7 fill-current"></i>
 		</a>
 
-		<!-- SCRIPTS LÓGICA -->
 		<script>
 			lucide.createIcons();
-			document.getElementById("year").textContent = new Date().getFullYear();
-
-			// LÓGICA DEL MENÚ MÓVIL
-			const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-			const mobileMenu = document.getElementById("mobile-menu");
-
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.toggle("hidden");
-				mobileMenu.classList.toggle("flex");
+			document.getElementById('year').textContent = new Date().getFullYear();
+			document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+				const m = document.getElementById('mobile-menu');
+				m.classList.toggle('hidden');
+				m.classList.toggle('flex');
 			});
 		</script>
 	</body>

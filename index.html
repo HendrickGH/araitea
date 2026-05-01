@@ -12,19 +12,35 @@
 		/>
 
 		<!-- Open Graph -->
-		<meta property="og:title" content="Araitea Cat's | Criadero de Gatos Persas" />
-		<meta property="og:description" content="Criadero de gatos persas en México con más de 25 años de experiencia. Gatitos libres de PKD, con envío seguro a todo el país." />
-		<meta property="og:image" content="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1920&q=80" />
+		<meta
+			property="og:title"
+			content="Araitea Cat's | Criadero de Gatos Persas"
+		/>
+		<meta
+			property="og:description"
+			content="Criadero de gatos persas en México con más de 25 años de experiencia. Gatitos libres de PKD, con envío seguro a todo el país."
+		/>
+		<meta
+			property="og:image"
+			content="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1920&q=80"
+		/>
 		<meta property="og:url" content="https://gatospersas.com.mx/" />
 		<meta property="og:type" content="website" />
 
 		<!-- LCP Preload -->
-		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1920&q=80" />
+		<link
+			rel="preload"
+			as="image"
+			href="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1920&q=80"
+		/>
 
 		<!-- Fuentes -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Josefin+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
@@ -33,15 +49,15 @@
 				theme: {
 					extend: {
 						colors: {
-							navy:        '#0C2340',
-							'navy-dark': '#071829',
-							gold:        '#CCA052',
-							'gold-light':'#E2C07E',
-							whatsapp:    '#25D366',
+							navy: "#0C2340",
+							"navy-dark": "#071829",
+							gold: "#CCA052",
+							"gold-light": "#E2C07E",
+							whatsapp: "#25D366",
 						},
 						fontFamily: {
-							serif: ['"Cormorant Garamond"', 'serif'],
-							sans:  ['"Josefin Sans"', 'sans-serif'],
+							serif: ['"Cormorant Garamond"', "serif"],
+							sans: ['"Josefin Sans"', "sans-serif"],
 						},
 					},
 				},
@@ -52,9 +68,14 @@
 		<script src="https://unpkg.com/lucide@latest"></script>
 
 		<style>
-			body { background-color: #0C2340; color: #fff; }
+			body {
+				background-color: #0c2340;
+				color: #fff;
+			}
 
-			.hero-slide { transition: opacity 1s ease-in-out; }
+			.hero-slide {
+				transition: opacity 1s ease-in-out;
+			}
 
 			.color-slide {
 				position: absolute;
@@ -63,13 +84,17 @@
 			}
 
 			.faq-content {
-				transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+				transition:
+					max-height 0.3s ease-in-out,
+					opacity 0.3s ease-in-out;
 				max-height: 0;
 				opacity: 0;
 				overflow: hidden;
 			}
 
-			.cat-slide { transition: opacity 0.5s ease-in-out; }
+			.cat-slide {
+				transition: opacity 0.5s ease-in-out;
+			}
 
 			/* Gold underline on nav hover */
 			.nav-link {
@@ -77,84 +102,167 @@
 				padding-bottom: 2px;
 			}
 			.nav-link::after {
-				content: '';
+				content: "";
 				position: absolute;
 				bottom: -2px;
 				left: 0;
 				width: 0;
 				height: 1px;
-				background: #CCA052;
+				background: #cca052;
 				transition: width 0.2s ease;
 			}
-			.nav-link:hover::after { width: 100%; }
+			.nav-link:hover::after {
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body class="font-sans bg-navy min-h-screen">
-
 		<!-- ═══════════════════════════════════════════════════
 		     NAVBAR
 		═══════════════════════════════════════════════════ -->
 		<nav class="bg-navy border-b border-gold/20 py-4 px-6 sticky top-0 z-50">
 			<div class="max-w-6xl mx-auto flex justify-between items-center">
-
 				<!-- Logo -->
 				<a href="/" class="flex items-center gap-3">
-					<span class="font-sans text-2xl font-medium text-white tracking-tight">Araitea <span class="text-gold font-serif italic">Cat's</span></span>
+					<span class="font-sans text-2xl font-medium text-white tracking-tight"
+						>Araitea
+						<span class="text-gold font-serif italic">Cat's</span></span
+					>
 				</a>
 
 				<!-- Menú Desktop -->
 				<div class="hidden md:flex items-center gap-8">
-					<a href="#disponibles" class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Gatitos</a>
-					<a href="#colores"     class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Razas y Colores</a>
+					<a
+						href="#disponibles"
+						class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
+						>Gatitos</a
+					>
+					<a
+						href="#colores"
+						class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
+						>Razas y Colores</a
+					>
 
 					<!-- Dropdown Ubicaciones -->
 					<div class="relative group">
-						<button class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors flex items-center gap-1 py-2">
+						<button
+							class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors flex items-center gap-1 py-2"
+						>
 							Ubicaciones <i data-lucide="chevron-down" class="w-3 h-3"></i>
 						</button>
-						<div class="absolute left-0 top-full pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+						<div
+							class="absolute left-0 top-full pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+						>
 							<div class="bg-navy border border-gold/30 overflow-hidden">
-								<a href="/venta-de-gatos-persas-en-cdmx"      class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors">Ciudad de México</a>
-								<a href="/venta-de-gatos-persas-en-monterrey" class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors">Monterrey</a>
-								<a href="/venta-de-gatos-persas-en-jalisco"   class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors">Guadalajara</a>
+								<a
+									href="/venta-de-gatos-persas-en-cdmx"
+									class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors"
+									>Ciudad de México</a
+								>
+								<a
+									href="/venta-de-gatos-persas-en-monterrey"
+									class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors"
+									>Monterrey</a
+								>
+								<a
+									href="/venta-de-gatos-persas-en-jalisco"
+									class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors"
+									>Guadalajara</a
+								>
 								<div class="border-t border-gold/20"></div>
-								<a href="#envios" class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/50 hover:text-gold hover:bg-navy-dark transition-colors">Ver otros estados</a>
+								<a
+									href="#envios"
+									class="block px-5 py-3 font-sans text-xs uppercase tracking-widest text-white/50 hover:text-gold hover:bg-navy-dark transition-colors"
+									>Ver otros estados</a
+								>
 							</div>
 						</div>
 					</div>
 
-					<a href="#envios" class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Envíos</a>
-					<a href="#blog"   class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors">Blog</a>
+					<a
+						href="#envios"
+						class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
+						>Envíos</a
+					>
+					<a
+						href="#blog"
+						class="nav-link font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
+						>Blog</a
+					>
 
-					<a href="https://wa.me/529992274376" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-5 py-2.5 transition-colors duration-200">
+					<a
+						href="https://wa.me/529992274376"
+						class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-5 py-2.5 transition-colors duration-200"
+					>
 						Contacto
 					</a>
 				</div>
 
 				<!-- Botón Menú Móvil -->
-				<button id="mobile-menu-btn" class="md:hidden text-white/80" aria-label="Abrir menú">
+				<button
+					id="mobile-menu-btn"
+					class="md:hidden text-white/80"
+					aria-label="Abrir menú"
+				>
 					<i data-lucide="menu" class="w-7 h-7"></i>
 				</button>
 			</div>
 
 			<!-- Menú Móvil -->
-			<div id="mobile-menu" class="md:hidden hidden flex-col gap-4 mt-4 pt-4 border-t border-gold/20 text-center">
-				<a href="#disponibles" class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold">Gatitos</a>
-				<a href="#colores"     class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold">Razas y Colores</a>
+			<div
+				id="mobile-menu"
+				class="md:hidden hidden flex-col gap-4 mt-4 pt-4 border-t border-gold/20 text-center"
+			>
+				<a
+					href="#disponibles"
+					class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold"
+					>Gatitos</a
+				>
+				<a
+					href="#colores"
+					class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold"
+					>Razas y Colores</a
+				>
 				<div class="border-y border-gold/10 py-3 flex flex-col gap-3">
-					<span class="font-sans text-xs font-medium uppercase tracking-widest text-gold">Ubicaciones</span>
-					<a href="/venta-de-gatos-persas-en-cdmx"      class="font-sans text-xs text-white/60 hover:text-gold">Ciudad de México</a>
-					<a href="/venta-de-gatos-persas-en-monterrey" class="font-sans text-xs text-white/60 hover:text-gold">Monterrey</a>
-					<a href="/venta-de-gatos-persas-en-jalisco"   class="font-sans text-xs text-white/60 hover:text-gold">Guadalajara</a>
+					<span
+						class="font-sans text-xs font-medium uppercase tracking-widest text-gold"
+						>Ubicaciones</span
+					>
+					<a
+						href="/venta-de-gatos-persas-en-cdmx"
+						class="font-sans text-xs text-white/60 hover:text-gold"
+						>Ciudad de México</a
+					>
+					<a
+						href="/venta-de-gatos-persas-en-monterrey"
+						class="font-sans text-xs text-white/60 hover:text-gold"
+						>Monterrey</a
+					>
+					<a
+						href="/venta-de-gatos-persas-en-jalisco"
+						class="font-sans text-xs text-white/60 hover:text-gold"
+						>Guadalajara</a
+					>
 				</div>
-				<a href="#envios" class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold">Envíos</a>
-				<a href="#blog"   class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold">Blog</a>
-				<a href="https://wa.me/529992274376" class="bg-gold text-navy font-sans text-xs font-medium uppercase tracking-wide py-3 px-6 mx-auto w-3/4">Contacto</a>
+				<a
+					href="#envios"
+					class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold"
+					>Envíos</a
+				>
+				<a
+					href="#blog"
+					class="font-sans text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold"
+					>Blog</a
+				>
+				<a
+					href="https://wa.me/529992274376"
+					class="bg-gold text-navy font-sans text-xs font-medium uppercase tracking-wide py-3 px-6 mx-auto w-3/4"
+					>Contacto</a
+				>
 			</div>
 		</nav>
 
 		<main>
-
 			<!-- ═══════════════════════════════════════════════════
 			     1. HERO CAROUSEL
 			═══════════════════════════════════════════════════ -->
@@ -162,14 +270,32 @@
 				<!-- Slide 1 -->
 				<div class="hero-slide absolute inset-0 opacity-100 z-10">
 					<div class="absolute inset-0 bg-navy/60 z-10"></div>
-					<img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1920&q=80" alt="Gato persa blanco de excelencia en Araitea Cats" class="w-full h-full object-cover" />
-					<div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Criadero Certificado · México</p>
-						<h1 class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg">
-							Más de <span class="text-gold font-serif italic">25 años</span> criando gatos persas de <span class="text-gold font-serif italic">excelencia</span>.
+					<img
+						src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1920&q=80"
+						alt="Gato persa blanco de excelencia en Araitea Cats"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Criadero Certificado · México
+						</p>
+						<h1
+							class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg"
+						>
+							Más de
+							<span class="text-gold font-serif italic">25 años</span> criando
+							gatos persas de
+							<span class="text-gold font-serif italic">excelencia</span>.
 						</h1>
 						<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-						<a href="#disponibles" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200">
+						<a
+							href="#disponibles"
+							class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200"
+						>
 							Conoce nuestros gatitos
 						</a>
 					</div>
@@ -177,14 +303,31 @@
 				<!-- Slide 2 -->
 				<div class="hero-slide absolute inset-0 opacity-0 z-0">
 					<div class="absolute inset-0 bg-navy/60 z-10"></div>
-					<img src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80" alt="Gato persa para envío a CDMX" class="w-full h-full object-cover" />
-					<div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Envíos Seguros · CDMX</p>
-						<h2 class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg">
-							Llegamos a <span class="text-gold font-serif italic">Ciudad de México</span>. Tu nuevo integrante a un vuelo de distancia.
+					<img
+						src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80"
+						alt="Gato persa para envío a CDMX"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Envíos Seguros · CDMX
+						</p>
+						<h2
+							class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg"
+						>
+							Llegamos a
+							<span class="text-gold font-serif italic">Ciudad de México</span>.
+							Tu nuevo integrante a un vuelo de distancia.
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-						<a href="/venta-de-gatos-persas-en-cdmx" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200">
+						<a
+							href="/venta-de-gatos-persas-en-cdmx"
+							class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200"
+						>
 							Ver envíos a CDMX
 						</a>
 					</div>
@@ -192,14 +335,31 @@
 				<!-- Slide 3 -->
 				<div class="hero-slide absolute inset-0 opacity-0 z-0">
 					<div class="absolute inset-0 bg-navy/60 z-10"></div>
-					<img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=1920&q=80" alt="Gato persa con envío a Guadalajara Jalisco" class="w-full h-full object-cover" />
-					<div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Envíos Seguros · Jalisco</p>
-						<h2 class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg">
-							Nuestros persas ya ronronean en <span class="text-gold font-serif italic">Guadalajara</span>. Envíos seguros y monitoreados.
+					<img
+						src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=1920&q=80"
+						alt="Gato persa con envío a Guadalajara Jalisco"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Envíos Seguros · Jalisco
+						</p>
+						<h2
+							class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg"
+						>
+							Nuestros persas ya ronronean en
+							<span class="text-gold font-serif italic">Guadalajara</span>.
+							Envíos seguros y monitoreados.
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-						<a href="/venta-de-gatos-persas-en-jalisco" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200">
+						<a
+							href="/venta-de-gatos-persas-en-jalisco"
+							class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200"
+						>
 							Ver envíos a Jalisco
 						</a>
 					</div>
@@ -207,25 +367,59 @@
 				<!-- Slide 4 -->
 				<div class="hero-slide absolute inset-0 opacity-0 z-0">
 					<div class="absolute inset-0 bg-navy/60 z-10"></div>
-					<img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80" alt="Gato persa llegando a Monterrey Nuevo León" class="w-full h-full object-cover" />
-					<div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Envíos Seguros · Nuevo León</p>
-						<h2 class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg">
-							Llevamos alegría a familias en <span class="text-gold font-serif italic">Monterrey</span>.
+					<img
+						src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1920&q=80"
+						alt="Gato persa llegando a Monterrey Nuevo León"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Envíos Seguros · Nuevo León
+						</p>
+						<h2
+							class="font-sans text-4xl md:text-6xl text-white font-medium mb-6 leading-tight drop-shadow-lg"
+						>
+							Llevamos alegría a familias en
+							<span class="text-gold font-serif italic">Monterrey</span>.
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-						<a href="/venta-de-gatos-persas-en-monterrey" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200">
+						<a
+							href="/venta-de-gatos-persas-en-monterrey"
+							class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200"
+						>
 							Ver envíos a Nuevo León
 						</a>
 					</div>
 				</div>
 
 				<!-- Dots -->
-				<div class="absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-3">
-					<button class="hero-dot w-2.5 h-2.5 rounded-full bg-gold transition-colors" data-index="0" aria-label="Slide 1"></button>
-					<button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-colors" data-index="1" aria-label="Slide 2"></button>
-					<button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-colors" data-index="2" aria-label="Slide 3"></button>
-					<button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-colors" data-index="3" aria-label="Slide 4"></button>
+				<div
+					class="absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-3"
+				>
+					<button
+						class="hero-dot w-2.5 h-2.5 rounded-full bg-gold transition-colors"
+						data-index="0"
+						aria-label="Slide 1"
+					></button>
+					<button
+						class="hero-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-colors"
+						data-index="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						class="hero-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-colors"
+						data-index="2"
+						aria-label="Slide 3"
+					></button>
+					<button
+						class="hero-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-colors"
+						data-index="3"
+						aria-label="Slide 4"
+					></button>
 				</div>
 			</div>
 
@@ -235,172 +429,404 @@
 			<section id="disponibles" class="py-20 bg-navy-dark">
 				<div class="max-w-6xl mx-auto px-4">
 					<div class="text-center mb-14">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Criadero Araitea Cat's</p>
-						<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
-							Gatitos <span class="text-gold font-serif italic">Disponibles</span>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+						>
+							Criadero Araitea Cat's
+						</p>
+						<h2
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+						>
+							Gatitos
+							<span class="text-gold font-serif italic">Disponibles</span>
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
-							Conoce a los pequeños que están listos para llenar tu hogar de amor. Criados en ambiente familiar, libres de PKD.
+						<p
+							class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed"
+						>
+							Conoce a los pequeños que están listos para llenar tu hogar de
+							amor. Criados en ambiente familiar, libres de PKD.
 						</p>
 					</div>
 
 					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
 						<!-- Gato 1: Blue -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy" data-cat-carousel>
+						<div
+							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy"
+							data-cat-carousel
+						>
 							<div class="relative aspect-[4/5]">
-								<div class="cat-slide absolute inset-0" style="opacity:1;z-index:1">
-									<img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Gatito persa Blue disponible" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 1; z-index: 1"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito persa Blue disponible"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=600&q=80" alt="Gatito persa Blue vista 2" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito persa Blue vista 2"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=600&q=80" alt="Gatito persa Blue vista 3" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito persa Blue vista 3"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=600&q=80" alt="Gatito persa Blue vista 4" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito persa Blue vista 4"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="absolute top-3 left-3 z-20">
-									<span class="bg-gold text-navy font-sans text-xs font-medium px-3 py-1 uppercase tracking-wider">Disponible</span>
-								</div>
-								<button class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen anterior">
+
+								<button
+									class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen anterior"
+								>
 									<i data-lucide="chevron-left" class="w-4 h-4 text-white"></i>
 								</button>
-								<button class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen siguiente">
+								<button
+									class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen siguiente"
+								>
 									<i data-lucide="chevron-right" class="w-4 h-4 text-white"></i>
 								</button>
-								<div class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5">
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
+								<div
+									class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5"
+								>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
 								</div>
 							</div>
 							<div class="p-5">
-								<h3 class="font-sans text-lg font-medium text-white mb-1">Gatito Persa Blue</h3>
-								<p class="font-sans text-xs text-white/50 uppercase tracking-widest">Listo para entrega</p>
+								<h3 class="font-sans text-lg font-medium text-white mb-1">
+									Gatito Persa Blue
+								</h3>
+								<p
+									class="font-sans text-xs text-white/50 uppercase tracking-widest"
+								>
+									Listo para entrega
+								</p>
 								<div class="h-0.5 w-8 bg-gold mt-3"></div>
 							</div>
 						</div>
 
 						<!-- Gato 2: Blanca -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy" data-cat-carousel>
+						<div
+							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy"
+							data-cat-carousel
+						>
 							<div class="relative aspect-[4/5]">
-								<div class="cat-slide absolute inset-0" style="opacity:1;z-index:1">
-									<img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80" alt="Gatita persa Blanca disponible" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 1; z-index: 1"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita persa Blanca disponible"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1548681528-6c2a78f2ba1e?auto=format&fit=crop&w=600&q=80" alt="Gatita persa Blanca vista 2" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1548681528-6c2a78f2ba1e?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita persa Blanca vista 2"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=600&q=80" alt="Gatita persa Blanca vista 3" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita persa Blanca vista 3"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" alt="Gatita persa Blanca vista 4" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita persa Blanca vista 4"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="absolute top-3 left-3 z-20">
-									<span class="bg-gold text-navy font-sans text-xs font-medium px-3 py-1 uppercase tracking-wider">Disponible</span>
-								</div>
-								<button class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen anterior">
+
+								<button
+									class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen anterior"
+								>
 									<i data-lucide="chevron-left" class="w-4 h-4 text-white"></i>
 								</button>
-								<button class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen siguiente">
+								<button
+									class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen siguiente"
+								>
 									<i data-lucide="chevron-right" class="w-4 h-4 text-white"></i>
 								</button>
-								<div class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5">
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
+								<div
+									class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5"
+								>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
 								</div>
 							</div>
 							<div class="p-5">
-								<h3 class="font-sans text-lg font-medium text-white mb-1">Gatita Persa Blanca</h3>
-								<p class="font-sans text-xs text-white/50 uppercase tracking-widest">Lista para entrega</p>
+								<h3 class="font-sans text-lg font-medium text-white mb-1">
+									Gatita Persa Blanca
+								</h3>
+								<p
+									class="font-sans text-xs text-white/50 uppercase tracking-widest"
+								>
+									Lista para entrega
+								</p>
 								<div class="h-0.5 w-8 bg-gold mt-3"></div>
 							</div>
 						</div>
 
 						<!-- Gato 3: Red Tabby -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy" data-cat-carousel>
+						<div
+							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy"
+							data-cat-carousel
+						>
 							<div class="relative aspect-[4/5]">
-								<div class="cat-slide absolute inset-0" style="opacity:1;z-index:1">
-									<img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=600&q=80" alt="Gatito Red Tabby disponible" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 1; z-index: 1"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito Red Tabby disponible"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?auto=format&fit=crop&w=600&q=80" alt="Gatito Red Tabby vista 2" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito Red Tabby vista 2"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=600&q=80" alt="Gatito Red Tabby vista 3" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito Red Tabby vista 3"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=600&q=80" alt="Gatito Red Tabby vista 4" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=600&q=80"
+										alt="Gatito Red Tabby vista 4"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="absolute top-3 left-3 z-20">
-									<span class="bg-gold text-navy font-sans text-xs font-medium px-3 py-1 uppercase tracking-wider">Disponible</span>
-								</div>
-								<button class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen anterior">
+
+								<button
+									class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen anterior"
+								>
 									<i data-lucide="chevron-left" class="w-4 h-4 text-white"></i>
 								</button>
-								<button class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen siguiente">
+								<button
+									class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen siguiente"
+								>
 									<i data-lucide="chevron-right" class="w-4 h-4 text-white"></i>
 								</button>
-								<div class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5">
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
+								<div
+									class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5"
+								>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
 								</div>
 							</div>
 							<div class="p-5">
-								<h3 class="font-sans text-lg font-medium text-white mb-1">Gatito Red Tabby</h3>
-								<p class="font-sans text-xs text-white/50 uppercase tracking-widest">Listo para entrega</p>
+								<h3 class="font-sans text-lg font-medium text-white mb-1">
+									Gatito Red Tabby
+								</h3>
+								<p
+									class="font-sans text-xs text-white/50 uppercase tracking-widest"
+								>
+									Listo para entrega
+								</p>
 								<div class="h-0.5 w-8 bg-gold mt-3"></div>
 							</div>
 						</div>
 
 						<!-- Gato 4: Bicolor Crema -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy" data-cat-carousel>
+						<div
+							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy"
+							data-cat-carousel
+						>
 							<div class="relative aspect-[4/5]">
-								<div class="cat-slide absolute inset-0" style="opacity:1;z-index:1">
-									<img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=600&q=80" alt="Gatita Bicolor Crema apartada" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 1; z-index: 1"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita Bicolor Crema apartada"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=600&q=80" alt="Gatita Bicolor Crema vista 2" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita Bicolor Crema vista 2"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=600&q=80" alt="Gatita Bicolor Crema vista 3" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita Bicolor Crema vista 3"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
-								<div class="cat-slide absolute inset-0" style="opacity:0;z-index:0">
-									<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=600&q=80" alt="Gatita Bicolor Crema vista 4" loading="lazy" class="w-full h-full object-cover" />
+								<div
+									class="cat-slide absolute inset-0"
+									style="opacity: 0; z-index: 0"
+								>
+									<img
+										src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=600&q=80"
+										alt="Gatita Bicolor Crema vista 4"
+										loading="lazy"
+										class="w-full h-full object-cover"
+									/>
 								</div>
 								<div class="absolute top-3 left-3 z-20">
-									<span class="bg-white/20 text-white font-sans text-xs font-medium px-3 py-1 uppercase tracking-wider backdrop-blur-sm">Apartado</span>
+									<span
+										class="bg-white/20 text-white font-sans text-xs font-medium px-3 py-1 uppercase tracking-wider backdrop-blur-sm"
+										>Apartado</span
+									>
 								</div>
-								<button class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen anterior">
+								<button
+									class="cat-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen anterior"
+								>
 									<i data-lucide="chevron-left" class="w-4 h-4 text-white"></i>
 								</button>
-								<button class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors" aria-label="Imagen siguiente">
+								<button
+									class="cat-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-1.5 transition-colors"
+									aria-label="Imagen siguiente"
+								>
 									<i data-lucide="chevron-right" class="w-4 h-4 text-white"></i>
 								</button>
-								<div class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5">
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
-									<button class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"></button>
+								<div
+									class="absolute bottom-3 left-0 right-0 z-20 flex justify-center gap-1.5"
+								>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-gold transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
+									<button
+										class="cat-dot w-1.5 h-1.5 rounded-full bg-white/30 transition-colors"
+									></button>
 								</div>
 							</div>
 							<div class="p-5">
-								<h3 class="font-sans text-lg font-medium text-white mb-1">Gatita Bicolor Crema</h3>
-								<p class="font-sans text-xs text-white/50 uppercase tracking-widest">En lista de espera</p>
+								<h3 class="font-sans text-lg font-medium text-white mb-1">
+									Gatita Bicolor Crema
+								</h3>
+								<p
+									class="font-sans text-xs text-white/50 uppercase tracking-widest"
+								>
+									En lista de espera
+								</p>
 								<div class="h-0.5 w-8 bg-gold mt-3"></div>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
 			</section>
 
@@ -410,40 +836,70 @@
 			<section class="py-16 bg-navy border-t border-gold/20">
 				<div class="max-w-6xl mx-auto px-4">
 					<div class="text-center mb-12">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Garantía de Calidad</p>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+						>
+							Garantía de Calidad
+						</p>
 						<h2 class="font-sans text-3xl md:text-4xl font-medium text-white">
-							Nuestro <span class="text-gold font-serif italic">Compromiso</span> Contigo
+							Nuestro
+							<span class="text-gold font-serif italic">Compromiso</span>
+							Contigo
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4"></div>
 					</div>
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-						<div class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300">
+						<div
+							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="shield-check" class="w-10 h-10"></i>
 							</div>
-							<h3 class="font-sans text-lg font-medium text-white mb-2">Libres de PKD</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed">Garantizados por pruebas genéticas de ADN.</p>
+							<h3 class="font-sans text-lg font-medium text-white mb-2">
+								Libres de PKD
+							</h3>
+							<p class="font-sans text-sm text-white/60 leading-relaxed">
+								Garantizados por pruebas genéticas de ADN.
+							</p>
 						</div>
-						<div class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300">
+						<div
+							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="heart" class="w-10 h-10"></i>
 							</div>
-							<h3 class="font-sans text-lg font-medium text-white mb-2">Crianza Familiar</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed">Crecen en casa, siendo sociables y amorosos.</p>
+							<h3 class="font-sans text-lg font-medium text-white mb-2">
+								Crianza Familiar
+							</h3>
+							<p class="font-sans text-sm text-white/60 leading-relaxed">
+								Crecen en casa, siendo sociables y amorosos.
+							</p>
 						</div>
-						<div class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300">
+						<div
+							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="stethoscope" class="w-10 h-10"></i>
 							</div>
-							<h3 class="font-sans text-lg font-medium text-white mb-2">Revisión Veterinaria</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed">Entregados con certificado de excelente salud.</p>
+							<h3 class="font-sans text-lg font-medium text-white mb-2">
+								Revisión Veterinaria
+							</h3>
+							<p class="font-sans text-sm text-white/60 leading-relaxed">
+								Entregados con certificado de excelente salud.
+							</p>
 						</div>
-						<div class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300">
+						<div
+							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="check-circle-2" class="w-10 h-10"></i>
 							</div>
-							<h3 class="font-sans text-lg font-medium text-white mb-2">Vacunas Completas</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed">Esquema inicial completo acorde a su edad.</p>
+							<h3 class="font-sans text-lg font-medium text-white mb-2">
+								Vacunas Completas
+							</h3>
+							<p class="font-sans text-sm text-white/60 leading-relaxed">
+								Esquema inicial completo acorde a su edad.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -455,13 +911,22 @@
 			<section id="colores" class="bg-navy-dark">
 				<!-- Encabezado de sección -->
 				<div class="py-16 px-4 text-center border-t border-gold/20">
-					<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Un catálogo de belleza inigualable</p>
+					<p
+						class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+					>
+						Un catálogo de belleza inigualable
+					</p>
 					<h2 class="font-sans text-3xl md:text-4xl font-medium text-white">
-						Los <span class="text-gold font-serif italic">Colores</span> del Persa
+						Los <span class="text-gold font-serif italic">Colores</span> del
+						Persa
 					</h2>
 					<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-					<p class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
-						El carácter de tu gatito depende exclusivamente del <strong class="text-white">amor y la crianza</strong> que le demos en sus primeros meses, ¡no de su color!
+					<p
+						class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed"
+					>
+						El carácter de tu gatito depende exclusivamente del
+						<strong class="text-white">amor y la crianza</strong> que le demos
+						en sus primeros meses, ¡no de su color!
 					</p>
 				</div>
 
@@ -469,44 +934,85 @@
 				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
 					<!-- Carrusel -->
 					<div class="relative min-h-[480px]" data-carousel="blue">
-						<div class="color-slide" style="opacity:1;z-index:1">
-							<img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80" alt="Gato persa Blue o gris cara chata" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 1; z-index: 1">
+							<img
+								src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa Blue o gris cara chata"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=900&q=80" alt="Persa blue adulto" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=900&q=80"
+								alt="Persa blue adulto"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=900&q=80" alt="Gato persa gris de perfil" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa gris de perfil"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"></div>
+						<div
+							class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"
+						></div>
 						<!-- Navegación -->
-						<button class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<button
+							class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-left" class="w-5 h-5 text-white"></i>
 						</button>
-						<button class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<button
+							class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-right" class="w-5 h-5 text-white"></i>
 						</button>
-						<div class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2">
-							<button class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
+						<div
+							class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2"
+						>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
 						</div>
 					</div>
 					<!-- Texto -->
-					<div class="bg-navy-dark flex flex-col justify-center px-10 py-14 lg:px-16">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Color 01</p>
-						<h3 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+					<div
+						class="bg-navy-dark flex flex-col justify-center px-10 py-14 lg:px-16"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Color 01
+						</p>
+						<h3
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+						>
 							Blue <span class="text-gold italic">(Gris)</span>
 						</h3>
 						<div class="h-0.5 w-12 bg-gold mb-6"></div>
 						<p class="font-sans text-base text-white/70 leading-relaxed mb-4">
-							El Blue es quizás el color más icónico del gato Persa. Su manto uniforme de un gris azulado profundo y sus ojos cobrizos o dorados crean un contraste de elegancia única.
+							El Blue es quizás el color más icónico del gato Persa. Su manto
+							uniforme de un gris azulado profundo y sus ojos cobrizos o dorados
+							crean un contraste de elegancia única.
 						</p>
 						<p class="font-sans text-base text-white/70 leading-relaxed">
-							Conocidos por su temperamento <strong class="text-white">calmado y afectuoso</strong>, son perfectos para hogares tranquilos y familias con niños.
+							Conocidos por su temperamento
+							<strong class="text-white">calmado y afectuoso</strong>, son
+							perfectos para hogares tranquilos y familias con niños.
 						</p>
 						<div class="mt-8 flex items-center gap-3">
-							<a href="https://wa.me/529992274376" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200">
+							<a
+								href="https://wa.me/529992274376"
+								class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+							>
 								Preguntar disponibilidad
 							</a>
 						</div>
@@ -516,46 +1022,90 @@
 				<!-- Color 2: Red Tabby — texto izquierda, carrusel derecha -->
 				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
 					<!-- Texto -->
-					<div class="bg-navy flex flex-col justify-center px-10 py-14 lg:px-16 order-2 lg:order-1">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Color 02</p>
-						<h3 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+					<div
+						class="bg-navy flex flex-col justify-center px-10 py-14 lg:px-16 order-2 lg:order-1"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Color 02
+						</p>
+						<h3
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+						>
 							Red <span class="text-gold italic">Tabby</span>
 						</h3>
 						<div class="h-0.5 w-12 bg-gold mb-6"></div>
 						<p class="font-sans text-base text-white/70 leading-relaxed mb-4">
-							El Red Tabby es vibrante, cálido y absolutamente cautivador. Sus marcas atigradas en tonos anaranjados y rojizos lo hacen distinguible a primera vista.
+							El Red Tabby es vibrante, cálido y absolutamente cautivador. Sus
+							marcas atigradas en tonos anaranjados y rojizos lo hacen
+							distinguible a primera vista.
 						</p>
 						<p class="font-sans text-base text-white/70 leading-relaxed">
-							Son persas con una personalidad más <strong class="text-white">activa y juguetona</strong>, aunque siempre mantienen la dulzura característica de la raza.
+							Son persas con una personalidad más
+							<strong class="text-white">activa y juguetona</strong>, aunque
+							siempre mantienen la dulzura característica de la raza.
 						</p>
 						<div class="mt-8">
-							<a href="https://wa.me/529992274376" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200">
+							<a
+								href="https://wa.me/529992274376"
+								class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+							>
 								Preguntar disponibilidad
 							</a>
 						</div>
 					</div>
 					<!-- Carrusel -->
-					<div class="relative min-h-[480px] order-1 lg:order-2" data-carousel="red">
-						<div class="color-slide" style="opacity:1;z-index:1">
-							<img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=80" alt="Gato persa Red Tabby naranja" class="w-full h-full object-cover absolute inset-0" />
+					<div
+						class="relative min-h-[480px] order-1 lg:order-2"
+						data-carousel="red"
+					>
+						<div class="color-slide" style="opacity: 1; z-index: 1">
+							<img
+								src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa Red Tabby naranja"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?auto=format&fit=crop&w=900&q=80" alt="Persa naranja atigrado" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?auto=format&fit=crop&w=900&q=80"
+								alt="Persa naranja atigrado"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1548681528-6c2a78f2ba1e?auto=format&fit=crop&w=900&q=80" alt="Gatito persa red tabby" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1548681528-6c2a78f2ba1e?auto=format&fit=crop&w=900&q=80"
+								alt="Gatito persa red tabby"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"></div>
-						<button class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<div
+							class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"
+						></div>
+						<button
+							class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-left" class="w-5 h-5 text-white"></i>
 						</button>
-						<button class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<button
+							class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-right" class="w-5 h-5 text-white"></i>
 						</button>
-						<div class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2">
-							<button class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
+						<div
+							class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2"
+						>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
 						</div>
 					</div>
 				</div>
@@ -564,43 +1114,84 @@
 				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
 					<!-- Carrusel -->
 					<div class="relative min-h-[480px]" data-carousel="tortie">
-						<div class="color-slide" style="opacity:1;z-index:1">
-							<img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&q=80" alt="Gato persa Tortie caparazón de tortuga" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 1; z-index: 1">
+							<img
+								src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa Tortie caparazón de tortuga"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=900&q=80" alt="Persa tortoiseshell adulta" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=900&q=80"
+								alt="Persa tortoiseshell adulta"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&q=80" alt="Gatita persa tortie" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&q=80"
+								alt="Gatita persa tortie"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"></div>
-						<button class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<div
+							class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"
+						></div>
+						<button
+							class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-left" class="w-5 h-5 text-white"></i>
 						</button>
-						<button class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<button
+							class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-right" class="w-5 h-5 text-white"></i>
 						</button>
-						<div class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2">
-							<button class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
+						<div
+							class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2"
+						>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
 						</div>
 					</div>
 					<!-- Texto -->
-					<div class="bg-navy-dark flex flex-col justify-center px-10 py-14 lg:px-16">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Color 03</p>
-						<h3 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+					<div
+						class="bg-navy-dark flex flex-col justify-center px-10 py-14 lg:px-16"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Color 03
+						</p>
+						<h3
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+						>
 							<span class="text-gold italic">Tortie</span>
 						</h3>
 						<div class="h-0.5 w-12 bg-gold mb-6"></div>
 						<p class="font-sans text-base text-white/70 leading-relaxed mb-4">
-							El Tortie o Tortoiseshell combina parches irregulares de negro, rojo y crema en un manto que resulta único e irrepetible en cada ejemplar.
+							El Tortie o Tortoiseshell combina parches irregulares de negro,
+							rojo y crema en un manto que resulta único e irrepetible en cada
+							ejemplar.
 						</p>
 						<p class="font-sans text-base text-white/70 leading-relaxed">
-							Casi exclusivamente hembras, son persas con una personalidad <strong class="text-white">independiente y elegante</strong> que saben exactamente lo que quieren.
+							Casi exclusivamente hembras, son persas con una personalidad
+							<strong class="text-white">independiente y elegante</strong> que
+							saben exactamente lo que quieren.
 						</p>
 						<div class="mt-8">
-							<a href="https://wa.me/529992274376" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200">
+							<a
+								href="https://wa.me/529992274376"
+								class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+							>
 								Preguntar disponibilidad
 							</a>
 						</div>
@@ -610,46 +1201,177 @@
 				<!-- Color 4: Bicolor — texto izquierda, carrusel derecha -->
 				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
 					<!-- Texto -->
-					<div class="bg-navy flex flex-col justify-center px-10 py-14 lg:px-16 order-2 lg:order-1">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Color 04</p>
-						<h3 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+					<div
+						class="bg-navy flex flex-col justify-center px-10 py-14 lg:px-16 order-2 lg:order-1"
+					>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						>
+							Color 04
+						</p>
+						<h3
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+						>
 							<span class="text-gold italic">Bicolor</span>
 						</h3>
 						<div class="h-0.5 w-12 bg-gold mb-6"></div>
 						<p class="font-sans text-base text-white/70 leading-relaxed mb-4">
-							El Bicolor presenta una combinación de blanco con otro color (negro, azul, rojo o crema) distribuido en parches armoniosos. Sus ojos generalmente son de un azul o cobre intenso.
+							El Bicolor presenta una combinación de blanco con otro color
+							(negro, azul, rojo o crema) distribuido en parches armoniosos. Sus
+							ojos generalmente son de un azul o cobre intenso.
 						</p>
 						<p class="font-sans text-base text-white/70 leading-relaxed">
-							Son considerados de los persas más <strong class="text-white">cariñosos y leales</strong>. Se apegan profundamente a su familia y son excelentes con niños.
+							Son considerados de los persas más
+							<strong class="text-white">cariñosos y leales</strong>. Se apegan
+							profundamente a su familia y son excelentes con niños.
 						</p>
 						<div class="mt-8">
-							<a href="https://wa.me/529992274376" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200">
+							<a
+								href="https://wa.me/529992274376"
+								class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+							>
 								Preguntar disponibilidad
 							</a>
 						</div>
 					</div>
 					<!-- Carrusel -->
-					<div class="relative min-h-[480px] order-1 lg:order-2" data-carousel="bicolor">
-						<div class="color-slide" style="opacity:1;z-index:1">
-							<img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&q=80" alt="Gato persa bicolor blanco y negro" class="w-full h-full object-cover absolute inset-0" />
+					<div
+						class="relative min-h-[480px] order-1 lg:order-2"
+						data-carousel="bicolor"
+					>
+						<div class="color-slide" style="opacity: 1; z-index: 1">
+							<img
+								src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa bicolor blanco y negro"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=900&q=80" alt="Persa bicolor adulto" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=900&q=80"
+								alt="Persa bicolor adulto"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="color-slide" style="opacity:0;z-index:0">
-							<img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=900&q=80" alt="Gatito bicolor de perfil" class="w-full h-full object-cover absolute inset-0" />
+						<div class="color-slide" style="opacity: 0; z-index: 0">
+							<img
+								src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=900&q=80"
+								alt="Gatito bicolor de perfil"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
 						</div>
-						<div class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"></div>
-						<button class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<div
+							class="absolute inset-0 bg-navy/20 z-10 pointer-events-none"
+						></div>
+						<button
+							class="color-prev absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-left" class="w-5 h-5 text-white"></i>
 						</button>
-						<button class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors">
+						<button
+							class="color-next absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-navy/70 hover:bg-navy p-2 transition-colors"
+						>
 							<i data-lucide="chevron-right" class="w-5 h-5 text-white"></i>
 						</button>
-						<div class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2">
-							<button class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
-							<button class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"></button>
+						<div
+							class="absolute bottom-5 left-0 right-0 z-20 flex justify-center gap-2"
+						>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-gold transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
+							<button
+								class="color-dot w-2 h-2 rounded-full bg-white/30 transition-colors"
+							></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══════════════════════════════════════════════════
+			     6. PROCESO DE COMPRA
+			═══════════════════════════════════════════════════ -->
+			<section id="envios" class="py-20 bg-navy border-t border-gold/20">
+				<div class="max-w-6xl mx-auto px-4 text-center">
+					<p
+						class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+					>
+						Así de Fácil
+					</p>
+					<h2
+						class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+					>
+						Proceso de <span class="text-gold font-serif italic">Compra</span> y
+						Envíos
+					</h2>
+					<div class="h-0.5 w-16 bg-gold mx-auto mb-16"></div>
+
+					<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+						<div
+							class="hidden md:block absolute top-8 left-[12%] right-[12%] h-px bg-gold/20 -z-10"
+						></div>
+
+						<div class="flex flex-col items-center">
+							<div
+								class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10"
+							>
+								01
+							</div>
+							<h3 class="font-sans text-xl font-medium text-white mb-2">
+								Elige
+							</h3>
+							<p
+								class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]"
+							>
+								Encuentra al gatito que te robe el corazón en nuestra galería.
+							</p>
+						</div>
+						<div class="flex flex-col items-center">
+							<div
+								class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10"
+							>
+								02
+							</div>
+							<h3 class="font-sans text-xl font-medium text-white mb-2">
+								Aparta
+							</h3>
+							<p
+								class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]"
+							>
+								Asegura a tu nuevo amigo con un anticipo fácil y seguro.
+							</p>
+						</div>
+						<div class="flex flex-col items-center">
+							<div
+								class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10"
+							>
+								03
+							</div>
+							<h3 class="font-sans text-xl font-medium text-white mb-2">
+								Preparamos
+							</h3>
+							<p
+								class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]"
+							>
+								Revisión médica y organización de la logística de envío.
+							</p>
+						</div>
+						<div class="flex flex-col items-center">
+							<div
+								class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10"
+							>
+								04
+							</div>
+							<h3 class="font-sans text-xl font-medium text-white mb-2">
+								Lo recibes
+							</h3>
+							<p
+								class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]"
+							>
+								Recíbelo directo en el aeropuerto de tu ciudad.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -661,61 +1383,119 @@
 			<section class="py-20 bg-navy border-t border-gold/20">
 				<div class="max-w-6xl mx-auto px-4">
 					<div class="text-center mb-14">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Prueba Social</p>
-						<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+						>
+							Prueba Social
+						</p>
+						<h2
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+						>
 							<span class="text-gold font-serif italic">Familias</span> Felices
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
-							Nuestra mejor garantía son los cientos de familias en todo México que ya disfrutan de un Persa Araitea.
+						<p
+							class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed"
+						>
+							Nuestra mejor garantía son los cientos de familias en todo México
+							que ya disfrutan de un Persa Araitea.
 						</p>
 					</div>
 
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<!-- Testimonio 1 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div
+							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group"
+						>
 							<div class="aspect-[4/3] overflow-hidden">
-								<img src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=800&q=80" alt="Familia Villaseñor con su gato persa en Guadalajara" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+								<img
+									src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=800&q=80"
+									alt="Familia Villaseñor con su gato persa en Guadalajara"
+									loading="lazy"
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								/>
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-6">
-									"Fue amor a primera vista. Verlo crecer, jugar y dormir es una experiencia inigualable."
+								<p
+									class="font-sans text-lg text-white/80 italic leading-relaxed mb-6"
+								>
+									"Fue amor a primera vista. Verlo crecer, jugar y dormir es una
+									experiencia inigualable."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Familia Villaseñor</h4>
-								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
-									<i data-lucide="map-pin" class="w-3 h-3"></i> Guadalajara, Jalisco
+								<h4
+									class="font-sans text-sm font-medium uppercase tracking-widest text-white"
+								>
+									Familia Villaseñor
+								</h4>
+								<p
+									class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest"
+								>
+									<i data-lucide="map-pin" class="w-3 h-3"></i> Guadalajara,
+									Jalisco
 								</p>
 							</div>
 						</div>
 						<!-- Testimonio 2 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div
+							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group"
+						>
 							<div class="aspect-[4/3] overflow-hidden">
-								<img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=800&q=80" alt="Jessica con su gatita persa Bella en Monterrey" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+								<img
+									src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=800&q=80"
+									alt="Jessica con su gatita persa Bella en Monterrey"
+									loading="lazy"
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								/>
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-6">
-									"Gracias por tener tanta paciencia en enseñarme todo sobre los cuidados de Bella."
+								<p
+									class="font-sans text-lg text-white/80 italic leading-relaxed mb-6"
+								>
+									"Gracias por tener tanta paciencia en enseñarme todo sobre los
+									cuidados de Bella."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Jessica M.</h4>
-								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+								<h4
+									class="font-sans text-sm font-medium uppercase tracking-widest text-white"
+								>
+									Jessica M.
+								</h4>
+								<p
+									class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest"
+								>
 									<i data-lucide="map-pin" class="w-3 h-3"></i> Monterrey, N.L.
 								</p>
 							</div>
 						</div>
 						<!-- Testimonio 3 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div
+							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group"
+						>
 							<div class="aspect-[4/3] overflow-hidden">
-								<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80" alt="Familia Wood con su persa en CDMX" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+								<img
+									src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80"
+									alt="Familia Wood con su persa en CDMX"
+									loading="lazy"
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								/>
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-6">
-									"Mis hijas conviven con ellos desde recién nacidas, son niñas felices y aman a los animales."
+								<p
+									class="font-sans text-lg text-white/80 italic leading-relaxed mb-6"
+								>
+									"Mis hijas conviven con ellos desde recién nacidas, son niñas
+									felices y aman a los animales."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Dabbie Wood</h4>
-								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
+								<h4
+									class="font-sans text-sm font-medium uppercase tracking-widest text-white"
+								>
+									Dabbie Wood
+								</h4>
+								<p
+									class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest"
+								>
 									<i data-lucide="map-pin" class="w-3 h-3"></i> Ciudad de México
 								</p>
 							</div>
@@ -727,53 +1507,121 @@
 			<!-- ═══════════════════════════════════════════════════
 			     5.5 PRESENCIA NACIONAL
 			═══════════════════════════════════════════════════ -->
-			<section id="presencia" class="py-20 bg-navy-dark border-t border-gold/20">
+			<section
+				id="presencia"
+				class="py-20 bg-navy-dark border-t border-gold/20"
+			>
 				<div class="max-w-6xl mx-auto px-4">
 					<div class="text-center mb-14">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Cobertura Nacional</p>
-						<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
-							Nuestra <span class="text-gold font-serif italic">Presencia</span> en México
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+						>
+							Cobertura Nacional
+						</p>
+						<h2
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+						>
+							Nuestra
+							<span class="text-gold font-serif italic">Presencia</span> en
+							México
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
-							Llegamos a cada rincón del país con logística preferencial en los principales centros económicos.
+						<p
+							class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed"
+						>
+							Llegamos a cada rincón del país con logística preferencial en los
+							principales centros económicos.
 						</p>
 					</div>
 
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<!-- CDMX -->
-						<a href="/venta-de-gatos-persas-en-cdmx" title="Envíos a CDMX" class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300">
-							<img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Envíos de gatos persas a Ciudad de México" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-							<div class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"></div>
+						<a
+							href="/venta-de-gatos-persas-en-cdmx"
+							title="Envíos a CDMX"
+							class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300"
+						>
+							<img
+								src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80"
+								alt="Envíos de gatos persas a Ciudad de México"
+								loading="lazy"
+								class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"
+							></div>
 							<div class="absolute bottom-0 left-0 w-full p-6">
-								<h3 class="font-sans text-2xl font-medium text-white mb-1">Ciudad de México</h3>
-								<p class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2">
+								<h3 class="font-sans text-2xl font-medium text-white mb-1">
+									Ciudad de México
+								</h3>
+								<p
+									class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2"
+								>
 									Envíos a CDMX y EdoMex
-									<i data-lucide="arrow-right" class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"></i>
+									<i
+										data-lucide="arrow-right"
+										class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"
+									></i>
 								</p>
 							</div>
 						</a>
 						<!-- Monterrey -->
-						<a href="/venta-de-gatos-persas-en-monterrey" title="Envíos a Monterrey" class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300">
-							<img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=80" alt="Envíos de gatos persas a Monterrey" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-							<div class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"></div>
+						<a
+							href="/venta-de-gatos-persas-en-monterrey"
+							title="Envíos a Monterrey"
+							class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300"
+						>
+							<img
+								src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=80"
+								alt="Envíos de gatos persas a Monterrey"
+								loading="lazy"
+								class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"
+							></div>
 							<div class="absolute bottom-0 left-0 w-full p-6">
-								<h3 class="font-sans text-2xl font-medium text-white mb-1">Monterrey</h3>
-								<p class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2">
+								<h3 class="font-sans text-2xl font-medium text-white mb-1">
+									Monterrey
+								</h3>
+								<p
+									class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2"
+								>
 									Envíos a Nuevo León
-									<i data-lucide="arrow-right" class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"></i>
+									<i
+										data-lucide="arrow-right"
+										class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"
+									></i>
 								</p>
 							</div>
 						</a>
 						<!-- Guadalajara -->
-						<a href="/venta-de-gatos-persas-en-jalisco" title="Envíos a Guadalajara" class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300">
-							<img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80" alt="Envíos de gatos persas a Guadalajara" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-							<div class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"></div>
+						<a
+							href="/venta-de-gatos-persas-en-jalisco"
+							title="Envíos a Guadalajara"
+							class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300"
+						>
+							<img
+								src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80"
+								alt="Envíos de gatos persas a Guadalajara"
+								loading="lazy"
+								class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"
+							></div>
 							<div class="absolute bottom-0 left-0 w-full p-6">
-								<h3 class="font-sans text-2xl font-medium text-white mb-1">Guadalajara</h3>
-								<p class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2">
+								<h3 class="font-sans text-2xl font-medium text-white mb-1">
+									Guadalajara
+								</h3>
+								<p
+									class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2"
+								>
 									Envíos a Jalisco
-									<i data-lucide="arrow-right" class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"></i>
+									<i
+										data-lucide="arrow-right"
+										class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"
+									></i>
 								</p>
 							</div>
 						</a>
@@ -782,178 +1630,350 @@
 					<div class="mt-20 pt-10 border-t border-gold/20">
 						<!-- Header -->
 						<div class="text-center mb-12">
-							<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Logística Nacional · Envíos Seguros</p>
-							<h3 class="font-sans text-2xl md:text-3xl font-medium text-white mb-3">
-								Tu <span class="text-gold font-serif italic">persa ideal</span> llega hasta donde estás
+							<p
+								class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+							>
+								Logística Nacional · Envíos Seguros
+							</p>
+							<h3
+								class="font-sans text-2xl md:text-3xl font-medium text-white mb-3"
+							>
+								Tu
+								<span class="text-gold font-serif italic">persa ideal</span>
+								llega hasta donde estás
 							</h3>
 							<div class="h-0.5 w-12 bg-gold mx-auto mt-4 mb-6"></div>
-							<p class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
-								Coordinamos vuelos directos con aerolíneas certificadas en traslado de mascotas. Tu gatito viaja en cabina climatizada con transportadora aprobada por IATA y monitoreo en tiempo real hasta el aeropuerto de tu ciudad.
+							<p
+								class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed"
+							>
+								Coordinamos vuelos directos con aerolíneas certificadas en
+								traslado de mascotas. Tu gatito viaja en cabina climatizada con
+								transportadora aprobada por IATA y monitoreo en tiempo real
+								hasta el aeropuerto de tu ciudad.
 							</p>
 						</div>
 
 						<!-- 3 zonas geográficas -->
 						<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
 							<!-- Zona Norte -->
-							<div class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300">
+							<div
+								class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300"
+							>
 								<div class="flex items-center gap-2 mb-5">
 									<div class="h-px w-4 bg-gold"></div>
-									<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold">Zona Norte</h4>
+									<h4
+										class="font-sans text-xs font-medium uppercase tracking-widest text-gold"
+									>
+										Zona Norte
+									</h4>
 								</div>
 								<ul class="space-y-3">
-									<li><a href="/venta-de-gatos-persas-en-monterrey"   class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Venta de gatos persas en Monterrey</a></li>
-									<li><a href="/envio-gatos-persas-chihuahua"         class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Envío de gatos persas a Chihuahua</a></li>
-									<li><a href="/envio-gatos-persas-sonora"            class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Envío de gatos persas a Sonora</a></li>
-									<li><a href="/envio-gatos-persas-baja-california"   class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Gatos persas en Baja California</a></li>
+									<li>
+										<a
+											href="/venta-de-gatos-persas-en-monterrey"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Venta de gatos persas en Monterrey</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-chihuahua"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Envío de gatos persas a Chihuahua</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-sonora"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Envío de gatos persas a Sonora</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-baja-california"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Gatos persas en Baja California</a
+										>
+									</li>
 								</ul>
 							</div>
 							<!-- Zona Centro-Occidente -->
-							<div class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300">
+							<div
+								class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300"
+							>
 								<div class="flex items-center gap-2 mb-5">
 									<div class="h-px w-4 bg-gold"></div>
-									<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold">Zona Centro · Occidente</h4>
+									<h4
+										class="font-sans text-xs font-medium uppercase tracking-widest text-gold"
+									>
+										Zona Centro · Occidente
+									</h4>
 								</div>
 								<ul class="space-y-3">
-									<li><a href="/venta-de-gatos-persas-en-cdmx"        class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Venta de gatos persas en CDMX</a></li>
-									<li><a href="/venta-de-gatos-persas-en-jalisco"     class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Venta de gatos persas en Guadalajara</a></li>
-									<li><a href="/envio-gatos-persas-queretaro"         class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Gatos persas en Querétaro</a></li>
-									<li><a href="/envio-gatos-persas-puebla"            class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Envío de gatos persas a Puebla</a></li>
+									<li>
+										<a
+											href="/venta-de-gatos-persas-en-cdmx"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Venta de gatos persas en CDMX</a
+										>
+									</li>
+									<li>
+										<a
+											href="/venta-de-gatos-persas-en-jalisco"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Venta de gatos persas en Guadalajara</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-queretaro"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Gatos persas en Querétaro</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-puebla"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Envío de gatos persas a Puebla</a
+										>
+									</li>
 								</ul>
 							</div>
 							<!-- Zona Sur-Sureste -->
-							<div class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300">
+							<div
+								class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300"
+							>
 								<div class="flex items-center gap-2 mb-5">
 									<div class="h-px w-4 bg-gold"></div>
-									<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold">Zona Sur · Sureste</h4>
+									<h4
+										class="font-sans text-xs font-medium uppercase tracking-widest text-gold"
+									>
+										Zona Sur · Sureste
+									</h4>
 								</div>
 								<ul class="space-y-3">
-									<li><a href="/envio-gatos-persas-yucatan"           class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Envío de gatos persas a Yucatán</a></li>
-									<li><a href="/envio-gatos-persas-quintana-roo"      class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Gatos persas en Quintana Roo</a></li>
-									<li><a href="/envio-gatos-persas-veracruz"          class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Envío de gatos persas a Veracruz</a></li>
-									<li><a href="/envio-gatos-persas-tabasco"           class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>Gatos persas en Tabasco</a></li>
+									<li>
+										<a
+											href="/envio-gatos-persas-yucatan"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Envío de gatos persas a Yucatán</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-quintana-roo"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Gatos persas en Quintana Roo</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-veracruz"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Envío de gatos persas a Veracruz</a
+										>
+									</li>
+									<li>
+										<a
+											href="/envio-gatos-persas-tabasco"
+											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
+											><i
+												data-lucide="arrow-right"
+												class="w-3 h-3 text-gold/40 flex-shrink-0"
+											></i
+											>Gatos persas en Tabasco</a
+										>
+									</li>
 								</ul>
 							</div>
 						</div>
 
 						<p class="font-sans text-sm text-white/40 text-center">
-							¿Tu ciudad no aparece? <a href="https://wa.me/529992274376" class="text-gold hover:underline">Escríbenos por WhatsApp</a> — enviamos a todos los aeropuertos de la República Mexicana.
+							¿Tu ciudad no aparece?
+							<a
+								href="https://wa.me/529992274376"
+								class="text-gold hover:underline"
+								>Escríbenos por WhatsApp</a
+							>
+							— enviamos a todos los aeropuertos de la República Mexicana.
 						</p>
 					</div>
 				</div>
 			</section>
-
-			<!-- ═══════════════════════════════════════════════════
-			     6. PROCESO DE COMPRA
-			═══════════════════════════════════════════════════ -->
-			<section id="envios" class="py-20 bg-navy border-t border-gold/20">
-				<div class="max-w-6xl mx-auto px-4 text-center">
-					<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">Así de Fácil</p>
-					<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
-						Proceso de <span class="text-gold font-serif italic">Compra</span> y Envíos
-					</h2>
-					<div class="h-0.5 w-16 bg-gold mx-auto mb-16"></div>
-
-					<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-						<div class="hidden md:block absolute top-8 left-[12%] right-[12%] h-px bg-gold/20 -z-10"></div>
-
-						<div class="flex flex-col items-center">
-							<div class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10">01</div>
-							<h3 class="font-sans text-xl font-medium text-white mb-2">Elige</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]">Encuentra al gatito que te robe el corazón en nuestra galería.</p>
-						</div>
-						<div class="flex flex-col items-center">
-							<div class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10">02</div>
-							<h3 class="font-sans text-xl font-medium text-white mb-2">Aparta</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]">Asegura a tu nuevo amigo con un anticipo fácil y seguro.</p>
-						</div>
-						<div class="flex flex-col items-center">
-							<div class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10">03</div>
-							<h3 class="font-sans text-xl font-medium text-white mb-2">Preparamos</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]">Revisión médica y organización de la logística de envío.</p>
-						</div>
-						<div class="flex flex-col items-center">
-							<div class="w-16 h-16 border-2 border-gold flex items-center justify-center font-sans text-xl font-medium text-gold italic mb-6 bg-navy z-10">04</div>
-							<h3 class="font-sans text-xl font-medium text-white mb-2">Lo recibes</h3>
-							<p class="font-sans text-sm text-white/60 leading-relaxed max-w-[200px]">Recíbelo directo en el aeropuerto de tu ciudad.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<!-- ═══════════════════════════════════════════════════
 			     7. FAQ
 			═══════════════════════════════════════════════════ -->
 			<section class="py-20 bg-navy-dark border-t border-gold/20">
 				<div class="max-w-3xl mx-auto px-4">
 					<div class="text-center mb-12">
-						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Resolvemos tus dudas</p>
+						<p
+							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+						>
+							Resolvemos tus dudas
+						</p>
 						<h2 class="font-sans text-3xl md:text-4xl font-medium text-white">
-							Preguntas <span class="text-gold font-serif italic">Frecuentes</span>
+							Preguntas
+							<span class="text-gold font-serif italic">Frecuentes</span>
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4"></div>
 					</div>
 
 					<div class="space-y-3" id="faq-container">
 						<!-- FAQ 1 -->
-						<div class="faq-item border border-gold/20 overflow-hidden transition-all duration-300">
-							<button class="faq-btn w-full flex justify-between items-center p-6 bg-navy text-left focus:outline-none" aria-expanded="false">
-								<span class="font-sans text-lg text-white font-medium">¿Hacen envíos a toda la República?</span>
-								<i data-lucide="chevron-down" class="faq-icon text-gold/60 w-5 h-5 transition-transform duration-300 flex-shrink-0"></i>
+						<div
+							class="faq-item border border-gold/20 overflow-hidden transition-all duration-300"
+						>
+							<button
+								class="faq-btn w-full flex justify-between items-center p-6 bg-navy text-left focus:outline-none"
+								aria-expanded="false"
+							>
+								<span class="font-sans text-lg text-white font-medium"
+									>¿Hacen envíos a toda la República?</span
+								>
+								<i
+									data-lucide="chevron-down"
+									class="faq-icon text-gold/60 w-5 h-5 transition-transform duration-300 flex-shrink-0"
+								></i>
 							</button>
 							<div class="faq-content px-6 bg-navy-dark">
 								<p class="font-sans text-sm text-white/70 leading-relaxed py-5">
-									Sí, realizamos envíos seguros y monitoreados a los principales aeropuertos de México. Nos encargamos de que tu nuevo integrante viaje cómodo, seguro y sin estrés.
+									Sí, realizamos envíos seguros y monitoreados a los principales
+									aeropuertos de México. Nos encargamos de que tu nuevo
+									integrante viaje cómodo, seguro y sin estrés.
 								</p>
 							</div>
 						</div>
 						<!-- FAQ 2 -->
-						<div class="faq-item border border-gold/20 overflow-hidden transition-all duration-300">
-							<button class="faq-btn w-full flex justify-between items-center p-6 bg-navy text-left focus:outline-none" aria-expanded="false">
-								<span class="font-sans text-lg text-white font-medium">¿A qué edad se entregan los gatitos?</span>
-								<i data-lucide="chevron-down" class="faq-icon text-gold/60 w-5 h-5 transition-transform duration-300 flex-shrink-0"></i>
+						<div
+							class="faq-item border border-gold/20 overflow-hidden transition-all duration-300"
+						>
+							<button
+								class="faq-btn w-full flex justify-between items-center p-6 bg-navy text-left focus:outline-none"
+								aria-expanded="false"
+							>
+								<span class="font-sans text-lg text-white font-medium"
+									>¿A qué edad se entregan los gatitos?</span
+								>
+								<i
+									data-lucide="chevron-down"
+									class="faq-icon text-gold/60 w-5 h-5 transition-transform duration-300 flex-shrink-0"
+								></i>
 							</button>
 							<div class="faq-content px-6 bg-navy-dark">
 								<p class="font-sans text-sm text-white/70 leading-relaxed py-5">
-									Los entregamos a partir de los 3 meses de edad. Esto garantiza que han completado su destete correctamente, han socializado con su madre y cuentan con su esquema de vacunación inicial.
+									Los entregamos a partir de los 3 meses de edad. Esto garantiza
+									que han completado su destete correctamente, han socializado
+									con su madre y cuentan con su esquema de vacunación inicial.
 								</p>
 							</div>
 						</div>
 						<!-- FAQ 3 -->
-						<div class="faq-item border border-gold/20 overflow-hidden transition-all duration-300">
-							<button class="faq-btn w-full flex justify-between items-center p-6 bg-navy text-left focus:outline-none" aria-expanded="false">
-								<span class="font-sans text-lg text-white font-medium">¿Cómo garantizan la salud del gatito?</span>
-								<i data-lucide="chevron-down" class="faq-icon text-gold/60 w-5 h-5 transition-transform duration-300 flex-shrink-0"></i>
+						<div
+							class="faq-item border border-gold/20 overflow-hidden transition-all duration-300"
+						>
+							<button
+								class="faq-btn w-full flex justify-between items-center p-6 bg-navy text-left focus:outline-none"
+								aria-expanded="false"
+							>
+								<span class="font-sans text-lg text-white font-medium"
+									>¿Cómo garantizan la salud del gatito?</span
+								>
+								<i
+									data-lucide="chevron-down"
+									class="faq-icon text-gold/60 w-5 h-5 transition-transform duration-300 flex-shrink-0"
+								></i>
 							</button>
 							<div class="faq-content px-6 bg-navy-dark">
 								<p class="font-sans text-sm text-white/70 leading-relaxed py-5">
-									Todos nuestros ejemplares están libres de PKD por pruebas de ADN. Se entregan desparasitados, vacunados y con un certificado expedido por nuestro médico veterinario.
+									Todos nuestros ejemplares están libres de PKD por pruebas de
+									ADN. Se entregan desparasitados, vacunados y con un
+									certificado expedido por nuestro médico veterinario.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
 		</main>
 
 		<!-- ═══════════════════════════════════════════════════
 		     FOOTER
 		═══════════════════════════════════════════════════ -->
 		<footer id="blog" class="bg-navy border-t-2 border-gold">
-			<div class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
-
+			<div
+				class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-12"
+			>
 				<!-- Col 1: Marca -->
 				<div>
-					<h2 class="font-sans text-3xl font-medium text-white mb-1">Araitea <span class="text-gold font-serif italic">Cat's</span></h2>
+					<h2 class="font-sans text-3xl font-medium text-white mb-1">
+						Araitea <span class="text-gold font-serif italic">Cat's</span>
+					</h2>
 					<div class="h-0.5 w-10 bg-gold mt-3 mb-5"></div>
-					<p class="font-sans text-sm text-white/60 leading-relaxed max-w-xs mb-6">
-						Criadero profesional de gatos persas. Llevamos más de 25 años uniendo familias con su compañero ideal en todo México.
+					<p
+						class="font-sans text-sm text-white/60 leading-relaxed max-w-xs mb-6"
+					>
+						Criadero profesional de gatos persas. Llevamos más de 25 años
+						uniendo familias con su compañero ideal en todo México.
 					</p>
 					<div class="flex gap-4">
-						<a href="#" class="text-white/40 hover:text-gold transition-colors" aria-label="Instagram">
+						<a
+							href="#"
+							class="text-white/40 hover:text-gold transition-colors"
+							aria-label="Instagram"
+						>
 							<i data-lucide="instagram" class="w-5 h-5"></i>
 						</a>
-						<a href="#" class="text-white/40 hover:text-gold transition-colors" aria-label="Facebook">
+						<a
+							href="#"
+							class="text-white/40 hover:text-gold transition-colors"
+							aria-label="Facebook"
+						>
 							<i data-lucide="facebook" class="w-5 h-5"></i>
 						</a>
 					</div>
@@ -961,14 +1981,45 @@
 
 				<!-- Col 2: Navegación -->
 				<div>
-					<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-6">Navegación</h4>
+					<h4
+						class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-6"
+					>
+						Navegación
+					</h4>
 					<ul class="space-y-3">
-						<li><a href="#disponibles"                       class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Gatitos Disponibles</a></li>
-						<li><a href="#presencia"                         class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Principales Ubicaciones</a></li>
-						<li><a href="#envios"                            class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Información de Envíos</a></li>
-						<li><a href="#colores"                           class="font-sans text-sm text-white/60 hover:text-gold transition-colors">Conoce los Colores</a></li>
+						<li>
+							<a
+								href="#disponibles"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors"
+								>Gatitos Disponibles</a
+							>
+						</li>
+						<li>
+							<a
+								href="#presencia"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors"
+								>Principales Ubicaciones</a
+							>
+						</li>
+						<li>
+							<a
+								href="#envios"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors"
+								>Información de Envíos</a
+							>
+						</li>
+						<li>
+							<a
+								href="#colores"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors"
+								>Conoce los Colores</a
+							>
+						</li>
 						<li class="pt-2">
-							<a href="tel:+529992274376" class="font-sans text-sm text-white hover:text-gold transition-colors flex items-center gap-2 font-medium">
+							<a
+								href="tel:+529992274376"
+								class="font-sans text-sm text-white hover:text-gold transition-colors flex items-center gap-2 font-medium"
+							>
 								<i data-lucide="phone" class="w-4 h-4"></i> +52 (999) 227 4376
 							</a>
 						</li>
@@ -977,24 +2028,68 @@
 
 				<!-- Col 3: Blog -->
 				<div>
-					<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-6">Blog Educativo</h4>
+					<h4
+						class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-6"
+					>
+						Blog Educativo
+					</h4>
 					<ul class="space-y-4">
-						<li><a href="/blog/antes-de-comprar"    class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">Antes de comprar un gato persa: Todo lo que debes saber</a></li>
-						<li><a href="/blog/personalidad-persa"  class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">La Personalidad Única del Gato Persa: ¿Qué Esperar?</a></li>
-						<li><a href="/blog/masaje-patas"        class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">¿Tu Gatito te da masaje con sus patas?</a></li>
-						<li><a href="/blog/no-al-cascabel"      class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block">¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a></li>
+						<li>
+							<a
+								href="/blog/antes-de-comprar"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block"
+								>Antes de comprar un gato persa: Todo lo que debes saber</a
+							>
+						</li>
+						<li>
+							<a
+								href="/blog/personalidad-persa"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block"
+								>La Personalidad Única del Gato Persa: ¿Qué Esperar?</a
+							>
+						</li>
+						<li>
+							<a
+								href="/blog/masaje-patas"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block"
+								>¿Tu Gatito te da masaje con sus patas?</a
+							>
+						</li>
+						<li>
+							<a
+								href="/blog/no-al-cascabel"
+								class="font-sans text-sm text-white/60 hover:text-gold transition-colors leading-snug block"
+								>¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a
+							>
+						</li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="border-t border-white/10 py-5 text-center">
-				<p class="font-sans text-xs text-white/30">&copy; <span id="year"></span> Araitea Cat's · Todos los derechos reservados</p>
+				<p class="font-sans text-xs text-white/30">
+					&copy; <span id="year"></span> Araitea Cat's · Todos los derechos
+					reservados
+				</p>
 			</div>
 		</footer>
 
 		<!-- WhatsApp Flotante -->
-		<a href="https://wa.me/529992274376" target="_blank" class="fixed bottom-6 right-6 p-4 rounded-full bg-whatsapp text-white shadow-xl z-50 hover:scale-110 hover:shadow-2xl transition-all duration-300 flex items-center justify-center" aria-label="Contactar por WhatsApp">
-			<i data-lucide="message-circle" class="w-7 h-7 fill-current"></i>
+		<a
+			href="https://wa.me/529992274376"
+			target="_blank"
+			class="fixed bottom-6 right-6 p-3.5 rounded-full bg-navy text-white border-2 border-white shadow-xl z-50 hover:scale-110 hover:bg-gold hover:text-navy hover:border-navy transition-all duration-300 flex items-center justify-center"
+			aria-label="Contactar por WhatsApp"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				class="w-7 h-7 fill-current"
+			>
+				<path
+					d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+				/>
+			</svg>
 		</a>
 
 		<!-- ═══════════════════════════════════════════════════
@@ -1002,123 +2097,146 @@
 		═══════════════════════════════════════════════════ -->
 		<script>
 			lucide.createIcons();
-			document.getElementById('year').textContent = new Date().getFullYear();
+			document.getElementById("year").textContent = new Date().getFullYear();
 
 			// ── Menú móvil ──────────────────────────────────
-			document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-				const menu = document.getElementById('mobile-menu');
-				menu.classList.toggle('hidden');
-				menu.classList.toggle('flex');
-			});
+			document
+				.getElementById("mobile-menu-btn")
+				.addEventListener("click", () => {
+					const menu = document.getElementById("mobile-menu");
+					menu.classList.toggle("hidden");
+					menu.classList.toggle("flex");
+				});
 
 			// ── Hero carousel ────────────────────────────────
-			const heroSlides = document.querySelectorAll('.hero-slide');
-			const heroDots   = document.querySelectorAll('.hero-dot');
+			const heroSlides = document.querySelectorAll(".hero-slide");
+			const heroDots = document.querySelectorAll(".hero-dot");
 			let heroIndex = 0;
 
 			function showHeroSlide(n) {
 				if (n < 0) n = heroSlides.length - 1;
 				if (n >= heroSlides.length) n = 0;
 				heroSlides.forEach((s, i) => {
-					s.classList.toggle('opacity-100', i === n);
-					s.classList.toggle('z-10', i === n);
-					s.classList.toggle('opacity-0', i !== n);
-					s.classList.toggle('z-0', i !== n);
+					s.classList.toggle("opacity-100", i === n);
+					s.classList.toggle("z-10", i === n);
+					s.classList.toggle("opacity-0", i !== n);
+					s.classList.toggle("z-0", i !== n);
 				});
 				heroDots.forEach((d, i) => {
-					d.classList.toggle('bg-gold', i === n);
-					d.classList.toggle('bg-white/30', i !== n);
+					d.classList.toggle("bg-gold", i === n);
+					d.classList.toggle("bg-white/30", i !== n);
 				});
 				heroIndex = n;
 			}
 
 			setInterval(() => showHeroSlide(heroIndex + 1), 5000);
 			heroDots.forEach(d => {
-				d.addEventListener('click', () => showHeroSlide(parseInt(d.dataset.index)));
+				d.addEventListener("click", () =>
+					showHeroSlide(parseInt(d.dataset.index)),
+				);
 			});
 
 			// ── Carruseles de gatitos disponibles ───────────
-			document.querySelectorAll('[data-cat-carousel]').forEach(card => {
-				const slides = card.querySelectorAll('.cat-slide');
-				const dots   = card.querySelectorAll('.cat-dot');
+			document.querySelectorAll("[data-cat-carousel]").forEach(card => {
+				const slides = card.querySelectorAll(".cat-slide");
+				const dots = card.querySelectorAll(".cat-dot");
 				if (!slides.length) return;
 				let cur = 0;
 
 				function goTo(n) {
-					slides[cur].style.opacity = '0';
-					slides[cur].style.zIndex  = '0';
-					if (dots[cur]) { dots[cur].classList.remove('bg-gold'); dots[cur].classList.add('bg-white/30'); }
+					slides[cur].style.opacity = "0";
+					slides[cur].style.zIndex = "0";
+					if (dots[cur]) {
+						dots[cur].classList.remove("bg-gold");
+						dots[cur].classList.add("bg-white/30");
+					}
 					cur = ((n % slides.length) + slides.length) % slides.length;
-					slides[cur].style.opacity = '1';
-					slides[cur].style.zIndex  = '1';
-					if (dots[cur]) { dots[cur].classList.add('bg-gold'); dots[cur].classList.remove('bg-white/30'); }
+					slides[cur].style.opacity = "1";
+					slides[cur].style.zIndex = "1";
+					if (dots[cur]) {
+						dots[cur].classList.add("bg-gold");
+						dots[cur].classList.remove("bg-white/30");
+					}
 				}
 
-				card.querySelector('.cat-prev')?.addEventListener('click', () => goTo(cur - 1));
-				card.querySelector('.cat-next')?.addEventListener('click', () => goTo(cur + 1));
-				dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+				card
+					.querySelector(".cat-prev")
+					?.addEventListener("click", () => goTo(cur - 1));
+				card
+					.querySelector(".cat-next")
+					?.addEventListener("click", () => goTo(cur + 1));
+				dots.forEach((dot, i) => dot.addEventListener("click", () => goTo(i)));
 			});
 
 			// ── Carruseles de colores ────────────────────────
-			document.querySelectorAll('[data-carousel]').forEach(carousel => {
-				const slides = carousel.querySelectorAll('.color-slide');
-				const dots   = carousel.querySelectorAll('.color-dot');
+			document.querySelectorAll("[data-carousel]").forEach(carousel => {
+				const slides = carousel.querySelectorAll(".color-slide");
+				const dots = carousel.querySelectorAll(".color-dot");
 				if (!slides.length) return;
 
 				let cur = 0;
 
 				function goTo(n) {
-					slides[cur].style.opacity = '0';
-					slides[cur].style.zIndex  = '0';
+					slides[cur].style.opacity = "0";
+					slides[cur].style.zIndex = "0";
 					if (dots[cur]) {
-						dots[cur].classList.remove('bg-gold');
-						dots[cur].classList.add('bg-white/30');
+						dots[cur].classList.remove("bg-gold");
+						dots[cur].classList.add("bg-white/30");
 					}
 					cur = ((n % slides.length) + slides.length) % slides.length;
-					slides[cur].style.opacity = '1';
-					slides[cur].style.zIndex  = '1';
+					slides[cur].style.opacity = "1";
+					slides[cur].style.zIndex = "1";
 					if (dots[cur]) {
-						dots[cur].classList.add('bg-gold');
-						dots[cur].classList.remove('bg-white/30');
+						dots[cur].classList.add("bg-gold");
+						dots[cur].classList.remove("bg-white/30");
 					}
 				}
 
-				carousel.querySelector('.color-prev')?.addEventListener('click', () => goTo(cur - 1));
-				carousel.querySelector('.color-next')?.addEventListener('click', () => goTo(cur + 1));
-				dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+				carousel
+					.querySelector(".color-prev")
+					?.addEventListener("click", () => goTo(cur - 1));
+				carousel
+					.querySelector(".color-next")
+					?.addEventListener("click", () => goTo(cur + 1));
+				dots.forEach((dot, i) => dot.addEventListener("click", () => goTo(i)));
 
 				// Offset each carousel's interval slightly so they don't all advance together
-				const offset = Array.from(document.querySelectorAll('[data-carousel]')).indexOf(carousel) * 1100;
+				const offset =
+					Array.from(document.querySelectorAll("[data-carousel]")).indexOf(
+						carousel,
+					) * 1100;
 				setTimeout(() => setInterval(() => goTo(cur + 1), 4500), offset);
 			});
 
 			// ── FAQ accordion ────────────────────────────────
-			document.querySelectorAll('.faq-item').forEach(item => {
-				const btn     = item.querySelector('.faq-btn');
-				const content = item.querySelector('.faq-content');
-				const icon    = item.querySelector('.faq-icon');
+			document.querySelectorAll(".faq-item").forEach(item => {
+				const btn = item.querySelector(".faq-btn");
+				const content = item.querySelector(".faq-content");
+				const icon = item.querySelector(".faq-icon");
 
-				btn.addEventListener('click', () => {
-					const isOpen = item.classList.contains('faq-open');
+				btn.addEventListener("click", () => {
+					const isOpen = item.classList.contains("faq-open");
 
 					// Close all
-					document.querySelectorAll('.faq-item').forEach(other => {
-						other.classList.remove('faq-open', 'border-gold');
-						other.classList.add('border-gold/20');
-						other.querySelector('.faq-content').style.maxHeight = '0px';
-						other.querySelector('.faq-content').style.opacity   = '0';
-						other.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
-						other.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+					document.querySelectorAll(".faq-item").forEach(other => {
+						other.classList.remove("faq-open", "border-gold");
+						other.classList.add("border-gold/20");
+						other.querySelector(".faq-content").style.maxHeight = "0px";
+						other.querySelector(".faq-content").style.opacity = "0";
+						other
+							.querySelector(".faq-btn")
+							.setAttribute("aria-expanded", "false");
+						other.querySelector(".faq-icon").style.transform = "rotate(0deg)";
 					});
 
 					// Toggle current
 					if (!isOpen) {
-						item.classList.add('faq-open', 'border-gold');
-						item.classList.remove('border-gold/20');
-						content.style.maxHeight = content.scrollHeight + 'px';
-						content.style.opacity   = '1';
-						btn.setAttribute('aria-expanded', 'true');
-						icon.style.transform = 'rotate(180deg)';
+						item.classList.add("faq-open", "border-gold");
+						item.classList.remove("border-gold/20");
+						content.style.maxHeight = content.scrollHeight + "px";
+						content.style.opacity = "1";
+						btn.setAttribute("aria-expanded", "true");
+						icon.style.transform = "rotate(180deg)";
 					}
 				});
 			});

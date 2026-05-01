@@ -9,7 +9,7 @@
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,8 +27,8 @@
               whatsapp:    '#25D366',
             },
             fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              sans:  ['Montserrat', 'sans-serif'],
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans:  ['"Josefin Sans"', 'sans-serif'],
             },
           },
         },
@@ -50,8 +50,8 @@
       <div class="w-full max-w-md bg-cream border-t-4 border-gold p-10">
 
         <div class="mb-8 text-center">
-          <p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-2">Acceso Exclusivo</p>
-          <h1 class="font-serif text-4xl font-bold text-navy leading-tight">Manual del Persa</h1>
+          <p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-2">Acceso Exclusivo</p>
+          <h1 class="font-sans text-4xl font-medium text-navy leading-tight">Manual del Persa</h1>
           <div class="h-0.5 w-12 bg-gold mx-auto mt-4"></div>
           <p class="font-sans text-sm text-charcoal mt-4 leading-relaxed">
             Ingresa tus credenciales para acceder a tu material de bienvenida.
@@ -62,7 +62,7 @@
 
           <!-- Usuario -->
           <div>
-            <label for="username" class="block font-sans text-xs font-semibold uppercase tracking-widest text-navy mb-2">
+            <label for="username" class="block font-sans text-xs font-medium uppercase tracking-widest text-navy mb-2">
               Usuario
             </label>
             <input
@@ -76,7 +76,7 @@
 
           <!-- Contraseña -->
           <div>
-            <label for="password" class="block font-sans text-xs font-semibold uppercase tracking-widest text-navy mb-2">
+            <label for="password" class="block font-sans text-xs font-medium uppercase tracking-widest text-navy mb-2">
               Contraseña
             </label>
             <div class="relative">
@@ -110,7 +110,7 @@
           <!-- Submit -->
           <button
             type="submit"
-            class="w-full bg-gold hover:bg-gold-light text-navy font-sans text-sm font-semibold uppercase tracking-wide px-6 py-3 transition-colors duration-200 mt-2"
+            class="w-full bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200 mt-2"
           >
             Acceder
           </button>
@@ -135,7 +135,7 @@
           </a>
           <button
             onclick="logout()"
-            class="font-sans text-xs font-semibold uppercase tracking-widest text-white/60 hover:text-gold transition-colors duration-200"
+            class="font-sans text-xs font-medium uppercase tracking-widest text-white/60 hover:text-gold transition-colors duration-200"
           >
             Cerrar sesión
           </button>
@@ -153,13 +153,13 @@
               </svg>
             </div>
           </div>
-          <p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-3">Bienvenido a la familia Araitea</p>
-          <h2 class="font-serif text-5xl md:text-6xl font-bold text-white leading-tight">
+          <p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Bienvenido a la familia Araitea</p>
+          <h2 class="font-sans text-5xl md:text-6xl font-medium text-white leading-tight">
             ¡Gracias por<br class="hidden md:block" /> tu compra!
           </h2>
           <div class="h-0.5 w-16 bg-gold mx-auto mt-6 mb-6"></div>
           <p class="font-sans text-base text-white/70 leading-relaxed">
-            Te damos la bienvenida a la comunidad de amantes del gato persa. A continuación encontrarás el <strong class="text-white font-semibold">Manual del Persa</strong> con todo lo que necesitas saber para cuidar a tu nuevo integrante de la familia.
+            Te damos la bienvenida a la comunidad de amantes del gato persa. A continuación encontrarás el <strong class="text-white font-medium">Manual del Persa</strong> con todo lo que necesitas saber para cuidar a tu nuevo integrante de la familia.
           </p>
         </div>
       </section>
@@ -167,8 +167,8 @@
       <!-- Download section -->
       <section class="bg-cream py-16 px-6">
         <div class="max-w-3xl mx-auto text-center">
-          <p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-2">Tu material</p>
-          <h3 class="font-serif text-3xl font-bold text-navy mb-4">Descarga tu Manual</h3>
+          <p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-2">Tu material</p>
+          <h3 class="font-sans text-3xl font-medium text-navy mb-4">Descarga tu Manual</h3>
           <div class="h-0.5 w-12 bg-gold mx-auto mb-8"></div>
 
           <!-- Download card -->
@@ -181,13 +181,13 @@
             </div>
             <!-- Info -->
             <div class="flex-1 text-left">
-              <p class="font-serif text-xl font-semibold text-navy mb-1">Manual del Persa — Araitea Cat's</p>
+              <p class="font-sans text-xl font-medium text-navy mb-1">Manual del Persa — Araitea Cat's</p>
               <p class="font-sans text-sm text-charcoal/70 mb-4">Guía completa de cuidados, alimentación y salud de tu gato persa.</p>
               <!-- REPLACE href with the actual PDF path, e.g. /manual-del-persa/assets/manual-del-persa.pdf -->
               <a
                 href="/manual-del-persa/assets/manual-del-persa.pdf"
                 download
-                class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-semibold uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+                class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -203,8 +203,8 @@
       <section class="bg-navy py-16 px-6">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-10">
-            <p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-2">Vista previa</p>
-            <h3 class="font-serif text-3xl font-bold text-white">Contenido del Manual</h3>
+            <p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-2">Vista previa</p>
+            <h3 class="font-sans text-3xl font-medium text-white">Contenido del Manual</h3>
             <div class="h-0.5 w-12 bg-gold mx-auto mt-4"></div>
           </div>
 

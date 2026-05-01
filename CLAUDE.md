@@ -35,8 +35,8 @@ tailwind.config = {
         whatsapp:   '#25D366',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans:  ['Montserrat', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans:  ['"Josefin Sans"', 'sans-serif'],
       },
     },
   },
@@ -52,24 +52,28 @@ tailwind.config = {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Josefin+Sans:wght@400;500&display=swap"
   rel="stylesheet"
 />
 ```
 
 ### Scale
 
-| Role              | Class pattern                                              | Notes                                      |
-|-------------------|------------------------------------------------------------|--------------------------------------------|
-| Display / Hero    | `font-serif text-5xl md:text-7xl font-bold leading-tight` | Playfair Display Bold, sentence case       |
-| Section Title     | `font-serif text-3xl md:text-4xl font-semibold`           | Playfair Display Semibold                  |
-| Card Title        | `font-serif text-xl font-semibold`                        | Playfair Display Semibold                  |
-| Nav Links         | `font-sans text-xs font-semibold uppercase tracking-widest` | Montserrat, ALL CAPS, letter-spacing wide |
-| Body / Paragraph  | `font-sans text-base font-normal leading-relaxed`          | Montserrat Regular                        |
-| Label / Caption   | `font-sans text-sm font-medium`                            | Montserrat Medium                         |
-| Button Text       | `font-sans text-sm font-semibold uppercase tracking-wide`  | Montserrat Semibold, ALL CAPS             |
+| Role              | Class pattern                                              | Notes                                          |
+|-------------------|------------------------------------------------------------|------------------------------------------------|
+| Display / Hero    | `font-sans text-5xl md:text-7xl font-medium leading-tight` | Josefin Sans Medium, sentence case             |
+| Section Title     | `font-sans text-3xl md:text-4xl font-medium`               | Josefin Sans Medium                            |
+| Card Title        | `font-sans text-xl font-medium`                            | Josefin Sans Medium                            |
+| Gold inline span  | `font-serif italic text-gold`                              | Cormorant Garamond italic — only inside p/h tags |
+| Nav Links         | `font-sans text-xs font-medium uppercase tracking-widest`  | Josefin Sans, ALL CAPS, letter-spacing wide    |
+| Body / Paragraph  | `font-sans text-base font-normal leading-relaxed`          | Josefin Sans Regular                           |
+| Label / Caption   | `font-sans text-sm font-medium`                            | Josefin Sans Medium                            |
+| Button Text       | `font-sans text-sm font-medium uppercase tracking-wide`    | Josefin Sans Medium, ALL CAPS                  |
 
-**Rule:** Serif (`font-serif`) is reserved for editorial text (titles, pull quotes). Never use it for UI elements (buttons, labels, nav). All UI copy uses `font-sans` (Montserrat).
+**Font rules:**
+- `font-sans` (Josefin Sans) is the default for **all** text — UI, body, headings, labels, buttons.
+- `font-serif` (Cormorant Garamond italic) is used **only** on `<span class="text-gold font-serif italic">` inline within `<p>` or `<h1>`–`<h6>` to highlight a gold word or phrase.
+- Max font-weight is `font-medium` (500). Never use `font-medium`, `font-medium`, or heavier.
 
 ---
 
@@ -109,8 +113,8 @@ tailwind.config = {
     </a>
     <!-- Links -->
     <ul class="hidden md:flex items-center gap-8">
-      <li><a href="/" class="font-sans text-xs font-semibold uppercase tracking-widest text-white hover:text-gold transition-colors">Inicio</a></li>
-      <li><a href="/venta-de-gatos-persas-en-cdmx/" class="font-sans text-xs font-semibold uppercase tracking-widest text-white hover:text-gold transition-colors">CDMX</a></li>
+      <li><a href="/" class="font-sans text-xs font-medium uppercase tracking-widest text-white hover:text-gold transition-colors">Inicio</a></li>
+      <li><a href="/venta-de-gatos-persas-en-cdmx/" class="font-sans text-xs font-medium uppercase tracking-widest text-white hover:text-gold transition-colors">CDMX</a></li>
       <!-- repeat per page -->
     </ul>
     <!-- CTA -->
@@ -129,21 +133,21 @@ tailwind.config = {
 
 **Primary (Gold CTA)**
 ```html
-<a class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-semibold uppercase tracking-wide px-6 py-3 rounded-none transition-colors duration-200">
+<a class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-6 py-3 rounded-none transition-colors duration-200">
   Ver Gatitos Disponibles
 </a>
 ```
 
 **Secondary (Outlined)**
 ```html
-<a class="inline-flex items-center gap-2 border border-gold text-gold hover:bg-gold hover:text-navy font-sans text-sm font-semibold uppercase tracking-wide px-6 py-3 rounded-none transition-colors duration-200">
+<a class="inline-flex items-center gap-2 border border-gold text-gold hover:bg-gold hover:text-navy font-sans text-sm font-medium uppercase tracking-wide px-6 py-3 rounded-none transition-colors duration-200">
   Conoce el Criadero
 </a>
 ```
 
 **WhatsApp**
 ```html
-<a class="inline-flex items-center gap-2 bg-whatsapp hover:opacity-90 text-white font-sans text-sm font-semibold uppercase tracking-wide px-6 py-3 rounded-none transition-opacity duration-200">
+<a class="inline-flex items-center gap-2 bg-whatsapp hover:opacity-90 text-white font-sans text-sm font-medium uppercase tracking-wide px-6 py-3 rounded-none transition-opacity duration-200">
   <!-- WhatsApp SVG icon -->
   Escribir por WhatsApp
 </a>
@@ -162,7 +166,7 @@ tailwind.config = {
 <div class="bg-white border border-mist hover:border-gold transition-colors duration-300 p-6 group">
   <!-- optional top accent -->
   <div class="h-0.5 w-12 bg-gold mb-4"></div>
-  <h3 class="font-serif text-xl font-semibold text-navy mb-2">Título de Tarjeta</h3>
+  <h3 class="font-sans text-xl font-medium text-navy mb-2">Título de Tarjeta</h3>
   <p class="font-sans text-base text-charcoal leading-relaxed">Descripción breve.</p>
 </div>
 ```
@@ -183,8 +187,8 @@ Gold rule under section titles:
 Section heading pattern (dark background):
 ```html
 <div class="text-center mb-12">
-  <p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-2">Subtítulo de Categoría</p>
-  <h2 class="font-serif text-4xl font-bold text-white">Título Principal</h2>
+  <p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-2">Subtítulo de Categoría</p>
+  <h2 class="font-sans text-4xl font-medium text-white">Título Principal</h2>
   <div class="h-0.5 w-16 bg-gold mx-auto mt-4"></div>
 </div>
 ```
@@ -192,8 +196,8 @@ Section heading pattern (dark background):
 Section heading pattern (light background):
 ```html
 <div class="mb-10">
-  <p class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-2">Subtítulo</p>
-  <h2 class="font-serif text-4xl font-bold text-navy">Título Principal</h2>
+  <p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-2">Subtítulo</p>
+  <h2 class="font-sans text-4xl font-medium text-navy">Título Principal</h2>
   <div class="h-0.5 w-16 bg-gold mt-4"></div>
 </div>
 ```
@@ -219,7 +223,7 @@ Three-column layout on desktop, stacked on mobile. Background: `bg-navy`. Top go
 
     <!-- Col 2: Navigation -->
     <div>
-      <h4 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-5">Navegación</h4>
+      <h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-5">Navegación</h4>
       <ul class="space-y-3">
         <li><a href="/" class="font-sans text-sm text-white/70 hover:text-gold transition-colors">Inicio</a></li>
         <li><a href="/venta-de-gatos-persas-en-cdmx/" class="font-sans text-sm text-white/70 hover:text-gold transition-colors">Gatos en CDMX</a></li>
@@ -230,7 +234,7 @@ Three-column layout on desktop, stacked on mobile. Background: `bg-navy`. Top go
 
     <!-- Col 3: Contact -->
     <div>
-      <h4 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-5">Contacto</h4>
+      <h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-5">Contacto</h4>
       <ul class="space-y-3">
         <li>
           <a href="https://wa.me/..." class="inline-flex items-center gap-2 font-sans text-sm text-white/70 hover:text-gold transition-colors">
@@ -284,7 +288,7 @@ Every page should follow this rhythm to maintain consistency:
 - Prefer `text-white/70` for secondary text on dark backgrounds over pure `text-gray-*`.
 
 **Don't:**
-- Mix Playfair Display into UI elements (labels, buttons, nav, form fields).
+- Use `font-serif` (Cormorant Garamond) anywhere other than inline gold `<span>` inside `<p>` or `<h1>`–`<h6>`.
 - Use rounded corners (`rounded-lg`, `rounded-full`) on buttons or cards.
 - Use the old brand blue (`#0081C2`) — it has been retired in favor of navy + gold.
 - Add drop shadows to cards — use border treatments instead.

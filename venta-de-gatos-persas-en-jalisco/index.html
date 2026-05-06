@@ -26,10 +26,13 @@
 				theme: {
 					extend: {
 						colors: {
-							navy:        '#0C2340',
-							'navy-dark': '#071829',
+							navy:        '#0A2241',
+							'navy-dark': '#005A8E',
 							gold:        '#CCA052',
 							'gold-light':'#E2C07E',
+						cream:'#FAF7F2',
+						mist:'#E8E3DB',
+						charcoal:'#2D2D2D',
 							whatsapp:    '#25D366',
 						},
 						fontFamily: {
@@ -44,7 +47,7 @@
 		<script src="https://unpkg.com/lucide@latest"></script>
 
 		<style>
-			body { background-color: #0C2340; color: #fff; }
+			body { background-color: #0A2241; color: #fff; }
 			.nav-link { position: relative; padding-bottom: 2px; }
 			.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #CCA052; transition: width 0.2s ease; }
 			.nav-link:hover::after { width: 100%; }
@@ -157,8 +160,8 @@
 					</div>
 
 					<!-- Info box -->
-					<div class="mt-10 border border-gold/30 bg-navy-dark p-7">
-						<h4 class="font-sans text-lg font-medium text-white mb-3 flex items-center gap-3">
+					<div class="mt-10 border border-mist bg-cream p-7">
+						<h4 class="font-sans text-lg font-medium text-navy mb-3 flex items-center gap-3">
 							<i data-lucide="sun" class="w-5 h-5 text-gold flex-shrink-0"></i>
 							El Persa en la <span class="text-gold font-serif italic ml-1">Perla Tapatía</span>
 						</h4>
@@ -170,15 +173,15 @@
 			</section>
 
 			<!-- 3. LOGÍSTICA JALISCO -->
-			<section id="logistica" class="py-20 bg-navy-dark border-t border-gold/20">
+			<section id="logistica" class="py-20 bg-cream border-t border-mist">
 				<div class="max-w-6xl mx-auto px-6">
 					<div class="text-center mb-14">
 						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Proceso de Envío</p>
-						<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+						<h2 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
 							Logística y <span class="text-gold font-serif italic">Envíos</span> a Jalisco
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
+						<p class="font-sans text-sm text-charcoal/80 max-w-xl mx-auto leading-relaxed">
 							Un proceso seguro, monitoreado y directo al Aeropuerto Internacional de Guadalajara (GDL), con tiempos de vuelo reducidos.
 						</p>
 					</div>
@@ -246,48 +249,48 @@
 
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<!-- Testimonio 1 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group">
 							<div class="aspect-[4/3] overflow-hidden">
 								<img src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=800&q=80" alt="Familia Villaseñor con su gato persa en Guadalajara Jalisco" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-5">
+								<p class="font-sans text-lg text-charcoal italic leading-relaxed mb-5">
 									"Fue amor a primera vista. Verlo crecer, jugar y dormir en nuestra casa de Zapopan es una experiencia inigualable."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Familia Villaseñor</h4>
+								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-navy">Familia Villaseñor</h4>
 								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
 									<i data-lucide="map-pin" class="w-3 h-3"></i> Zapopan, Jalisco
 								</p>
 							</div>
 						</div>
 						<!-- Testimonio 2 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group">
 							<div class="aspect-[4/3] overflow-hidden">
 								<img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=800&q=80" alt="Familia en Providencia Guadalajara con gato persa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-5">
+								<p class="font-sans text-lg text-charcoal italic leading-relaxed mb-5">
 									"Araitea nos acompañó en todo el proceso. La comunicación fue excelente y el gatito llegó súper bien al aeropuerto de GDL."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Mariana y Carlos P.</h4>
+								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-navy">Mariana y Carlos P.</h4>
 								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
 									<i data-lucide="map-pin" class="w-3 h-3"></i> Providencia, GDL
 								</p>
 							</div>
 						</div>
 						<!-- Testimonio 3 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group">
 							<div class="aspect-[4/3] overflow-hidden">
 								<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80" alt="Familia en Tlaquepaque con su gatito persa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-5">
+								<p class="font-sans text-lg text-charcoal italic leading-relaxed mb-5">
 									"Nuestros persas son los reyes de la casa. Su pelaje, su carácter tan dulce y la tranquilidad de saber que son PKD-negativo no tiene precio."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Sofía R.</h4>
+								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-navy">Sofía R.</h4>
 								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
 									<i data-lucide="map-pin" class="w-3 h-3"></i> Tlaquepaque, JAL
 								</p>
@@ -298,14 +301,14 @@
 			</section>
 
 			<!-- 5. CTA FINAL -->
-			<section class="py-20 bg-navy-dark border-t border-gold/20">
+			<section class="py-20 bg-cream border-t border-mist">
 				<div class="max-w-3xl mx-auto px-6 text-center">
 					<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">¿Listo para dar el siguiente paso?</p>
-					<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+					<h2 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
 						Conoce a tu nuevo <span class="text-gold font-serif italic">integrante</span>
 					</h2>
 					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-					<p class="font-sans text-base text-white/70 mb-10 leading-relaxed">
+					<p class="font-sans text-base text-charcoal mb-10 leading-relaxed">
 						Revisa nuestro catálogo de gatitos y contáctanos por WhatsApp para resolver dudas, apartar a tu preferido y coordinar el vuelo hacia Guadalajara.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center">

@@ -12,7 +12,7 @@ Each page lives in its own folder (`/venta-de-gatos-persas-en-*/index.html`).
 
 | Token       | Hex       | Usage                                                     |
 |-------------|-----------|-----------------------------------------------------------|
-| `navy`      | `#0C2340` | Primary background, navbar, section fills, footer         |
+| `navy`      | `#0A2241` | Primary background, navbar, section fills, footer         |
 | `gold`      | `#CCA052` | Accent: CTAs, dividers, icon highlights, hover states     |
 | `gold-light`| `#E2C07E` | Gold tint for subtle backgrounds or disabled states       |
 | `cream`     | `#FAF7F2` | Off-white page background, card fills                     |
@@ -26,7 +26,7 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        navy:       '#0C2340',
+        navy:       '#0A2241',
         gold:       '#CCA052',
         'gold-light': '#E2C07E',
         cream:      '#FAF7F2',

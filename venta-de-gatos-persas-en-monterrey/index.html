@@ -26,10 +26,13 @@
 				theme: {
 					extend: {
 						colors: {
-							navy:        '#0C2340',
-							'navy-dark': '#071829',
+							navy:        '#0A2241',
+							'navy-dark': '#005A8E',
 							gold:        '#CCA052',
 							'gold-light':'#E2C07E',
+						cream:'#FAF7F2',
+						mist:'#E8E3DB',
+						charcoal:'#2D2D2D',
 							whatsapp:    '#25D366',
 						},
 						fontFamily: {
@@ -44,7 +47,7 @@
 		<script src="https://unpkg.com/lucide@latest"></script>
 
 		<style>
-			body { background-color: #0C2340; color: #fff; }
+			body { background-color: #0A2241; color: #fff; }
 			.nav-link { position: relative; padding-bottom: 2px; }
 			.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #CCA052; transition: width 0.2s ease; }
 			.nav-link:hover::after { width: 100%; }
@@ -157,8 +160,8 @@
 					</div>
 
 					<!-- Info box -->
-					<div class="mt-10 border border-gold/30 bg-navy-dark p-7">
-						<h4 class="font-sans text-lg font-medium text-white mb-3 flex items-center gap-3">
+					<div class="mt-10 border border-mist bg-cream p-7">
+						<h4 class="font-sans text-lg font-medium text-navy mb-3 flex items-center gap-3">
 							<i data-lucide="thermometer-sun" class="w-5 h-5 text-gold flex-shrink-0"></i>
 							El Gato Persa en el <span class="text-gold font-serif italic ml-1">clima de Monterrey</span>
 						</h4>
@@ -170,15 +173,15 @@
 			</section>
 
 			<!-- 3. LOGÍSTICA MONTERREY -->
-			<section id="logistica" class="py-20 bg-navy-dark border-t border-gold/20">
+			<section id="logistica" class="py-20 bg-cream border-t border-mist">
 				<div class="max-w-6xl mx-auto px-6">
 					<div class="text-center mb-14">
 						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">Proceso de Envío</p>
-						<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+						<h2 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
 							Logística y <span class="text-gold font-serif italic">Envíos</span> a Nuevo León
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed">
+						<p class="font-sans text-sm text-charcoal/80 max-w-xl mx-auto leading-relaxed">
 							Un proceso seguro, libre de estrés y directo a la zona de carga del Aeropuerto Internacional de Monterrey (MTY).
 						</p>
 					</div>
@@ -246,48 +249,48 @@
 
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<!-- Testimonio 1 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group">
 							<div class="aspect-[4/3] overflow-hidden">
 								<img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?auto=format&fit=crop&w=800&q=80" alt="Jessica con su gatita persa Bella en Monterrey" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-5">
+								<p class="font-sans text-lg text-charcoal italic leading-relaxed mb-5">
 									"Gracias a Araitea Cat's por tener tanta paciencia en enseñarme todo respecto a la crianza y cuidados de Bella. ¡Estamos enamoradas de ella!"
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Jessica M.</h4>
+								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-navy">Jessica M.</h4>
 								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
 									<i data-lucide="map-pin" class="w-3 h-3"></i> Monterrey, N.L.
 								</p>
 							</div>
 						</div>
 						<!-- Testimonio 2 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group">
 							<div class="aspect-[4/3] overflow-hidden">
 								<img src="https://images.unsplash.com/photo-1529778459841-36b0b5ec1e65?auto=format&fit=crop&w=800&q=80" alt="Familia Garza con gato persa en San Pedro Garza García" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-5">
+								<p class="font-sans text-lg text-charcoal italic leading-relaxed mb-5">
 									"Buscábamos un criadero con pruebas de PKD negativas. Al ver la calidad de sus persas no dudamos. La entrega en el aeropuerto fue puntual y muy profesional."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Familia Garza T.</h4>
+								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-navy">Familia Garza T.</h4>
 								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
 									<i data-lucide="map-pin" class="w-3 h-3"></i> San Pedro Garza García
 								</p>
 							</div>
 						</div>
 						<!-- Testimonio 3 -->
-						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-navy-dark group">
+						<div class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group">
 							<div class="aspect-[4/3] overflow-hidden">
 								<img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=800&q=80" alt="Alejandro con su persa en Zona Cumbres Monterrey" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 							</div>
 							<div class="p-7">
 								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p class="font-sans text-lg text-white/80 italic leading-relaxed mb-5">
+								<p class="font-sans text-lg text-charcoal italic leading-relaxed mb-5">
 									"Mi gatito llegó súper relajado y limpio. Al instante se puso a explorar la casa. Definitivamente es el gatito más cariñoso y hermoso que he visto."
 								</p>
-								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-white">Alejandro V.</h4>
+								<h4 class="font-sans text-sm font-medium uppercase tracking-widest text-navy">Alejandro V.</h4>
 								<p class="font-sans text-xs text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest">
 									<i data-lucide="map-pin" class="w-3 h-3"></i> Zona Cumbres, MTY
 								</p>
@@ -298,14 +301,14 @@
 			</section>
 
 			<!-- 5. CTA FINAL -->
-			<section class="py-20 bg-navy-dark border-t border-gold/20">
+			<section class="py-20 bg-cream border-t border-mist">
 				<div class="max-w-3xl mx-auto px-6 text-center">
 					<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">¿Listo para dar el siguiente paso?</p>
-					<h2 class="font-sans text-3xl md:text-4xl font-medium text-white mb-4">
+					<h2 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
 						Conoce a tu nuevo <span class="text-gold font-serif italic">integrante</span>
 					</h2>
 					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-					<p class="font-sans text-base text-white/70 mb-10 leading-relaxed">
+					<p class="font-sans text-base text-charcoal mb-10 leading-relaxed">
 						Revisa nuestro catálogo de gatitos y contáctanos por WhatsApp para resolver dudas, apartar a tu preferido y coordinar el vuelo hacia Monterrey.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center">

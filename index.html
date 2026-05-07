@@ -53,9 +53,9 @@
 							"navy-dark": "#061629",
 							gold: "#CCA052",
 							"gold-light": "#E2C07E",
-						cream: "#FAF7F2",
-						mist: "#E8E3DB",
-						charcoal: "#2D2D2D",
+							cream: "#FAF7F2",
+							mist: "#E8E3DB",
+							charcoal: "#2D2D2D",
 							whatsapp: "#25D366",
 						},
 						fontFamily: {
@@ -72,8 +72,8 @@
 
 		<style>
 			body {
-				background-color: #FAF7F2;
-				color: #2D2D2D;
+				background-color: #faf7f2;
+				color: #2d2d2d;
 			}
 
 			.hero-slide {
@@ -433,7 +433,7 @@
 				<div class="max-w-6xl mx-auto px-4">
 					<div class="text-center mb-14">
 						<p
-							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+							class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-3"
 						>
 							Criadero Araitea Cat's
 						</p>
@@ -836,8 +836,17 @@
 			<!-- ═══════════════════════════════════════════════════
 			     3. NUESTRO COMPROMISO
 			═══════════════════════════════════════════════════ -->
-			<section class="py-16 bg-navy border-t border-gold/20">
-				<div class="max-w-6xl mx-auto px-4">
+			<section class="relative py-16 bg-navy border-t border-b-4 border-gold">
+				<div class="absolute inset-0 opacity-20">
+					<div
+						class="w-full h-full"
+						style="
+							background-image: radial-gradient(#ffffff 1px, transparent 1px);
+							background-size: 30px 30px;
+						"
+					></div>
+				</div>
+				<div class="relative max-w-6xl mx-auto px-4">
 					<div class="text-center mb-12">
 						<p
 							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
@@ -853,7 +862,7 @@
 					</div>
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 						<div
-							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+							class="flex flex-col items-center text-center p-8 bg-navy border border-gold/40 shadow-[0_4px_0_#CCA052] hover:border-gold transition-colors duration-300"
 						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="shield-check" class="w-10 h-10"></i>
@@ -866,7 +875,7 @@
 							</p>
 						</div>
 						<div
-							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+							class="flex flex-col items-center text-center p-8 bg-navy border border-gold/40 shadow-[0_4px_0_#CCA052] hover:border-gold transition-colors duration-300"
 						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="heart" class="w-10 h-10"></i>
@@ -879,7 +888,7 @@
 							</p>
 						</div>
 						<div
-							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+							class="flex flex-col items-center text-center p-8 bg-navy border border-gold/40 shadow-[0_4px_0_#CCA052] hover:border-gold transition-colors duration-300"
 						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="stethoscope" class="w-10 h-10"></i>
@@ -892,7 +901,7 @@
 							</p>
 						</div>
 						<div
-							class="flex flex-col items-center text-center p-8 border border-gold/20 hover:border-gold transition-colors duration-300"
+							class="flex flex-col items-center text-center p-8 bg-navy border border-gold/40 shadow-[0_4px_0_#CCA052] hover:border-gold transition-colors duration-300"
 						>
 							<div class="mb-5 text-gold">
 								<i data-lucide="check-circle-2" class="w-10 h-10"></i>
@@ -905,22 +914,30 @@
 							</p>
 						</div>
 					</div>
+					<div class="mt-6 w-full overflow-hidden border border-gold/40">
+						<img
+							src="/assets/banner1.jpeg"
+							alt="Criadero Araitea Cat's"
+							class="w-full aspect-[4/3] object-cover"
+						/>
+					</div>
 				</div>
 			</section>
 
 			<!-- ═══════════════════════════════════════════════════
 			     4. PROCESO DE COMPRA Y ENVIOS
 			═══════════════════════════════════════════════════ -->
-			<section id="envios" class="py-20 bg-cream border-t border-mist">
+			<section
+				id="envios"
+				class="py-20 bg-cream border-t border-mist border-b-4 shadow-[0_4px_0_#CCA052]"
+			>
 				<div class="max-w-6xl mx-auto px-4 text-center">
 					<p
-						class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+						class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-4"
 					>
 						Así de Fácil
 					</p>
-					<h2
-						class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4"
-					>
+					<h2 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
 						Proceso de <span class="text-gold font-serif italic">Compra</span> y
 						Envíos
 					</h2>
@@ -928,7 +945,7 @@
 
 					<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
 						<div
-							class="hidden md:block absolute top-8 left-[12%] right-[12%] h-px bg-gold/20 -z-10"
+							class="hidden md:block absolute top-8 left-[12%] right-[12%] h-px bg-mist -z-10"
 						></div>
 
 						<div class="flex flex-col items-center">
@@ -998,32 +1015,34 @@
 			<!-- ═══════════════════════════════════════════════════
 			     5. COLORES DEL PERSA — carruseles alternados
 			═══════════════════════════════════════════════════ -->
-			<section id="colores" class="bg-navy">
+			<section id="colores" class="bg-cream">
+				<div class="max-w-6xl mx-auto">
 				<!-- Encabezado de sección -->
-				<div class="py-16 px-4 text-center border-t border-gold/20">
+				<div class="py-16 px-4 text-center border-t border-mist">
 					<p
-						class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+						class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-3"
 					>
 						Un catálogo de belleza inigualable
 					</p>
-					<h2 class="font-sans text-3xl md:text-4xl font-medium text-white">
+					<h2 class="font-sans text-3xl md:text-4xl font-medium text-navy">
 						Los <span class="text-gold font-serif italic">Colores</span> del
 						Persa
 					</h2>
 					<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
 					<p
-						class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed"
+						class="font-sans text-base text-charcoal max-w-2xl mx-auto leading-relaxed"
 					>
 						El carácter de tu gatito depende exclusivamente del
-						<strong class="text-white">amor y la crianza</strong> que le demos
-						en sus primeros meses, ¡no de su color!
+						<strong class="text-navy">amor y la crianza</strong> que le demos en
+						sus primeros meses, ¡no de su color!
 					</p>
 				</div>
 
+				<div class="flex flex-col gap-16 pb-16">
 				<!-- Color 1: Blue/Gris — carrusel izquierda, texto derecha -->
-				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
+				<div class="grid grid-cols-1 lg:grid-cols-[70%_30%]">
 					<!-- Carrusel -->
-					<div class="relative min-h-[480px]" data-carousel="blue">
+					<div class="relative min-h-[540px]" data-carousel="blue">
 						<div class="color-slide" style="opacity: 1; z-index: 1">
 							<img
 								src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80"
@@ -1075,10 +1094,10 @@
 					</div>
 					<!-- Texto -->
 					<div
-						class="bg-cream flex flex-col justify-center px-10 py-14 lg:px-16"
+						class="bg-cream flex flex-col justify-center px-6 py-10 lg:px-8"
 					>
 						<p
-							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+							class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-4"
 						>
 							Color 01
 						</p>
@@ -1110,30 +1129,30 @@
 				</div>
 
 				<!-- Color 2: Red Tabby — texto izquierda, carrusel derecha -->
-				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
+				<div class="grid grid-cols-1 lg:grid-cols-[30%_70%]">
 					<!-- Texto -->
 					<div
-						class="bg-navy flex flex-col justify-center px-10 py-14 lg:px-16 order-2 lg:order-1"
+						class="bg-cream flex flex-col justify-center px-6 py-10 lg:px-8 order-2 lg:order-1"
 					>
 						<p
-							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+							class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-4"
 						>
 							Color 02
 						</p>
 						<h3
-							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+							class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4"
 						>
 							Red <span class="text-gold font-serif italic">Tabby</span>
 						</h3>
 						<div class="h-0.5 w-12 bg-gold mb-6"></div>
-						<p class="font-sans text-base text-white/70 leading-relaxed mb-4">
+						<p class="font-sans text-base text-charcoal leading-relaxed mb-4">
 							El Red Tabby es vibrante, cálido y absolutamente cautivador. Sus
 							marcas atigradas en tonos anaranjados y rojizos lo hacen
 							distinguible a primera vista.
 						</p>
-						<p class="font-sans text-base text-white/70 leading-relaxed">
+						<p class="font-sans text-base text-charcoal leading-relaxed">
 							Son persas con una personalidad más
-							<strong class="text-white">activa y juguetona</strong>, aunque
+							<strong class="text-navy">activa y juguetona</strong>, aunque
 							siempre mantienen la dulzura característica de la raza.
 						</p>
 						<div class="mt-8">
@@ -1147,7 +1166,7 @@
 					</div>
 					<!-- Carrusel -->
 					<div
-						class="relative min-h-[480px] order-1 lg:order-2"
+						class="relative min-h-[540px] order-1 lg:order-2"
 						data-carousel="red"
 					>
 						<div class="color-slide" style="opacity: 1; z-index: 1">
@@ -1201,9 +1220,9 @@
 				</div>
 
 				<!-- Color 3: Tortie — carrusel izquierda, texto derecha -->
-				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
+				<div class="grid grid-cols-1 lg:grid-cols-[70%_30%]">
 					<!-- Carrusel -->
-					<div class="relative min-h-[480px]" data-carousel="tortie">
+					<div class="relative min-h-[540px]" data-carousel="tortie">
 						<div class="color-slide" style="opacity: 1; z-index: 1">
 							<img
 								src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&q=80"
@@ -1254,10 +1273,10 @@
 					</div>
 					<!-- Texto -->
 					<div
-						class="bg-cream flex flex-col justify-center px-10 py-14 lg:px-16"
+						class="bg-cream flex flex-col justify-center px-6 py-10 lg:px-8"
 					>
 						<p
-							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+							class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-4"
 						>
 							Color 03
 						</p>
@@ -1289,30 +1308,30 @@
 				</div>
 
 				<!-- Color 4: Bicolor — texto izquierda, carrusel derecha -->
-				<div class="grid grid-cols-1 lg:grid-cols-2 border-t border-gold/10">
+				<div class="grid grid-cols-1 lg:grid-cols-[30%_70%]">
 					<!-- Texto -->
 					<div
-						class="bg-navy flex flex-col justify-center px-10 py-14 lg:px-16 order-2 lg:order-1"
+						class="bg-cream flex flex-col justify-center px-6 py-10 lg:px-8 order-2 lg:order-1"
 					>
 						<p
-							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4"
+							class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-4"
 						>
 							Color 04
 						</p>
 						<h3
-							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
+							class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4"
 						>
 							<span class="text-gold italic">Bicolor</span>
 						</h3>
 						<div class="h-0.5 w-12 bg-gold mb-6"></div>
-						<p class="font-sans text-base text-white/70 leading-relaxed mb-4">
+						<p class="font-sans text-base text-charcoal leading-relaxed mb-4">
 							El Bicolor presenta una combinación de blanco con otro color
 							(negro, azul, rojo o crema) distribuido en parches armoniosos. Sus
 							ojos generalmente son de un azul o cobre intenso.
 						</p>
-						<p class="font-sans text-base text-white/70 leading-relaxed">
+						<p class="font-sans text-base text-charcoal leading-relaxed">
 							Son considerados de los persas más
-							<strong class="text-white">cariñosos y leales</strong>. Se apegan
+							<strong class="text-navy">cariñosos y leales</strong>. Se apegan
 							profundamente a su familia y son excelentes con niños.
 						</p>
 						<div class="mt-8">
@@ -1326,7 +1345,7 @@
 					</div>
 					<!-- Carrusel -->
 					<div
-						class="relative min-h-[480px] order-1 lg:order-2"
+						class="relative min-h-[540px] order-1 lg:order-2"
 						data-carousel="bicolor"
 					>
 						<div class="color-slide" style="opacity: 1; z-index: 1">
@@ -1378,13 +1397,24 @@
 						</div>
 					</div>
 				</div>
+				</div><!-- /flex gap-16 -->
+				</div><!-- /max-w-6xl -->
 			</section>
 
 			<!-- ═══════════════════════════════════════════════════
 			     6. FAMILIAS FELICES — fotos grandes como cards
 			═══════════════════════════════════════════════════ -->
-			<section class="py-20 bg-cream border-t border-mist">
-				<div class="max-w-6xl mx-auto px-4">
+			<section class="relative py-20 bg-navy border-t border-b-4 border-gold">
+				<div class="absolute inset-0 opacity-20">
+					<div
+						class="w-full h-full"
+						style="
+							background-image: radial-gradient(#ffffff 1px, transparent 1px);
+							background-size: 30px 30px;
+						"
+					></div>
+				</div>
+				<div class="relative max-w-6xl mx-auto px-4">
 					<div class="text-center mb-14">
 						<p
 							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
@@ -1392,13 +1422,13 @@
 							Prueba Social
 						</p>
 						<h2
-							class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4"
+							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
 						>
 							<span class="text-gold font-serif italic">Familias</span> Felices
 						</h2>
 						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
 						<p
-							class="font-sans text-base text-charcoal max-w-2xl mx-auto leading-relaxed"
+							class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed"
 						>
 							Nuestra mejor garantía son los cientos de familias en todo México
 							que ya disfrutan de un Persa Araitea.
@@ -1408,7 +1438,7 @@
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<!-- Testimonio 1 -->
 						<div
-							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group"
+							class="border border-gold/40 hover:border-gold transition-colors duration-300 overflow-hidden bg-cream group"
 						>
 							<div class="aspect-[4/3] overflow-hidden">
 								<img
@@ -1441,7 +1471,7 @@
 						</div>
 						<!-- Testimonio 2 -->
 						<div
-							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group"
+							class="border border-gold/40 hover:border-gold transition-colors duration-300 overflow-hidden bg-cream group"
 						>
 							<div class="aspect-[4/3] overflow-hidden">
 								<img
@@ -1473,7 +1503,7 @@
 						</div>
 						<!-- Testimonio 3 -->
 						<div
-							class="border border-gold/20 hover:border-gold transition-colors duration-300 overflow-hidden bg-white group"
+							class="border border-gold/40 hover:border-gold transition-colors duration-300 overflow-hidden bg-cream group"
 						>
 							<div class="aspect-[4/3] overflow-hidden">
 								<img
@@ -1510,343 +1540,271 @@
 			<!-- ═══════════════════════════════════════════════════
 			     5.5 PRESENCIA NACIONAL
 			═══════════════════════════════════════════════════ -->
-			<section
-				id="presencia"
-				class="py-20 bg-navy border-t border-gold/20"
-			>
-				<div class="max-w-6xl mx-auto px-4">
-					<div class="text-center mb-14">
-						<p
-							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
-						>
+			<section id="presencia" class="bg-cream border-t border-mist">
+				<div class="max-w-6xl mx-auto px-4 pt-20 pb-0">
+					<div class="mb-14">
+						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">
 							Cobertura Nacional
 						</p>
-						<h2
-							class="font-sans text-3xl md:text-4xl font-medium text-white mb-4"
-						>
-							Nuestra
-							<span class="text-gold font-serif italic">Presencia</span> en
-							México
+						<h2 class="font-sans text-3xl md:text-4xl font-medium text-navy">
+							Nuestra <span class="text-gold font-serif italic">Presencia</span> en México
 						</h2>
-						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p
-							class="font-sans text-base text-white/70 max-w-2xl mx-auto leading-relaxed"
-						>
-							Llegamos a cada rincón del país con logística preferencial en los
-							principales centros económicos.
-						</p>
+						<div class="h-0.5 w-16 bg-gold mt-4"></div>
 					</div>
+				</div>
 
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-						<!-- CDMX -->
-						<a
-							href="/venta-de-gatos-persas-en-cdmx"
-							title="Envíos a CDMX"
-							class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300"
-						>
-							<img
-								src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80"
-								alt="Envíos de gatos persas a Ciudad de México"
-								loading="lazy"
-								class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-							/>
-							<div
-								class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"
-							></div>
-							<div class="absolute bottom-0 left-0 w-full p-6">
-								<h3 class="font-sans text-2xl font-medium text-white mb-1">
-									Ciudad de México
-								</h3>
-								<p
-									class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2"
-								>
-									Envíos a CDMX y EdoMex
-									<i
-										data-lucide="arrow-right"
-										class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"
-									></i>
-								</p>
-							</div>
-						</a>
-						<!-- Monterrey -->
-						<a
-							href="/venta-de-gatos-persas-en-monterrey"
-							title="Envíos a Monterrey"
-							class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300"
-						>
-							<img
-								src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=80"
-								alt="Envíos de gatos persas a Monterrey"
-								loading="lazy"
-								class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-							/>
-							<div
-								class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"
-							></div>
-							<div class="absolute bottom-0 left-0 w-full p-6">
-								<h3 class="font-sans text-2xl font-medium text-white mb-1">
-									Monterrey
-								</h3>
-								<p
-									class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2"
-								>
-									Envíos a Nuevo León
-									<i
-										data-lucide="arrow-right"
-										class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"
-									></i>
-								</p>
-							</div>
-						</a>
-						<!-- Guadalajara -->
-						<a
-							href="/venta-de-gatos-persas-en-jalisco"
-							title="Envíos a Guadalajara"
-							class="group block relative h-72 overflow-hidden border border-gold/20 hover:border-gold transition-colors duration-300"
-						>
-							<img
-								src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80"
-								alt="Envíos de gatos persas a Guadalajara"
-								loading="lazy"
-								class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-							/>
-							<div
-								class="absolute inset-0 bg-gradient-to-t from-navy-dark/95 via-navy/40 to-transparent"
-							></div>
-							<div class="absolute bottom-0 left-0 w-full p-6">
-								<h3 class="font-sans text-2xl font-medium text-white mb-1">
-									Guadalajara
-								</h3>
-								<p
-									class="font-sans text-xs text-gold uppercase tracking-widest flex items-center gap-2"
-								>
-									Envíos a Jalisco
-									<i
-										data-lucide="arrow-right"
-										class="w-3 h-3 transform group-hover:translate-x-1 transition-transform"
-									></i>
-								</p>
-							</div>
-						</a>
-					</div>
+				<div class="max-w-6xl mx-auto flex flex-col gap-16 pb-16">
 
-					<div class="mt-20 pt-10 border-t border-gold/20">
-						<!-- Header -->
-						<div class="text-center mb-12">
-							<p
-								class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
-							>
-								Logística Nacional · Envíos Seguros
+					<!-- Fila 1: imagen izquierda 70%, texto derecha 30% — CDMX -->
+					<div class="grid grid-cols-1 lg:grid-cols-[70%_30%]">
+						<div class="relative min-h-[540px]">
+							<img
+								src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa blue disponible en Ciudad de México"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
+						</div>
+						<div class="bg-cream flex flex-col justify-center px-6 py-10 lg:px-8">
+							<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">
+								Ciudad de México · EdoMex
 							</p>
-							<h3
-								class="font-sans text-2xl md:text-3xl font-medium text-white mb-3"
-							>
-								Tu
-								<span class="text-gold font-serif italic">persa ideal</span>
-								llega hasta donde estás
+							<h3 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
+								Gatos Persas <span class="text-gold font-serif italic">en CDMX</span>
 							</h3>
-							<div class="h-0.5 w-12 bg-gold mx-auto mt-4 mb-6"></div>
-							<p
-								class="font-sans text-sm text-white/60 max-w-xl mx-auto leading-relaxed"
-							>
-								Coordinamos vuelos directos con aerolíneas certificadas en
-								traslado de mascotas. Tu gatito viaja en cabina climatizada con
-								transportadora aprobada por IATA y monitoreo en tiempo real
-								hasta el aeropuerto de tu ciudad.
+							<div class="h-0.5 w-12 bg-gold mb-6"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed mb-4">
+								La Ciudad de México es nuestra principal plaza de entrega. Trabajamos con transportadoras especializadas que garantizan un traslado seguro, cómodo y monitoreado directamente hasta la puerta de tu hogar.
 							</p>
-						</div>
-
-						<!-- 3 zonas geográficas -->
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-							<!-- Zona Norte -->
-							<div
-								class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300"
-							>
-								<div class="flex items-center gap-2 mb-5">
-									<div class="h-px w-4 bg-gold"></div>
-									<h4
-										class="font-sans text-xs font-medium uppercase tracking-widest text-gold"
-									>
-										Zona Norte
-									</h4>
-								</div>
-								<ul class="space-y-3">
-									<li>
-										<a
-											href="/venta-de-gatos-persas-en-monterrey"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Venta de gatos persas en Monterrey</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-chihuahua"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Envío de gatos persas a Chihuahua</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-sonora"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Envío de gatos persas a Sonora</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-baja-california"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Gatos persas en Baja California</a
-										>
-									</li>
-								</ul>
-							</div>
-							<!-- Zona Centro-Occidente -->
-							<div
-								class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300"
-							>
-								<div class="flex items-center gap-2 mb-5">
-									<div class="h-px w-4 bg-gold"></div>
-									<h4
-										class="font-sans text-xs font-medium uppercase tracking-widest text-gold"
-									>
-										Zona Centro · Occidente
-									</h4>
-								</div>
-								<ul class="space-y-3">
-									<li>
-										<a
-											href="/venta-de-gatos-persas-en-cdmx"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Venta de gatos persas en CDMX</a
-										>
-									</li>
-									<li>
-										<a
-											href="/venta-de-gatos-persas-en-jalisco"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Venta de gatos persas en Guadalajara</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-queretaro"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Gatos persas en Querétaro</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-puebla"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Envío de gatos persas a Puebla</a
-										>
-									</li>
-								</ul>
-							</div>
-							<!-- Zona Sur-Sureste -->
-							<div
-								class="border border-gold/20 p-7 hover:border-gold/50 transition-colors duration-300"
-							>
-								<div class="flex items-center gap-2 mb-5">
-									<div class="h-px w-4 bg-gold"></div>
-									<h4
-										class="font-sans text-xs font-medium uppercase tracking-widest text-gold"
-									>
-										Zona Sur · Sureste
-									</h4>
-								</div>
-								<ul class="space-y-3">
-									<li>
-										<a
-											href="/envio-gatos-persas-yucatan"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Envío de gatos persas a Yucatán</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-quintana-roo"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Gatos persas en Quintana Roo</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-veracruz"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Envío de gatos persas a Veracruz</a
-										>
-									</li>
-									<li>
-										<a
-											href="/envio-gatos-persas-tabasco"
-											class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2"
-											><i
-												data-lucide="arrow-right"
-												class="w-3 h-3 text-gold/40 flex-shrink-0"
-											></i
-											>Gatos persas en Tabasco</a
-										>
-									</li>
-								</ul>
+							<p class="font-sans text-base text-charcoal leading-relaxed mb-8">
+								Cada gatito viaja con su cartilla de vacunación completa, certificado de salud vigente y el kit de bienvenida de Araitea. Más de 25 años nos respaldan en cada envío a la capital del país.
+							</p>
+							<div>
+								<a
+									href="/venta-de-gatos-persas-en-cdmx"
+									class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+								>
+									Ver gatos en CDMX
+									<i data-lucide="arrow-right" class="w-4 h-4"></i>
+								</a>
 							</div>
 						</div>
+					</div>
 
-						<p class="font-sans text-sm text-white/40 text-center">
-							¿Tu ciudad no aparece?
-							<a
-								href="https://wa.me/529992274376"
-								class="text-gold hover:underline"
-								>Escríbenos por WhatsApp</a
-							>
-							— enviamos a todos los aeropuertos de la República Mexicana.
+					<!-- Fila 2 (invertida): texto izquierda 30%, imagen derecha 70% — Jalisco -->
+					<div class="grid grid-cols-1 lg:grid-cols-[30%_70%]">
+						<div class="bg-cream flex flex-col justify-center px-6 py-10 lg:px-8 order-2 lg:order-1">
+							<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">
+								Jalisco · Guadalajara
+							</p>
+							<h3 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
+								Gatos Persas <span class="text-gold font-serif italic">en Jalisco</span>
+							</h3>
+							<div class="h-0.5 w-12 bg-gold mb-6"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed mb-4">
+								Guadalajara y toda la zona metropolitana de Jalisco son destinos frecuentes para nuestros gatitos. Coordinamos vuelos directos con escala mínima para que tu persa llegue descansado y tranquilo.
+							</p>
+							<p class="font-sans text-base text-charcoal leading-relaxed mb-8">
+								Acompañamiento personalizado desde la reserva hasta la entrega, con seguimiento en tiempo real de cada etapa del viaje.
+							</p>
+							<div>
+								<a
+									href="/venta-de-gatos-persas-en-jalisco"
+									class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+								>
+									Ver gatos en Jalisco
+									<i data-lucide="arrow-right" class="w-4 h-4"></i>
+								</a>
+							</div>
+						</div>
+						<div class="relative min-h-[540px] order-1 lg:order-2">
+							<img
+								src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa red tabby disponible en Jalisco"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
+						</div>
+					</div>
+
+					<!-- Fila 3: imagen izquierda 70%, texto derecha 30% — Monterrey -->
+					<div class="grid grid-cols-1 lg:grid-cols-[70%_30%]">
+						<div class="relative min-h-[540px]">
+							<img
+								src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&q=80"
+								alt="Gato persa bicolor disponible en Monterrey"
+								class="w-full h-full object-cover absolute inset-0"
+							/>
+						</div>
+						<div class="bg-cream flex flex-col justify-center px-6 py-10 lg:px-8">
+							<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-4">
+								Monterrey · Nuevo León
+							</p>
+							<h3 class="font-sans text-3xl md:text-4xl font-medium text-navy mb-4">
+								Gatos Persas <span class="text-gold font-serif italic">en Monterrey</span>
+							</h3>
+							<div class="h-0.5 w-12 bg-gold mb-6"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed mb-4">
+								Monterrey es uno de nuestros destinos con mayor demanda. Su conexión aérea directa con Mérida nos permite coordinaciones ágiles y tiempos de traslado óptimos para el bienestar de cada gatito.
+							</p>
+							<p class="font-sans text-base text-charcoal leading-relaxed mb-8">
+								Familias regiomontanas nos eligen por la transparencia del proceso y la salud garantizada de nuestros persas: libres de PKD, vacunados y desparasitados.
+							</p>
+							<div>
+								<a
+									href="/venta-de-gatos-persas-en-monterrey"
+									class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
+								>
+									Ver gatos en Monterrey
+									<i data-lucide="arrow-right" class="w-4 h-4"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- /flex gap-16 -->
+			</section>
+
+			<!-- ═══════════════════════════════════════════════════
+			     5.6 ENVÍOS SEGUROS
+			═══════════════════════════════════════════════════ -->
+			<section class="relative bg-navy border-b-4 border-gold">
+				<div class="absolute inset-0 opacity-20 pointer-events-none">
+					<div
+						class="w-full h-full"
+						style="
+							background-image: radial-gradient(#ffffff 1px, transparent 1px);
+							background-size: 30px 30px;
+						"
+					></div>
+				</div>
+				<div class="relative max-w-6xl mx-auto px-4 py-20">
+					<!-- Header -->
+					<div class="text-center mb-12">
+						<p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3">
+							Logística Nacional · Envíos Seguros
+						</p>
+						<h3 class="font-sans text-2xl md:text-3xl font-medium text-white mb-3">
+							Tu <span class="text-gold font-serif italic">persa ideal</span> llega hasta donde estás
+						</h3>
+						<div class="h-0.5 w-12 bg-gold mx-auto mt-4 mb-6"></div>
+						<p class="font-sans text-sm text-white/70 max-w-xl mx-auto leading-relaxed">
+							Coordinamos vuelos directos con aerolíneas certificadas en traslado de mascotas. Tu gatito viaja en cabina climatizada con transportadora aprobada por IATA y monitoreo en tiempo real hasta el aeropuerto de tu ciudad.
 						</p>
 					</div>
+
+					<!-- 3 zonas geográficas -->
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+						<!-- Zona Norte -->
+						<div class="border border-white/20 p-7 hover:border-gold/50 transition-colors duration-300">
+							<div class="flex items-center gap-2 mb-5">
+								<div class="h-px w-4 bg-gold"></div>
+								<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold">
+									Zona Norte
+								</h4>
+							</div>
+							<ul class="space-y-3">
+								<li>
+									<a href="/venta-de-gatos-persas-en-monterrey" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Venta de gatos persas en Monterrey
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-chihuahua" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Envío de gatos persas a Chihuahua
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-sonora" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Envío de gatos persas a Sonora
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-baja-california" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Gatos persas en Baja California
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Zona Centro-Occidente -->
+						<div class="border border-white/20 p-7 hover:border-gold/50 transition-colors duration-300">
+							<div class="flex items-center gap-2 mb-5">
+								<div class="h-px w-4 bg-gold"></div>
+								<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold">
+									Zona Centro · Occidente
+								</h4>
+							</div>
+							<ul class="space-y-3">
+								<li>
+									<a href="/venta-de-gatos-persas-en-cdmx" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Venta de gatos persas en CDMX
+									</a>
+								</li>
+								<li>
+									<a href="/venta-de-gatos-persas-en-jalisco" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Venta de gatos persas en Guadalajara
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-queretaro" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Gatos persas en Querétaro
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-puebla" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Envío de gatos persas a Puebla
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Zona Sur-Sureste -->
+						<div class="border border-white/20 p-7 hover:border-gold/50 transition-colors duration-300">
+							<div class="flex items-center gap-2 mb-5">
+								<div class="h-px w-4 bg-gold"></div>
+								<h4 class="font-sans text-xs font-medium uppercase tracking-widest text-gold">
+									Zona Sur · Sureste
+								</h4>
+							</div>
+							<ul class="space-y-3">
+								<li>
+									<a href="/envio-gatos-persas-yucatan" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Envío de gatos persas a Yucatán
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-quintana-roo" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Gatos persas en Quintana Roo
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-veracruz" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Envío de gatos persas a Veracruz
+									</a>
+								</li>
+								<li>
+									<a href="/envio-gatos-persas-tabasco" class="font-sans text-sm text-white/70 hover:text-gold transition-colors flex items-center gap-2">
+										<i data-lucide="arrow-right" class="w-3 h-3 text-gold/40 flex-shrink-0"></i>
+										Gatos persas en Tabasco
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="font-sans text-sm text-white/40 text-center">
+						¿Tu ciudad no aparece?
+						<a href="https://wa.me/529992274376" class="text-gold hover:underline">Escríbenos por WhatsApp</a>
+						— enviamos a todos los aeropuertos de la República Mexicana.
+					</p>
 				</div>
 			</section>
 			<!-- ═══════════════════════════════════════════════════
@@ -1856,7 +1814,7 @@
 				<div class="max-w-3xl mx-auto px-4">
 					<div class="text-center mb-12">
 						<p
-							class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-3"
+							class="font-sans text-xs font-medium uppercase tracking-widest text-navy mb-3"
 						>
 							Resolvemos tus dudas
 						</p>
@@ -1959,12 +1917,16 @@
 					</h2>
 					<div class="h-0.5 w-10 bg-gold mt-3 mb-5"></div>
 					<p
-						class="font-sans text-sm text-white/60 leading-relaxed max-w-xs mb-6"
+						class="font-sans text-sm text-charcoal/60 leading-relaxed max-w-xs mb-6"
 					>
 						Criadero profesional de gatos persas. Llevamos más de 25 años
 						uniendo familias con su compañero ideal en todo México.
 					</p>
-					<a href="/manual-del-persa/" class="font-sans text-xs font-medium uppercase tracking-widest text-gold hover:text-gold-light transition-colors duration-200 mb-5 inline-block">Manual de cuidados del persa</a>
+					<a
+						href="/manual-del-persa/"
+						class="font-sans text-xs font-medium uppercase tracking-widest text-gold hover:text-gold-light transition-colors duration-200 mb-5 inline-block"
+						>Manual de cuidados del persa</a
+					>
 					<div class="flex gap-4">
 						<a
 							href="#"

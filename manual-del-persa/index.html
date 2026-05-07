@@ -39,7 +39,7 @@
   <body class="bg-navy min-h-screen font-sans">
 
     <!-- ───────────────── LOGIN SCREEN ───────────────── -->
-    <div id="login-screen" class="min-h-screen flex flex-col items-center justify-center px-4 py-16">
+    <div id="login-screen" class="bg-navy min-h-screen flex flex-col items-center justify-center px-4 py-16">
 
       <!-- Logo -->
       <a href="/" class="mb-10">
@@ -125,7 +125,7 @@
     </div>
 
     <!-- ───────────────── CONTENT SCREEN ───────────────── -->
-    <div id="content-screen" class="hidden min-h-screen flex-col">
+    <div id="content-screen" class="hidden min-h-screen flex-col bg-cream">
 
       <!-- Navbar -->
       <nav class="bg-navy py-4 px-6 md:px-12 sticky top-0 z-50 shadow-md border-b border-white/10">
@@ -143,8 +143,11 @@
       </nav>
 
       <!-- Hero thank-you banner -->
-      <section class="bg-navy py-20 px-6 text-center">
-        <div class="max-w-2xl mx-auto">
+      <section class="relative bg-navy py-20 px-6 text-center">
+        <div class="absolute inset-0 opacity-20">
+          <div class="w-full h-full" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+        </div>
+        <div class="relative max-w-2xl mx-auto">
           <!-- Gold checkmark icon -->
           <div class="flex justify-center mb-6">
             <div class="h-16 w-16 rounded-full bg-gold/10 border border-gold flex items-center justify-center">
@@ -172,7 +175,7 @@
           <div class="h-0.5 w-12 bg-gold mx-auto mb-8"></div>
 
           <!-- Download card -->
-          <div class="bg-white border border-mist hover:border-gold transition-colors duration-300 p-8 flex flex-col sm:flex-row items-center gap-6">
+          <div class="border border-gold/30 hover:border-gold shadow-[0_4px_0_#CCA052] transition-colors duration-300 p-8 flex flex-col sm:flex-row items-center gap-6">
             <!-- PDF icon -->
             <div class="shrink-0 h-20 w-20 bg-navy flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -200,11 +203,11 @@
       </section>
 
       <!-- Carousel preview section -->
-      <section class="bg-navy py-16 px-6">
+      <section class="bg-cream py-16 px-6">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-10">
             <p class="font-sans text-xs font-medium uppercase tracking-widest text-gold mb-2">Vista previa</p>
-            <h3 class="font-sans text-3xl font-medium text-white">Contenido del Manual</h3>
+            <h3 class="font-sans text-3xl font-medium text-navy">Contenido del Manual</h3>
             <div class="h-0.5 w-12 bg-gold mx-auto mt-4"></div>
           </div>
 
@@ -284,7 +287,7 @@
           <div id="carousel-dots" class="flex justify-center gap-2 mt-8"></div>
 
           <!-- Counter -->
-          <p id="carousel-counter" class="text-center font-sans text-xs text-white/40 mt-3"></p>
+          <p id="carousel-counter" class="text-center font-sans text-xs text-charcoal/40 mt-3"></p>
 
         </div>
       </section>

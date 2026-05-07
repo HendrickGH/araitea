@@ -186,9 +186,8 @@
             <div class="flex-1 text-left">
               <p class="font-sans text-xl font-medium text-navy mb-1">Manual del Persa — Araitea Cat's</p>
               <p class="font-sans text-sm text-charcoal/70 mb-4">Guía completa de cuidados, alimentación y salud de tu gato persa.</p>
-              <!-- REPLACE href with the actual PDF path, e.g. /manual-del-persa/assets/manual-del-persa.pdf -->
               <a
-                href="/manual-del-persa/assets/manual-del-persa.pdf"
+                href="/assets/manual/guia.pdf"
                 download
                 class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-6 py-3 transition-colors duration-200"
               >
@@ -216,44 +215,45 @@
             <!-- Track -->
             <div id="carousel-track" class="overflow-hidden">
               <div id="carousel-slides" class="flex transition-transform duration-500 ease-in-out">
-                <!--
-                  ADD YOUR PREVIEW IMAGES HERE.
-                  Duplicate this <div> block for each page preview image.
-                  Place image files in /manual-del-persa/assets/ (e.g. preview-1.jpg).
-                -->
-                <div class="carousel-slide shrink-0 w-full px-2">
-                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/4] max-h-[600px] mx-auto overflow-hidden">
-                    <img src="/manual-del-persa/assets/preview-1.jpg" alt="Vista previa página 1" class="w-full h-full object-contain" onerror="this.closest('.carousel-slide').querySelector('.placeholder').classList.remove('hidden'); this.classList.add('hidden')" />
-                    <div class="placeholder hidden flex-col items-center justify-center gap-3 p-10 text-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gold/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      <p class="font-sans text-sm text-charcoal/50">Página 1 — Agrega tu imagen en<br><code class="text-xs">/manual-del-persa/assets/preview-1.jpg</code></p>
-                    </div>
+                  <div class="carousel-slide shrink-0 w-full px-2">
+                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/2] mx-auto overflow-hidden">
+                    <img src="/assets/manual/1.jpg" alt="Vista previa página 1" class="w-full h-full object-contain" />
                   </div>
                 </div>
 
                 <div class="carousel-slide shrink-0 w-full px-2">
-                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/4] max-h-[600px] mx-auto overflow-hidden">
-                    <img src="/manual-del-persa/assets/preview-2.jpg" alt="Vista previa página 2" class="w-full h-full object-contain" onerror="this.closest('.carousel-slide').querySelector('.placeholder').classList.remove('hidden'); this.classList.add('hidden')" />
-                    <div class="placeholder hidden flex-col items-center justify-center gap-3 p-10 text-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gold/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      <p class="font-sans text-sm text-charcoal/50">Página 2 — Agrega tu imagen en<br><code class="text-xs">/manual-del-persa/assets/preview-2.jpg</code></p>
-                    </div>
+                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/2] mx-auto overflow-hidden">
+                    <img src="/assets/manual/2.jpg" alt="Vista previa página 2" class="w-full h-full object-contain" />
                   </div>
                 </div>
 
                 <div class="carousel-slide shrink-0 w-full px-2">
-                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/4] max-h-[600px] mx-auto overflow-hidden">
-                    <img src="/manual-del-persa/assets/preview-3.jpg" alt="Vista previa página 3" class="w-full h-full object-contain" onerror="this.closest('.carousel-slide').querySelector('.placeholder').classList.remove('hidden'); this.classList.add('hidden')" />
-                    <div class="placeholder hidden flex-col items-center justify-center gap-3 p-10 text-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gold/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      <p class="font-sans text-sm text-charcoal/50">Página 3 — Agrega tu imagen en<br><code class="text-xs">/manual-del-persa/assets/preview-3.jpg</code></p>
-                    </div>
+                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/2] mx-auto overflow-hidden">
+                    <img src="/assets/manual/3.jpg" alt="Vista previa página 3" class="w-full h-full object-contain" />
+                  </div>
+                </div>
+
+                <div class="carousel-slide shrink-0 w-full px-2">
+                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/2] mx-auto overflow-hidden">
+                    <img src="/assets/manual/4.jpg" alt="Vista previa página 4" class="w-full h-full object-contain" />
+                  </div>
+                </div>
+
+                <div class="carousel-slide shrink-0 w-full px-2">
+                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/2] mx-auto overflow-hidden">
+                    <img src="/assets/manual/5.jpg" alt="Vista previa página 5" class="w-full h-full object-contain" />
+                  </div>
+                </div>
+
+                <div class="carousel-slide shrink-0 w-full px-2">
+                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/2] mx-auto overflow-hidden">
+                    <img src="/assets/manual/6.jpg" alt="Vista previa página 6" class="w-full h-full object-contain" />
+                  </div>
+                </div>
+
+                <div class="carousel-slide shrink-0 w-full px-2">
+                  <div class="bg-cream border border-gold/30 flex items-center justify-center aspect-[3/2] mx-auto overflow-hidden">
+                    <img src="/assets/manual/7.jpg" alt="Vista previa página 7" class="w-full h-full object-contain" />
                   </div>
                 </div>
 
@@ -309,10 +309,15 @@
     </div><!-- /content-screen -->
 
     <script>
-      // ── Auth ──────────────────────────────────────────
       const CREDS = { user: 'gato-persa', pass: 'patitasfelices' };
       const SESSION_KEY = 'araitea_manual_auth';
 
+      // Declared up-front so every function below can safely read/write them
+      let current = 0;
+      let total = 0;
+      let touchStartX = 0;
+
+      // ── Auth ──────────────────────────────────────────
       function handleLogin(e) {
         e.preventDefault();
         const u = document.getElementById('username').value.trim();
@@ -342,9 +347,6 @@
         initCarousel();
       }
 
-      // Auto-login if session still active
-      if (sessionStorage.getItem(SESSION_KEY)) showContent();
-
       // ── Password toggle ───────────────────────────────
       function togglePassword() {
         const input = document.getElementById('password');
@@ -352,21 +354,17 @@
       }
 
       // ── Carousel ──────────────────────────────────────
-      let current = 0;
-      let total = 0;
-
       function initCarousel() {
         const slides = document.querySelectorAll('.carousel-slide');
         total = slides.length;
         current = 0;
 
-        // Build dots
         const dotsEl = document.getElementById('carousel-dots');
         dotsEl.innerHTML = '';
         for (let i = 0; i < total; i++) {
           const d = document.createElement('button');
           d.setAttribute('aria-label', 'Ir a página ' + (i + 1));
-          d.className = 'h-2 w-2 transition-all duration-300 ' + (i === 0 ? 'bg-gold w-6' : 'bg-white/30 hover:bg-white/60');
+          d.className = 'h-2 w-2 transition-all duration-300 ' + (i === 0 ? 'bg-gold w-6' : 'bg-mist/50 hover:bg-mist');
           d.onclick = () => goTo(i);
           dotsEl.appendChild(d);
         }
@@ -375,6 +373,7 @@
       }
 
       function carouselMove(dir) {
+        if (total === 0) return;
         goTo((current + dir + total) % total);
       }
 
@@ -386,32 +385,33 @@
       function updateCarousel() {
         document.getElementById('carousel-slides').style.transform = `translateX(-${current * 100}%)`;
 
-        // Dots
         const dots = document.querySelectorAll('#carousel-dots button');
         dots.forEach((d, i) => {
-          d.className = 'h-2 transition-all duration-300 ' + (i === current ? 'bg-gold w-6' : 'bg-white/30 w-2 hover:bg-white/60');
+          d.className = 'h-2 transition-all duration-300 ' + (i === current ? 'bg-gold w-6' : 'bg-mist/50 w-2 hover:bg-mist');
         });
 
-        // Counter
         document.getElementById('carousel-counter').textContent = `${current + 1} / ${total}`;
       }
 
-      // Swipe support
-      let touchStartX = 0;
-      document.getElementById('carousel-track').addEventListener('touchstart', e => {
-        touchStartX = e.changedTouches[0].screenX;
-      }, { passive: true });
-      document.getElementById('carousel-track').addEventListener('touchend', e => {
-        const diff = touchStartX - e.changedTouches[0].screenX;
-        if (Math.abs(diff) > 40) carouselMove(diff > 0 ? 1 : -1);
-      }, { passive: true });
+      // ── Init on DOM ready ─────────────────────────────
+      document.addEventListener('DOMContentLoaded', () => {
+        if (sessionStorage.getItem(SESSION_KEY)) showContent();
 
-      // Keyboard navigation
-      document.addEventListener('keydown', e => {
-        if (!document.getElementById('content-screen').classList.contains('hidden')) {
-          if (e.key === 'ArrowLeft') carouselMove(-1);
-          if (e.key === 'ArrowRight') carouselMove(1);
-        }
+        document.getElementById('carousel-track').addEventListener('touchstart', e => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        document.getElementById('carousel-track').addEventListener('touchend', e => {
+          const diff = touchStartX - e.changedTouches[0].screenX;
+          if (Math.abs(diff) > 40) carouselMove(diff > 0 ? 1 : -1);
+        }, { passive: true });
+
+        document.addEventListener('keydown', e => {
+          if (!document.getElementById('content-screen').classList.contains('hidden')) {
+            if (e.key === 'ArrowLeft') carouselMove(-1);
+            if (e.key === 'ArrowRight') carouselMove(1);
+          }
+        });
       });
     </script>
   </body>

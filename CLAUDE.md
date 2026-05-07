@@ -291,6 +291,7 @@ Every page should follow this rhythm to maintain consistency:
 - Use `font-serif` (Cormorant Garamond) anywhere other than inline gold `<span>` inside `<p>` or `<h1>`–`<h6>`.
 - Use rounded corners (`rounded-lg`, `rounded-full`) on buttons or cards.
 - Use the old brand blue (`#0081C2`) — it has been retired in favor of navy + gold.
+- Use `bg-white` as background for any section or component — **absolutely prohibited**. Use `bg-cream` instead.
 - Add drop shadows to cards — use border treatments instead.
 - Place body copy wider than `max-w-2xl` — readability degrades.
 - Use sentence-case for navigation items — always ALL CAPS.

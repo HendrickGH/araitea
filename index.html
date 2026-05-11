@@ -789,127 +789,128 @@
 					class="max-w-6xl mx-auto px-4 md:px-8 pt-16 pb-16 flex flex-col gap-12"
 				>
 					<!-- Bloque superior: texto + gato side by side -->
-					<div class="flex flex-row w-full" style="justify-content: center; gap: 40px;">
+					<div class="flex flex-col lg:flex-row w-full lg:justify-center lg:gap-10 gap-6 items-center lg:items-start">
 						<!-- Texto -->
-						<div class="shrink-0 pt-2" style="max-width: 480px">
+						<div class="shrink-0 pt-2 w-full lg:w-auto text-center lg:text-left">
 							<p
-								class="font-sans text-sm font-medium uppercase tracking-widest text-gold mb-4"
+								class="font-sans text-sm md:text-base font-medium uppercase tracking-widest text-gold mb-4"
 							>
 								Nuestro Compromiso Contigo
 							</p>
 							<h2
-								class="font-sans text-5xl md:text-6xl font-medium text-navy leading-tight mb-2"
+								class="font-sans text-4xl md:text-5xl lg:text-6xl font-medium text-navy leading-tight mb-2"
 							>
 								Cuidado, salud y<br />
 								crianza
 								<span class="font-serif italic text-gold">responsable</span>
 							</h2>
-							<div class="h-0.5 w-14 bg-gold mt-5 mb-7"></div>
+							<div class="h-0.5 w-12 md:w-14 bg-gold mt-5 mb-7 mx-auto lg:mx-0"></div>
 							<p
-								class="font-sans text-lg text-charcoal leading-relaxed"
-								style="max-width: 75%"
+								class="font-sans text-base md:text-lg text-charcoal leading-relaxed max-w-sm mx-auto lg:mx-0"
 							>
 								Brindamos la tranquilidad de recibir un gatito sano, equilibrado
 								y acompañado desde sus primeros días de vida.
 							</p>
 						</div>
-						<!-- Cat photo pegado a la derecha -->
+						<!-- Cat photo -->
 						<img
 							src="/assets/nuestro-compromiso.jpeg"
 							alt="Gatito persa Araitea Cat's"
-							class="object-contain object-top"
-							style="width: 400px; max-height: 700px"
+							class="object-contain object-top w-64 md:w-80 lg:w-96 shrink-0"
+							style="max-height: 500px;"
 						/>
 					</div>
 
 					<!-- Bloque derecho: cards -->
-					<div class="flex-1 flex flex-row gap-6 items-center">
-						<!-- Cards agrupadas: todas en grid-cols-3 uniformes -->
-						<div class="flex-1 flex flex-col gap-4">
-							<div class="flex justify-center gap-4">
-								<div
-									class="bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-									style="max-width: 300px; width: 300px"
-								>
-									<div class="mb-4 text-gold">
-										<i data-lucide="shield-check" class="w-10 h-10"></i>
-									</div>
-									<h3 class="font-sans text-lg font-medium text-navy mb-2">
-										Libres de PKD
-									</h3>
-									<div class="h-px w-8 bg-gold mb-2"></div>
-									<p class="font-sans text-base text-charcoal leading-relaxed">
-										Realizamos pruebas genéticas para garantizar líneas sanas y
-										seguras.
-									</p>
-								</div>
-								<div
-									class="bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-									style="max-width: 300px; width: 300px"
-								>
-									<div class="mb-4 text-gold">
-										<i data-lucide="home" class="w-10 h-10"></i>
-									</div>
-									<h3 class="font-sans text-lg font-medium text-navy mb-2">
-										Socialización temprana
-									</h3>
-									<div class="h-px w-8 bg-gold mb-2"></div>
-									<p class="font-sans text-base text-charcoal leading-relaxed">
-										Crecen en un ambiente familiar que favorece un temperamento
-										equilibrado y sociable.
-									</p>
-								</div>
-								<div
-									class="bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-									style="max-width: 300px; width: 300px"
-								>
-									<div class="mb-4 text-gold">
-										<i data-lucide="award" class="w-10 h-10"></i>
-									</div>
-									<h3 class="font-sans text-lg font-medium text-navy mb-2">
-										Registro CFA
-									</h3>
-									<div class="h-px w-8 bg-gold mb-2"></div>
-									<p class="font-sans text-base text-charcoal leading-relaxed">
-										Ejemplares con registro CFA, el organismo felino más
-										prestigioso del mundo.
-									</p>
-								</div>
+					<div class="w-full flex flex-col lg:flex-wrap lg:flex-row justify-center gap-4">
+						<!-- Card 1 -->
+						<div
+							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
+							style="max-width: 300px; width: 100%; margin: 0 auto;"
+						>
+							<div class="mb-4 text-gold">
+								<i data-lucide="shield-check" class="w-10 h-10"></i>
 							</div>
-							<div class="flex justify-center gap-4">
-								<div
-									class="bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-									style="max-width: 300px; width: 300px"
-								>
-									<div class="mb-4 text-gold">
-										<i data-lucide="user-check" class="w-10 h-10"></i>
-									</div>
-									<h3 class="font-sans text-lg font-medium text-navy mb-2">
-										Atención personalizada
-									</h3>
-									<div class="h-px w-8 bg-gold mb-2"></div>
-									<p class="font-sans text-base text-charcoal leading-relaxed">
-										Te acompañamos antes, durante y después de la llegada de tu
-										gatito.
-									</p>
-								</div>
-								<div
-									class="bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-									style="max-width: 300px; width: 300px"
-								>
-									<div class="mb-4 text-gold">
-										<i data-lucide="syringe" class="w-10 h-10"></i>
-									</div>
-									<h3 class="font-sans text-lg font-medium text-navy mb-2">
-										Vacunación y desparasitación
-									</h3>
-									<div class="h-px w-8 bg-gold mb-2"></div>
-									<p class="font-sans text-base text-charcoal leading-relaxed">
-										Esquema preventivo acorde a su edad para proteger su
-										bienestar.
-									</p>
-								</div>
+							<h3 class="font-sans text-lg font-medium text-navy mb-2">
+								Libres de PKD
+							</h3>
+							<div class="h-px w-8 bg-gold mb-2"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed">
+								Realizamos pruebas genéticas para garantizar líneas sanas y
+								seguras.
+							</p>
+						</div>
+
+						<!-- Card 2 -->
+						<div
+							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
+							style="max-width: 300px; width: 100%; margin: 0 auto;"
+						>
+							<div class="mb-4 text-gold">
+								<i data-lucide="home" class="w-10 h-10"></i>
 							</div>
+							<h3 class="font-sans text-lg font-medium text-navy mb-2">
+								Socialización temprana
+							</h3>
+							<div class="h-px w-8 bg-gold mb-2"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed">
+								Crecen en un ambiente familiar que favorece un temperamento
+								equilibrado y sociable.
+							</p>
+						</div>
+
+						<!-- Card 3 -->
+						<div
+							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
+							style="max-width: 300px; width: 100%; margin: 0 auto;"
+						>
+							<div class="mb-4 text-gold">
+								<i data-lucide="award" class="w-10 h-10"></i>
+							</div>
+							<h3 class="font-sans text-lg font-medium text-navy mb-2">
+								Registro CFA
+							</h3>
+							<div class="h-px w-8 bg-gold mb-2"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed">
+								Ejemplares con registro CFA, el organismo felino más
+								prestigioso del mundo.
+							</p>
+						</div>
+
+						<!-- Card 4 -->
+						<div
+							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
+							style="max-width: 300px; width: 100%; margin: 0 auto;"
+						>
+							<div class="mb-4 text-gold">
+								<i data-lucide="user-check" class="w-10 h-10"></i>
+							</div>
+							<h3 class="font-sans text-lg font-medium text-navy mb-2">
+								Atención personalizada
+							</h3>
+							<div class="h-px w-8 bg-gold mb-2"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed">
+								Te acompañamos antes, durante y después de la llegada de tu
+								gatito.
+							</p>
+						</div>
+
+						<!-- Card 5 -->
+						<div
+							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
+							style="max-width: 300px; width: 100%; margin: 0 auto;"
+						>
+							<div class="mb-4 text-gold">
+								<i data-lucide="syringe" class="w-10 h-10"></i>
+							</div>
+							<h3 class="font-sans text-lg font-medium text-navy mb-2">
+								Vacunación y desparasitación
+							</h3>
+							<div class="h-px w-8 bg-gold mb-2"></div>
+							<p class="font-sans text-base text-charcoal leading-relaxed">
+								Esquema preventivo acorde a su edad para proteger su
+								bienestar.
+							</p>
 						</div>
 					</div>
 				</div>

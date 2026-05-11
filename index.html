@@ -117,6 +117,31 @@
 			.nav-link:hover::after {
 				width: 100%;
 			}
+
+			/* Hero section and image positioning on desktop */
+			@media (min-width: 1024px) {
+				.hero-container {
+					margin-right: 0 !important;
+				}
+				.hero-image {
+					right: 0 !important;
+					margin-right: 0 !important;
+					width: 60% !important;
+					top: 50% !important;
+					transform: translateY(-50%) !important;
+				}
+				.hero-image img {
+					max-height: 65vh !important;
+					height: auto !important;
+				}
+			}
+
+			/* Hero title and description max-width on mobile only */
+			@media (min-width: 1024px) {
+				.hero-text {
+					max-width: 100% !important;
+				}
+			}
 		</style>
 	</head>
 	<body class="font-sans bg-cream min-h-screen">
@@ -278,25 +303,30 @@
 						#0b1a28 55%,
 						#142233 100%
 					);
-					min-height: 88vh;
 				"
 			>
 				<div
-					class="max-w-6xl mx-auto px-6 md:px-8 flex items-center relative"
-					style="height: 88vh"
+					class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-start lg:items-center"
+					style="
+						min-height: 88vh;
+						padding-top: 2rem;
+						padding-bottom: 2rem;
+						gap: 2rem;
+						margin-top: 20px;
+					"
 				>
 					<!-- Left: Content -->
 					<div
-						class="flex flex-col gap-7"
+						class="flex flex-col gap-7 w-full"
 						style="
-							width: 30%;
 							position: relative;
 							z-index: 20;
 							isolation: isolate;
+							max-width: 480px;
 						"
 					>
 						<!-- Title -->
-						<div>
+						<div style="max-width: 70%" class="hero-text">
 							<h1
 								class="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-white leading-tight"
 							>
@@ -305,7 +335,10 @@
 							</h1>
 						</div>
 						<!-- Description -->
-						<p class="font-sans text-base text-white/70 leading-relaxed">
+						<p
+							class="font-sans text-base text-white/70 leading-relaxed hero-text"
+							style="max-width: 70%"
+						>
 							Más de 25 años criando gatos persas saludables, hermosos y
 							socializados en un ambiente familiar.
 						</p>
@@ -339,10 +372,10 @@
 							>
 						</div>
 						<!-- Buttons -->
-						<div class="flex gap-4 whitespace-nowrap">
+						<div class="flex flex-wrap gap-4">
 							<a
 								href="#disponibles"
-								class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-sm font-medium uppercase tracking-wide px-7 py-3.5 transition-colors duration-200"
+								class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xs sm:text-sm font-medium uppercase tracking-wide px-4 sm:px-7 py-3 sm:py-3.5 transition-colors duration-200"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -380,7 +413,7 @@
 							</a>
 							<a
 								href="https://wa.me/529992274376"
-								class="inline-flex items-center gap-2 text-gold font-sans text-sm font-medium uppercase tracking-wide px-7 py-3.5 transition-colors duration-200"
+								class="inline-flex items-center gap-2 text-gold font-sans text-xs sm:text-sm font-medium uppercase tracking-wide px-4 sm:px-7 py-3 sm:py-3.5 transition-colors duration-200"
 								style="background: transparent; border: 1px solid #cca052"
 							>
 								<svg
@@ -398,20 +431,12 @@
 						</div>
 					</div>
 					<!-- Right: Image -->
-					<div
-						class="hidden lg:block absolute right-0"
-						style="
-							width: 65%;
-							z-index: 10;
-							top: 50%;
-							transform: translateY(-50%);
-						"
-					>
+					<div class="w-full lg:absolute hero-image" style="z-index: 10">
 						<img
 							src="/assets/hero.jpeg"
 							alt="Gatitos persas Araitea Cat's"
-							class="w-full object-cover object-center"
-							style="max-height: 85vh"
+							class="w-full h-auto object-cover object-center"
+							style="max-height: none"
 						/>
 					</div>
 				</div>
@@ -789,9 +814,13 @@
 					class="max-w-6xl mx-auto px-4 md:px-8 pt-16 pb-16 flex flex-col gap-12"
 				>
 					<!-- Bloque superior: texto + gato side by side -->
-					<div class="flex flex-col lg:flex-row w-full lg:justify-center lg:gap-10 gap-6 items-center lg:items-start">
+					<div
+						class="flex flex-col lg:flex-row w-full lg:justify-center lg:gap-10 gap-6 items-center lg:items-start"
+					>
 						<!-- Texto -->
-						<div class="shrink-0 pt-2 w-full lg:w-auto text-center lg:text-left">
+						<div
+							class="shrink-0 pt-2 w-full lg:w-auto text-center lg:text-left"
+						>
 							<p
 								class="font-sans text-sm md:text-base font-medium uppercase tracking-widest text-gold mb-4"
 							>
@@ -804,7 +833,9 @@
 								crianza
 								<span class="font-serif italic text-gold">responsable</span>
 							</h2>
-							<div class="h-0.5 w-12 md:w-14 bg-gold mt-5 mb-7 mx-auto lg:mx-0"></div>
+							<div
+								class="h-0.5 w-12 md:w-14 bg-gold mt-5 mb-7 mx-auto lg:mx-0"
+							></div>
 							<p
 								class="font-sans text-base md:text-lg text-charcoal leading-relaxed max-w-sm mx-auto lg:mx-0"
 							>
@@ -817,16 +848,18 @@
 							src="/assets/nuestro-compromiso.jpeg"
 							alt="Gatito persa Araitea Cat's"
 							class="object-contain object-top w-64 md:w-80 lg:w-96 shrink-0"
-							style="max-height: 500px;"
+							style="max-height: 500px"
 						/>
 					</div>
 
 					<!-- Bloque derecho: cards -->
-					<div class="w-full flex flex-col lg:flex-wrap lg:flex-row justify-center gap-4">
+					<div
+						class="w-full flex flex-col lg:flex-wrap lg:flex-row justify-center gap-4"
+					>
 						<!-- Card 1 -->
 						<div
 							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-							style="max-width: 300px; width: 100%; margin: 0 auto;"
+							style="max-width: 300px; width: 100%; margin: 0 auto"
 						>
 							<div class="mb-4 text-gold">
 								<i data-lucide="shield-check" class="w-10 h-10"></i>
@@ -844,7 +877,7 @@
 						<!-- Card 2 -->
 						<div
 							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-							style="max-width: 300px; width: 100%; margin: 0 auto;"
+							style="max-width: 300px; width: 100%; margin: 0 auto"
 						>
 							<div class="mb-4 text-gold">
 								<i data-lucide="home" class="w-10 h-10"></i>
@@ -862,7 +895,7 @@
 						<!-- Card 3 -->
 						<div
 							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-							style="max-width: 300px; width: 100%; margin: 0 auto;"
+							style="max-width: 300px; width: 100%; margin: 0 auto"
 						>
 							<div class="mb-4 text-gold">
 								<i data-lucide="award" class="w-10 h-10"></i>
@@ -872,15 +905,15 @@
 							</h3>
 							<div class="h-px w-8 bg-gold mb-2"></div>
 							<p class="font-sans text-base text-charcoal leading-relaxed">
-								Ejemplares con registro CFA, el organismo felino más
-								prestigioso del mundo.
+								Ejemplares con registro CFA, el organismo felino más prestigioso
+								del mundo.
 							</p>
 						</div>
 
 						<!-- Card 4 -->
 						<div
 							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-							style="max-width: 300px; width: 100%; margin: 0 auto;"
+							style="max-width: 300px; width: 100%; margin: 0 auto"
 						>
 							<div class="mb-4 text-gold">
 								<i data-lucide="user-check" class="w-10 h-10"></i>
@@ -898,7 +931,7 @@
 						<!-- Card 5 -->
 						<div
 							class="w-full lg:w-auto bg-white border border-mist hover:border-gold transition-colors duration-300 p-5 flex flex-col items-center text-center"
-							style="max-width: 300px; width: 100%; margin: 0 auto;"
+							style="max-width: 300px; width: 100%; margin: 0 auto"
 						>
 							<div class="mb-4 text-gold">
 								<i data-lucide="syringe" class="w-10 h-10"></i>
@@ -908,8 +941,7 @@
 							</h3>
 							<div class="h-px w-8 bg-gold mb-2"></div>
 							<p class="font-sans text-base text-charcoal leading-relaxed">
-								Esquema preventivo acorde a su edad para proteger su
-								bienestar.
+								Esquema preventivo acorde a su edad para proteger su bienestar.
 							</p>
 						</div>
 					</div>

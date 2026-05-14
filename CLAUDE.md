@@ -15,7 +15,7 @@ Each page lives in its own folder (`/venta-de-gatos-persas-en-*/index.html`).
 | `navy`      | `#0A2241` | Primary background, navbar, section fills, footer         |
 | `gold`      | `#CCA052` | Accent: CTAs, dividers, icon highlights, hover states     |
 | `gold-light`| `#E2C07E` | Gold tint for subtle backgrounds or disabled states       |
-| `cream`     | `#FAF7F2` | Off-white page background, card fills                     |
+| `cream`     | `#fbf6f2` | Off-white page background, card fills                     |
 | `white`     | `#FFFFFF` | Text on dark surfaces, icon fills                         |
 | `charcoal`  | `#2D2D2D` | Body copy on light backgrounds                            |
 | `mist`      | `#E8E3DB` | Borders, horizontal rules, light dividers                 |
@@ -29,7 +29,7 @@ tailwind.config = {
         navy:       '#0A2241',
         gold:       '#CCA052',
         'gold-light': '#E2C07E',
-        cream:      '#FAF7F2',
+        cream:      '#fbf6f2',
         charcoal:   '#2D2D2D',
         mist:       '#E8E3DB',
         whatsapp:   '#25D366',

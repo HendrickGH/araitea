@@ -258,6 +258,7 @@ p {
 .btn--lg {
 	font-size: 1.25rem;
 	padding: 0.875rem 1.75rem;
+	white-space: nowrap;
 }
 
 .btn--sharp {
@@ -524,8 +525,10 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	min-height: 88vh;
-	padding-block: 2rem;
+	min-height: 110vh;
+	margin-top: -3rem;
+	padding-block-start: 1rem;
+	padding-block-end: 2rem;
 	gap: 2rem;
 }
 
@@ -562,7 +565,7 @@ p {
 	font-size: clamp(3.75rem, 8vw, 6rem);
 	font-weight: 500;
 	color: var(--c-white);
-	line-height: 1.1;
+	line-height: 0.9;
 }
 
 .hero__title-accent {
@@ -619,16 +622,16 @@ p {
 	left: -10%;
 	background: radial-gradient(
 		ellipse 70% 75% at 68% 52%,
-		rgba(255, 255, 255, 0.96)  0%,
-		rgba(245, 248, 255, 0.90) 10%,
+		rgba(255, 255, 255, 0.96) 0%,
+		rgba(245, 248, 255, 0.9) 10%,
 		rgba(225, 238, 255, 0.78) 22%,
 		rgba(190, 218, 255, 0.58) 35%,
 		rgba(130, 175, 235, 0.38) 48%,
-		rgba(70,  120, 200, 0.22) 60%,
-		rgba(35,   75, 155, 0.13) 70%,
-		rgba(10,   34,  65, 0.07) 80%,
-		rgba(10,   34,  65, 0.02) 90%,
-		rgba(10,   34,  65, 0.00) 100%
+		rgba(70, 120, 200, 0.22) 60%,
+		rgba(35, 75, 155, 0.13) 70%,
+		rgba(10, 34, 65, 0.07) 80%,
+		rgba(10, 34, 65, 0.02) 90%,
+		rgba(10, 34, 65, 0) 100%
 	);
 	mix-blend-mode: screen;
 	z-index: 5;
@@ -657,7 +660,7 @@ p {
 	object-position: center;
 	display: block;
 	position: relative;
-	z-index: 1;     /* img always above the spotlight ::before */
+	z-index: 1; /* img always above the spotlight ::before */
 }
 
 .hero__wave {
@@ -801,7 +804,7 @@ p {
 
 .cat-card__title {
 	font-family: var(--ff-sans);
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 500;
 	color: var(--c-white);
 	margin-bottom: 0.25rem;
@@ -810,7 +813,7 @@ p {
 
 .cat-card__meta {
 	font-family: var(--ff-sans);
-	font-size: 1rem;
+	font-size: 0.8rem;
 	color: rgba(255, 255, 255, 0.5);
 	text-transform: uppercase;
 	letter-spacing: 0.1em;

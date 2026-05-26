@@ -3,479 +3,150 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<title>
-			Venta de Gatos Persas en Ciudad de México (CDMX) | Envíos Seguros |
-			Araitea Cat's
-		</title>
-
-		<meta
-			name="description"
-			content="¿Buscas venta de gatos persas en CDMX? En Araitea Cat's criamos persas libres de PKD con envío seguro y rápido directo al Aeropuerto de la Ciudad de México (AICM)."
-		/>
-
-		<meta
-			property="og:title"
-			content="Venta de Gatos Persas en CDMX y EdoMex | Araitea Cat's"
-		/>
-		<meta
-			property="og:description"
-			content="Criadero especializado. Tu nuevo gatito persa a un vuelo corto de distancia hasta la Ciudad de México. Libres de PKD y con garantías de salud."
-		/>
-		<meta
-			property="og:image"
-			content="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80"
-		/>
-		<meta
-			property="og:url"
-			content="https://gatospersas.com.mx/venta-de-gatos-persas-en-cdmx"
-		/>
+		<title>Venta de Gatos Persas en Ciudad de México (CDMX) | Envíos Seguros | Araitea Cat's</title>
+		<meta name="description" content="¿Buscas venta de gatos persas en CDMX? En Araitea Cat's criamos persas libres de PKD con envío seguro y rápido directo al Aeropuerto de la Ciudad de México (AICM)." />
+		<meta property="og:title" content="Venta de Gatos Persas en CDMX y EdoMex | Araitea Cat's" />
+		<meta property="og:description" content="Criadero especializado. Tu nuevo gatito persa a un vuelo corto de distancia hasta la Ciudad de México. Libres de PKD y con garantías de salud." />
+		<meta property="og:image" content="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80" />
+		<meta property="og:url" content="https://gatospersas.com.mx/venta-de-gatos-persas-en-cdmx" />
 		<meta property="og:type" content="website" />
-
-		<link
-			rel="preload"
-			as="image"
-			href="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80"
-		/>
-
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Josefin+Sans:wght@400;500&display=swap"
-			rel="stylesheet"
-		/>
-
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			tailwind.config = {
-				theme: {
-					extend: {
-						colors: {
-							navy: "#0A2241",
-							"navy-dark": "#005A8E",
-							gold: "#CCA052",
-							"gold-light": "#E2C07E",
-						cream: "#fbf6f2",
-						mist: "#E8E3DB",
-						charcoal: "#2D2D2D",
-							whatsapp: "#25D366",
-						},
-						fontFamily: {
-							serif: ['"Cormorant Garamond"', "serif"],
-							sans: ['"Josefin Sans"', "sans-serif"],
-						},
-					},
-				},
-			};
-		</script>
-
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Josefin+Sans:wght@200;400;500;600&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/assets/css/styles.css" />
 		<script src="https://unpkg.com/lucide@latest"></script>
-
-		<style>
-			body {
-				background-color: #fbf6f2;
-				color: #2D2D2D;
-			}
-			.nav-link {
-				position: relative;
-				padding-bottom: 2px;
-			}
-			.nav-link::after {
-				content: "";
-				position: absolute;
-				bottom: -2px;
-				left: 0;
-				width: 0;
-				height: 1px;
-				background: #cca052;
-				transition: width 0.2s ease;
-			}
-			.nav-link:hover::after {
-				width: 100%;
-			}
-		</style>
 	</head>
-	<body class="font-sans bg-cream min-h-screen">
+	<body>
 		<!-- NAVBAR -->
-		<nav class="bg-navy border-b border-gold/20 py-4 px-[3rem] sticky top-0 z-50">
-			<div class="max-w-[1568px] w-full mx-auto flex justify-between items-center">
-				<a href="/" class="flex items-center gap-3">
-					<span class="font-sans text-4xl font-medium text-white tracking-tight"
-						>Araitea
-						<span class="text-gold font-serif italic">Cat's</span></span
-					>
-				</a>
-
-				<div class="hidden md:flex items-center gap-8">
-					<a
-						href="/#disponibles"
-						class="nav-link font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
-						>Gatitos</a
-					>
-					<a
-						href="/#colores"
-						class="nav-link font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
-						>Razas y Colores</a
-					>
-
-					<div class="relative group">
-						<button
-							class="font-sans text-lg font-medium uppercase tracking-widest text-gold flex items-center gap-1 py-2"
-						>
-							Ubicaciones <i data-lucide="chevron-down" class="w-3 h-3"></i>
+		<nav class="navbar">
+			<div class="container navbar__inner">
+				<a href="/" class="navbar__logo">Araitea <span class="gold-italic">Cat's</span></a>
+				<div class="navbar__menu">
+					<a href="/#disponibles" class="nav-link">Gatitos</a>
+					<a href="/#colores" class="nav-link">Razas y Colores</a>
+					<div class="nav-dropdown">
+						<button class="nav-link nav-link--has-icon" style="color:var(--c-gold)">
+							Ubicaciones <i data-lucide="chevron-down" style="width:.75rem;height:.75rem"></i>
 						</button>
-						<div
-							class="absolute left-0 top-full pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
-						>
-							<div class="bg-navy border border-gold/30 overflow-hidden">
-								<a
-									href="/venta-de-gatos-persas-en-cdmx"
-									class="block px-5 py-3 font-sans text-lg uppercase tracking-widest text-gold bg-navy-dark"
-									>Ciudad de México</a
-								>
-								<a
-									href="/venta-de-gatos-persas-en-monterrey"
-									class="block px-5 py-3 font-sans text-lg uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors"
-									>Monterrey</a
-								>
-								<a
-									href="/venta-de-gatos-persas-en-jalisco"
-									class="block px-5 py-3 font-sans text-lg uppercase tracking-widest text-white/70 hover:text-gold hover:bg-navy-dark transition-colors"
-									>Guadalajara</a
-								>
-								<div class="border-t border-gold/20"></div>
-								<a
-									href="/#presencia"
-									class="block px-5 py-3 font-sans text-lg uppercase tracking-widest text-white/50 hover:text-gold hover:bg-navy-dark transition-colors"
-									>Ver otros estados</a
-								>
+						<div class="nav-dropdown__panel">
+							<div class="nav-dropdown__inner">
+								<a href="/venta-de-gatos-persas-en-cdmx" class="nav-dropdown__link nav-dropdown__link--active">Ciudad de México</a>
+								<a href="/venta-de-gatos-persas-en-monterrey" class="nav-dropdown__link">Monterrey</a>
+								<a href="/venta-de-gatos-persas-en-jalisco" class="nav-dropdown__link">Guadalajara</a>
+								<div class="nav-dropdown__divider"></div>
+								<a href="/#presencia" class="nav-dropdown__link nav-dropdown__link--dim">Ver otros estados</a>
 							</div>
 						</div>
 					</div>
-
-					<a
-						href="/#envios"
-						class="nav-link font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
-						>Envíos</a
-					>
-					<a
-						href="/#blog"
-						class="nav-link font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
-						>Blog</a
-					>
-					<a
-						href="https://wa.me/529992274376"
-						class="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-lg font-medium uppercase tracking-wide px-5 py-2.5 transition-colors duration-200"
-						>Contacto</a
-					>
+					<a href="/#envios" class="nav-link">Envíos</a>
+					<a href="/#blog" class="nav-link">Blog</a>
+					<a href="https://wa.me/529992274376" class="navbar__cta">Contacto</a>
 				</div>
-
-				<button
-					id="mobile-menu-btn"
-					class="md:hidden text-white/80"
-					aria-label="Abrir menú"
-				>
-					<i data-lucide="menu" class="w-7 h-7"></i>
+				<button id="mobile-menu-btn" class="navbar__toggle" aria-label="Abrir menú">
+					<i data-lucide="menu" class="navbar__toggle-icon"></i>
 				</button>
 			</div>
-
-			<div
-				id="mobile-menu"
-				class="md:hidden hidden flex-col gap-4 mt-4 pt-4 border-t border-gold/20 text-center"
-			>
-				<a
-					href="/#disponibles"
-					class="font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold"
-					>Gatitos</a
-				>
-				<a
-					href="/#colores"
-					class="font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold"
-					>Razas y Colores</a
-				>
-				<div class="border-y border-gold/10 py-3 flex flex-col gap-3">
-					<span
-						class="text-gold font-serif italic text-lg font-medium uppercase tracking-widest"
-						>Ubicaciones</span
-					>
-					<a
-						href="/venta-de-gatos-persas-en-cdmx"
-						class="font-sans text-lg text-gold font-medium"
-						>Ciudad de México</a
-					>
-					<a
-						href="/venta-de-gatos-persas-en-monterrey"
-						class="font-sans text-lg text-white/60 hover:text-gold"
-						>Monterrey</a
-					>
-					<a
-						href="/venta-de-gatos-persas-en-jalisco"
-						class="font-sans text-lg text-white/60 hover:text-gold"
-						>Guadalajara</a
-					>
+			<div id="mobile-menu" class="navbar__mobile">
+				<a href="/#disponibles" class="navbar__mobile-link">Gatitos</a>
+				<a href="/#colores" class="navbar__mobile-link">Razas y Colores</a>
+				<div class="navbar__mobile-group">
+					<span class="navbar__mobile-group-title">Ubicaciones</span>
+					<a href="/venta-de-gatos-persas-en-cdmx" class="navbar__mobile-sub navbar__mobile-sub--active">Ciudad de México</a>
+					<a href="/venta-de-gatos-persas-en-monterrey" class="navbar__mobile-sub">Monterrey</a>
+					<a href="/venta-de-gatos-persas-en-jalisco" class="navbar__mobile-sub">Guadalajara</a>
 				</div>
-				<a
-					href="/#envios"
-					class="font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold"
-					>Envíos</a
-				>
-				<a
-					href="/#blog"
-					class="font-sans text-lg font-medium uppercase tracking-widest text-white/80 hover:text-gold"
-					>Blog</a
-				>
-				<a
-					href="https://wa.me/529992274376"
-					class="bg-gold text-navy font-sans text-lg font-medium uppercase tracking-wide py-3 px-6 mx-auto w-3/4"
-					>Contacto</a
-				>
+				<a href="/#envios" class="navbar__mobile-link">Envíos</a>
+				<a href="/#blog" class="navbar__mobile-link">Blog</a>
+				<a href="https://wa.me/529992274376" class="navbar__mobile-cta">Contacto</a>
 			</div>
 		</nav>
 
 		<main>
-			<!-- 1. HERO LOCALIZADO CDMX -->
-			<div
-				class="relative py-32 md:py-44 w-full overflow-hidden flex items-center"
-			>
-				<div class="absolute inset-0 bg-navy/65 z-10"></div>
-				<img
-					src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80"
-					alt="Gatos persas en Ciudad de México CDMX - Araitea Cats"
-					class="absolute inset-0 w-full h-full object-cover z-0"
-				/>
-
-				<div class="relative z-20 px-4 max-w-[1568px] w-full mx-auto text-center">
-					<p
-						class="font-sans text-lg font-medium uppercase tracking-widest text-gold mb-4"
-					>
-						Envíos Seguros · CDMX y Área Metropolitana
-					</p>
-					<h1
-						class="font-sans text-6xl md:text-8xl text-white font-medium mb-6 leading-tight drop-shadow-lg"
-					>
-						Venta de
-						<span class="text-gold font-serif italic">Gatos Persas</span
-						><br />en la Ciudad de México
+			<!-- 1. HERO CDMX -->
+			<div class="hero-photo">
+				<div class="hero-photo__overlay"></div>
+				<img class="hero-photo__bg" src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=1920&q=80" alt="Gatos persas en Ciudad de México CDMX - Araitea Cats" />
+				<div class="container hero-photo__content">
+					<p class="hero-photo__eyebrow">Envíos Seguros · CDMX y Área Metropolitana</p>
+					<h1 class="hero-photo__title">
+						Venta de <span class="gold-italic">Gatos Persas</span><br />en la Ciudad de México
 					</h1>
-					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-					<p
-						class="font-sans text-2xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed"
-					>
-						Más de 25 años uniendo familias. Tu nuevo compañero felino a un
-						vuelo corto de distancia, con recepción rápida y segura en el
-						<strong class="text-white">AICM</strong>.
+					<div class="divider-gold divider-gold--center" style="margin-bottom:2rem"></div>
+					<p class="hero-photo__lede">
+						Más de 25 años uniendo familias. Tu nuevo compañero felino a un vuelo corto de distancia, con recepción rápida y segura en el <strong style="color:#fff">AICM</strong>.
 					</p>
-					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<a
-							href="/#disponibles"
-							class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xl font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200"
-						>
-							Ver Gatitos Disponibles
-						</a>
-						<a
-							href="https://wa.me/529992274376"
-							target="_blank"
-							class="inline-flex items-center justify-center gap-2 border border-gold text-gold hover:bg-gold hover:text-navy font-sans text-xl font-medium uppercase tracking-wide px-8 py-4 transition-colors duration-200"
-						>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 fill-current flex-shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp
+					<div class="hero-photo__actions">
+						<a href="/#disponibles" class="btn btn--gold btn--lg">Ver Gatitos Disponibles</a>
+						<a href="https://wa.me/529992274376" target="_blank" class="btn btn--outline-gold btn--lg">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="btn__icon" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+							WhatsApp
 						</a>
 					</div>
 				</div>
 			</div>
 
 			<!-- 2. CONTENIDO SEO CDMX -->
-			<section class="py-20 bg-cream border-t border-mist">
-				<div class="max-w-[1568px] w-full mx-auto px-[3rem]">
-					<div class="text-center mb-12">
-						<p
-							class="font-sans text-lg font-medium uppercase tracking-widest text-gold mb-3"
-						>
-							Criadero Certificado
-						</p>
-						<h2
-							class="font-sans text-5xl md:text-6xl font-medium text-navy mb-4"
-						>
-							Encuentra tu
-							<span class="text-gold font-serif italic">Persa Ideal</span> en
-							CDMX y EdoMex
-						</h2>
-						<div class="h-0.5 w-16 bg-gold mx-auto mt-4"></div>
+			<section class="seo-section">
+				<div class="container">
+					<div class="seo-section__head">
+						<p class="eyebrow">Criadero Certificado</p>
+						<h2 class="section-title">Encuentra tu <span class="gold-italic">Persa Ideal</span> en CDMX y EdoMex</h2>
+						<div class="divider-gold divider-gold--center"></div>
 					</div>
-
-					<div
-						class="space-y-6 font-sans text-2xl text-charcoal leading-relaxed"
-					>
-						<p>
-							Sabemos que encontrar un criadero especializado en la
-							<strong class="text-navy font-medium">venta de gatos persas en CDMX</strong>
-							que garantice pureza racial, salud y una crianza libre de estrés
-							no siempre es sencillo en una metrópoli tan grande. Por ello, en
-							<strong class="text-navy font-medium">Araitea Cat's</strong> hemos
-							perfeccionado nuestro servicio de traslado VIP para llevar a la
-							capital del país ejemplares de la más alta calidad genética.
-						</p>
-						<p>
-							Nuestros gatitos son criados en casa, bajo un ambiente lleno de
-							amor y atenciones. Esta etapa de socialización temprana es
-							fundamental. Si vives en un departamento en
-							<strong class="text-white"
-								>Polanco, Condesa, Coyoacán o Santa Fe</strong
-							>, o en una casa en el
-							<strong class="text-navy font-medium">Estado de México</strong>, el carácter
-							tranquilo, silencioso y cariñoso del persa lo convierte en la
-							mascota perfecta para espacios interiores y la vida urbana.
-						</p>
-
-						<h3 class="font-sans text-4xl font-medium text-navy mt-10 mb-2">
-							Certificados y Libres de
-							<span class="text-gold font-serif italic">PKD</span>
-						</h3>
-						<div class="h-0.5 w-10 bg-gold mb-4"></div>
-						<p>
-							La salud es nuestra prioridad innegociable. Cuando recibas a tu
-							gatito en la Ciudad de México, tendrás la certeza de que proviene
-							de líneas de sangre probadas por ADN, garantizando que está
-							<strong class="text-white"
-								>100% libre de la Enfermedad Renal Poliquística (PKD)</strong
-							>. Todos nuestros pequeños viajan con desparasitación al
-							corriente, vacunas iniciales y certificado de salud emitido por
-							nuestro veterinario experto.
-						</p>
+					<div class="seo-section__body">
+						<p>Sabemos que encontrar un criadero especializado en la <strong style="color:var(--c-navy);font-weight:500">venta de gatos persas en CDMX</strong> que garantice pureza racial, salud y una crianza libre de estrés no siempre es sencillo en una metrópoli tan grande. Por ello, en <strong style="color:var(--c-navy);font-weight:500">Araitea Cat's</strong> hemos perfeccionado nuestro servicio de traslado VIP para llevar a la capital del país ejemplares de la más alta calidad genética.</p>
+						<p>Nuestros gatitos son criados en casa, bajo un ambiente lleno de amor y atenciones. Esta etapa de socialización temprana es fundamental. Si vives en un departamento en <strong style="color:var(--c-navy);font-weight:500">Polanco, Condesa, Coyoacán o Santa Fe</strong>, o en una casa en el <strong style="color:var(--c-navy);font-weight:500">Estado de México</strong>, el carácter tranquilo, silencioso y cariñoso del persa lo convierte en la mascota perfecta para espacios interiores y la vida urbana.</p>
+						<h3>Certificados y Libres de <span class="gold-italic">PKD</span></h3>
+						<div class="divider-gold divider-gold--sm"></div>
+						<p>La salud es nuestra prioridad innegociable. Cuando recibas a tu gatito en la Ciudad de México, tendrás la certeza de que proviene de líneas de sangre probadas por ADN, garantizando que está <strong style="color:var(--c-navy);font-weight:500">100% libre de la Enfermedad Renal Poliquística (PKD)</strong>. Todos nuestros pequeños viajan con desparasitación al corriente, vacunas iniciales y certificado de salud emitido por nuestro veterinario experto.</p>
 					</div>
-
-					<!-- Info box -->
-					<div class="mt-10 border border-mist bg-cream p-7">
-						<h4
-							class="font-sans text-2xl font-medium text-navy mb-3 flex items-center gap-3"
-						>
-							<i
-								data-lucide="building"
-								class="w-5 h-5 text-gold flex-shrink-0"
-							></i>
-							La vida del Persa en la
-							<span class="text-gold font-serif italic ml-1">gran ciudad</span>
+					<div class="seo-section__infobox">
+						<h4 class="seo-section__infobox-title">
+							<i data-lucide="building"></i>
+							La vida del Persa en la <span class="gold-italic" style="margin-left:.25rem">gran ciudad</span>
 						</h4>
-						<p class="font-sans text-xl text-charcoal leading-relaxed">
-							A diferencia de otras razas, el gato persa no exige grandes
-							espacios al aire libre ni tiene un nivel de energía destructivo.
-							Son felinos que disfrutan de la relajación, la observación desde
-							las ventanas y la compañía constante de sus humanos. Su naturaleza
-							indoor y dócil lo hace el gato ideal para la vida dinámica de la
-							CDMX.
-						</p>
+						<p class="seo-section__infobox-body">A diferencia de otras razas, el gato persa no exige grandes espacios al aire libre ni tiene un nivel de energía destructivo. Son felinos que disfrutan de la relajación, la observación desde las ventanas y la compañía constante de sus humanos. Su naturaleza indoor y dócil lo hace el gato ideal para la vida dinámica de la CDMX.</p>
 					</div>
 				</div>
 			</section>
 
 			<!-- 3. LOGÍSTICA CDMX -->
-			<section
-				id="logistica"
-				class="relative py-20 bg-navy border-t border-b-4 border-gold"
-			>
-				<div class="absolute inset-0 opacity-20">
-					<div class="w-full h-full" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
-				</div>
-				<div class="relative max-w-[1568px] w-full mx-auto px-[3rem]">
-					<div class="text-center mb-14">
-						<p
-							class="font-sans text-lg font-medium uppercase tracking-widest text-gold mb-3"
-						>
-							Proceso de Envío
-						</p>
-						<h2
-							class="font-sans text-5xl md:text-6xl font-medium text-white mb-4"
-						>
-							Logística y
-							<span class="text-gold font-serif italic">Envíos</span> a la CDMX
-						</h2>
-						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p
-							class="font-sans text-xl text-white/60 max-w-xl mx-auto leading-relaxed"
-						>
-							Un proceso seguro y directo al Aeropuerto Internacional de la
-							Ciudad de México (AICM), con tiempos de vuelo reducidos.
-						</p>
+			<section id="logistica" class="logistics">
+				<div class="logistics__pattern"></div>
+				<div class="container logistics__inner">
+					<div class="logistics__head">
+						<p class="eyebrow">Proceso de Envío</p>
+						<h2 class="section-title section-title--light">Logística y <span class="gold-italic">Envíos</span> a la CDMX</h2>
+						<div class="divider-gold divider-gold--center"></div>
+						<p class="section-lede section-lede--light" style="font-size:1.25rem;margin-top:1.5rem">Un proceso seguro y directo al Aeropuerto Internacional de la Ciudad de México (AICM), con tiempos de vuelo reducidos.</p>
 					</div>
-
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-						<!-- Paso 1 -->
-						<div
-							class="border border-gold/30 hover:border-gold transition-colors duration-300 p-8 bg-cream relative overflow-hidden"
-						>
-							<div
-								class="absolute right-4 top-4 font-sans text-9xl font-medium text-navy/5 select-none"
-							>
-								1
-							</div>
-							<div class="relative z-10">
-								<div
-									class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold"
-								>
-									<i data-lucide="stethoscope" class="w-6 h-6"></i>
-								</div>
-								<h3 class="font-sans text-3xl font-medium text-navy mb-3">
-									Revisión Pre-vuelo
-								</h3>
-								<div class="h-0.5 w-8 bg-gold mb-4"></div>
-								<p class="font-sans text-xl text-charcoal/60 leading-relaxed">
-									Previo a su salida, nuestro veterinario realiza un chequeo
-									general y expide el certificado de salud obligatorio para
-									asegurar que tu gatito esté listo para el viaje hacia el
-									centro del país.
-								</p>
+					<div class="logistics__grid">
+						<div class="step-card">
+							<span class="step-card__number">1</span>
+							<div class="step-card__inner">
+								<div class="step-card__icon"><i data-lucide="stethoscope"></i></div>
+								<h3 class="step-card__title">Revisión Pre-vuelo</h3>
+								<div class="step-card__rule"></div>
+								<p class="step-card__body">Previo a su salida, nuestro veterinario realiza un chequeo general y expide el certificado de salud obligatorio para asegurar que tu gatito esté listo para el viaje hacia el centro del país.</p>
 							</div>
 						</div>
-						<!-- Paso 2 -->
-						<div
-							class="border border-gold/30 hover:border-gold transition-colors duration-300 p-8 bg-cream relative overflow-hidden"
-						>
-							<div
-								class="absolute right-4 top-4 font-sans text-9xl font-medium text-navy/5 select-none"
-							>
-								2
-							</div>
-							<div class="relative z-10">
-								<div
-									class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold"
-								>
-									<i data-lucide="plane-takeoff" class="w-6 h-6"></i>
-								</div>
-								<h3 class="font-sans text-3xl font-medium text-navy mb-3">
-									Vuelo VIP a CDMX
-								</h3>
-								<div class="h-0.5 w-8 bg-gold mb-4"></div>
-								<p class="font-sans text-xl text-charcoal/60 leading-relaxed">
-									Coordinamos vuelos directos utilizando aerolíneas
-									especializadas en el manejo cuidadoso de mascotas. El vuelo es
-									corto y se realiza en zonas climatizadas con transportadora
-									IATA.
-								</p>
+						<div class="step-card">
+							<span class="step-card__number">2</span>
+							<div class="step-card__inner">
+								<div class="step-card__icon"><i data-lucide="plane-takeoff"></i></div>
+								<h3 class="step-card__title">Vuelo VIP a CDMX</h3>
+								<div class="step-card__rule"></div>
+								<p class="step-card__body">Coordinamos vuelos directos utilizando aerolíneas especializadas en el manejo cuidadoso de mascotas. El vuelo es corto y se realiza en zonas climatizadas con transportadora IATA.</p>
 							</div>
 						</div>
-						<!-- Paso 3 -->
-						<div
-							class="border border-gold/30 hover:border-gold transition-colors duration-300 p-8 bg-cream relative overflow-hidden"
-						>
-							<div
-								class="absolute right-4 top-4 font-sans text-9xl font-medium text-navy/5 select-none"
-							>
-								3
-							</div>
-							<div class="relative z-10">
-								<div
-									class="w-12 h-12 border border-gold/40 flex items-center justify-center mb-6 text-gold"
-								>
-									<i data-lucide="map-pin" class="w-6 h-6"></i>
-								</div>
-								<h3 class="font-sans text-3xl font-medium text-navy mb-3">
-									Recolección en AICM
-								</h3>
-								<div class="h-0.5 w-8 bg-gold mb-4"></div>
-								<p class="font-sans text-xl text-charcoal/60 leading-relaxed">
-									Con tu guía de rastreo en mano, podrás recoger fácilmente a tu
-									nuevo integrante en la zona de carga del
-									<strong class="text-navy font-medium">Aeropuerto Internacional de la Ciudad de México (AICM)</strong>.
-								</p>
+						<div class="step-card">
+							<span class="step-card__number">3</span>
+							<div class="step-card__inner">
+								<div class="step-card__icon"><i data-lucide="map-pin"></i></div>
+								<h3 class="step-card__title">Recolección en AICM</h3>
+								<div class="step-card__rule"></div>
+								<p class="step-card__body">Con tu guía de rastreo en mano, podrás recoger fácilmente a tu nuevo integrante en la zona de carga del <strong style="color:var(--c-navy);font-weight:500">Aeropuerto Internacional de la Ciudad de México (AICM)</strong>.</p>
 							</div>
 						</div>
 					</div>
@@ -483,174 +154,58 @@
 			</section>
 
 			<!-- 4. TESTIMONIOS CDMX -->
-			<section class="py-20 bg-cream border-t border-mist">
-				<div class="max-w-[1568px] w-full mx-auto px-[3rem]">
-					<div class="text-center mb-14">
-						<p
-							class="font-sans text-lg font-medium uppercase tracking-widest text-gold mb-3"
-						>
-							Prueba Social
-						</p>
-						<h2
-							class="font-sans text-5xl md:text-6xl font-medium text-navy mb-4"
-						>
-							<span class="text-gold font-serif italic">Familias</span> en CDMX
-							Felices
-						</h2>
-						<div class="h-0.5 w-16 bg-gold mx-auto mt-4 mb-6"></div>
-						<p
-							class="font-sans text-xl text-charcoal/70 max-w-xl mx-auto leading-relaxed"
-						>
-							Ellos ya confiaron en nosotros y hoy sus hermosos gatos persas
-							embellecen sus hogares en la Ciudad de México.
-						</p>
+			<section class="py-20" style="background:var(--c-cream);border-top:1px solid var(--c-mist)">
+				<div class="container">
+					<div class="section-head">
+						<p class="eyebrow">Prueba Social</p>
+						<h2 class="section-title"><span class="gold-italic">Familias</span> en CDMX Felices</h2>
+						<div class="divider-gold divider-gold--center"></div>
+						<p class="section-lede" style="color:rgba(45,45,45,.7);font-size:1.25rem">Ellos ya confiaron en nosotros y hoy sus hermosos gatos persas embellecen sus hogares en la Ciudad de México.</p>
 					</div>
-
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-						<!-- Testimonio 1 -->
-						<div
-							class="border border-gold/30 hover:border-gold transition-colors duration-300 overflow-hidden bg-cream group"
-						>
-							<div class="aspect-[4/3] overflow-hidden">
-								<img
-									src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80"
-									alt="Familia Dabbie Wood con su gato persa en CDMX"
-									loading="lazy"
-									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-								/>
+					<div class="testimonials__grid">
+						<article class="testimonial-card">
+							<div class="testimonial-card__media"><img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80" alt="Familia Dabbie Wood con su gato persa en CDMX" loading="lazy" /></div>
+							<div class="testimonial-card__body">
+								<div class="testimonial-card__rule"></div>
+								<p class="testimonial-card__quote">"Mis hijas conviven con ellos desde recién nacidas, son niñas muy sanas, felices y aman a los animales. Gracias Araitea por la paciencia."</p>
+								<h4 class="testimonial-card__author">Dabbie Wood</h4>
+								<p class="testimonial-card__location"><i data-lucide="map-pin"></i> Ciudad de México</p>
 							</div>
-							<div class="p-7">
-								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p
-									class="font-sans text-2xl text-charcoal italic leading-relaxed mb-5"
-								>
-									"Mis hijas conviven con ellos desde recién nacidas, son niñas
-									muy sanas, felices y aman a los animales. Gracias Araitea por
-									la paciencia."
-								</p>
-								<h4
-									class="font-sans text-xl font-medium uppercase tracking-widest text-navy"
-								>
-									Dabbie Wood
-								</h4>
-								<p
-									class="font-sans text-lg text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest"
-								>
-									<i data-lucide="map-pin" class="w-3 h-3"></i> Ciudad de México
-								</p>
+						</article>
+						<article class="testimonial-card">
+							<div class="testimonial-card__media"><img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=800&q=80" alt="Ana Paola con su gato persa en Polanco CDMX" loading="lazy" /></div>
+							<div class="testimonial-card__body">
+								<div class="testimonial-card__rule"></div>
+								<p class="testimonial-card__quote">"Mi departamento no es muy grande, pero mi gatito se adaptó súper bien. Es el rey de la sala. Recogerlo en el aeropuerto fue muy sencillo."</p>
+								<h4 class="testimonial-card__author">Ana Paola R.</h4>
+								<p class="testimonial-card__location"><i data-lucide="map-pin"></i> Polanco, CDMX</p>
 							</div>
-						</div>
-						<!-- Testimonio 2 -->
-						<div
-							class="border border-gold/30 hover:border-gold transition-colors duration-300 overflow-hidden bg-cream group"
-						>
-							<div class="aspect-[4/3] overflow-hidden">
-								<img
-									src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=800&q=80"
-									alt="Ana Paola con su gato persa en Polanco CDMX"
-									loading="lazy"
-									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-								/>
+						</article>
+						<article class="testimonial-card">
+							<div class="testimonial-card__media"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80" alt="Familia Gómez con su persa en Coyoacán CDMX" loading="lazy" /></div>
+							<div class="testimonial-card__body">
+								<div class="testimonial-card__rule"></div>
+								<p class="testimonial-card__quote">"Llegó perfecto al AICM, muy limpio y listo para ronronear. Definitivamente se nota la crianza familiar y el cuidado de su genética."</p>
+								<h4 class="testimonial-card__author">Familia Gómez</h4>
+								<p class="testimonial-card__location"><i data-lucide="map-pin"></i> Coyoacán, CDMX</p>
 							</div>
-							<div class="p-7">
-								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p
-									class="font-sans text-2xl text-charcoal italic leading-relaxed mb-5"
-								>
-									"Mi departamento no es muy grande, pero mi gatito se adaptó
-									súper bien. Es el rey de la sala. Recogerlo en el aeropuerto
-									fue muy sencillo."
-								</p>
-								<h4
-									class="font-sans text-xl font-medium uppercase tracking-widest text-navy"
-								>
-									Ana Paola R.
-								</h4>
-								<p
-									class="font-sans text-lg text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest"
-								>
-									<i data-lucide="map-pin" class="w-3 h-3"></i> Polanco, CDMX
-								</p>
-							</div>
-						</div>
-						<!-- Testimonio 3 -->
-						<div
-							class="border border-gold/30 hover:border-gold transition-colors duration-300 overflow-hidden bg-cream group"
-						>
-							<div class="aspect-[4/3] overflow-hidden">
-								<img
-									src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80"
-									alt="Familia Gómez con su persa en Coyoacán CDMX"
-									loading="lazy"
-									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-								/>
-							</div>
-							<div class="p-7">
-								<div class="h-0.5 w-8 bg-gold mb-5"></div>
-								<p
-									class="font-sans text-2xl text-charcoal italic leading-relaxed mb-5"
-								>
-									"Llegó perfecto al AICM, muy limpio y listo para ronronear.
-									Definitivamente se nota la crianza familiar y el cuidado de su
-									genética."
-								</p>
-								<h4
-									class="font-sans text-xl font-medium uppercase tracking-widest text-navy"
-								>
-									Familia Gómez
-								</h4>
-								<p
-									class="font-sans text-lg text-gold flex items-center gap-1.5 mt-2 uppercase tracking-widest"
-								>
-									<i data-lucide="map-pin" class="w-3 h-3"></i> Coyoacán, CDMX
-								</p>
-							</div>
-						</div>
+						</article>
 					</div>
 				</div>
 			</section>
 
 			<!-- 5. CTA FINAL -->
-			<section class="py-20 bg-cream border-t border-mist">
-				<div class="max-w-[1568px] w-full mx-auto px-[3rem] text-center">
-					<p
-						class="font-sans text-lg font-medium uppercase tracking-widest text-gold mb-4"
-					>
-						¿Listo para dar el siguiente paso?
-					</p>
-					<h2
-						class="font-sans text-5xl md:text-6xl font-medium text-navy mb-4"
-					>
-						Conoce a tu nuevo
-						<span class="text-gold font-serif italic">integrante</span>
-					</h2>
-					<div class="h-0.5 w-16 bg-gold mx-auto mb-8"></div>
-					<p class="font-sans text-2xl text-charcoal mb-10 leading-relaxed">
-						Revisa nuestro catálogo de gatitos y contáctanos por WhatsApp para
-						resolver dudas, apartar a tu preferido y coordinar el vuelo hacia la
-						Ciudad de México.
-					</p>
-					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<a
-							href="/#disponibles"
-							class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-sans text-xl font-medium uppercase tracking-wide px-10 py-4 transition-colors duration-200"
-						>
-							Ver Gatitos Disponibles
-						</a>
-						<a
-							href="https://wa.me/529992274376"
-							target="_blank"
-							class="inline-flex items-center justify-center gap-2 bg-whatsapp hover:opacity-90 text-white font-sans text-xl font-medium uppercase tracking-wide px-10 py-4 transition-opacity duration-200"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								class="w-7 h-7 fill-current"
-							>
-								<path
-									d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-								></path></svg
-							>Escribir por WhatsApp
+			<section class="cta-section">
+				<div class="container">
+					<p class="cta-section__eyebrow">¿Listo para dar el siguiente paso?</p>
+					<h2 class="cta-section__title">Conoce a tu nuevo <span class="gold-italic">integrante</span></h2>
+					<div class="divider-gold divider-gold--center"></div>
+					<p class="cta-section__body" style="margin-top:2rem">Revisa nuestro catálogo de gatitos y contáctanos por WhatsApp para resolver dudas, apartar a tu preferido y coordinar el vuelo hacia la Ciudad de México.</p>
+					<div class="cta-section__actions">
+						<a href="/#disponibles" class="btn btn--gold btn--lg">Ver Gatitos Disponibles</a>
+						<a href="https://wa.me/529992274376" target="_blank" class="btn btn--whatsapp btn--lg">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="btn__icon" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+							Escribir por WhatsApp
 						</a>
 					</div>
 				</div>
@@ -658,155 +213,51 @@
 		</main>
 
 		<!-- FOOTER -->
-		<footer id="blog" class="bg-navy border-t-2 border-gold">
-			<div
-				class="max-w-[1568px] w-full mx-auto px-[3rem] py-16 grid grid-cols-1 md:grid-cols-3 gap-12"
-			>
+		<footer id="blog" class="footer">
+			<div class="container footer__grid">
 				<div>
-					<h2 class="font-sans text-5xl font-medium text-white mb-1">
-						Araitea <span class="text-gold font-serif italic">Cat's</span>
-					</h2>
-					<div class="h-0.5 w-10 bg-gold mt-3 mb-5"></div>
-					<p
-						class="font-sans text-xl text-charcoal/60 leading-relaxed max-w-xs mb-6"
-					>
-						Criadero profesional de gatos persas. Llevamos más de 25 años
-						uniendo familias con su compañero ideal en todo México.
-					</p>
-					<a href="/manual-del-persa/" class="font-sans text-lg font-medium uppercase tracking-widest text-gold hover:text-gold-light transition-colors duration-200 mb-5 inline-block">Manual de cuidados del persa</a>
-					<div class="flex gap-4">
-						<a
-							href="#"
-							class="text-white/40 hover:text-gold transition-colors"
-							aria-label="Instagram"
-							><i data-lucide="instagram" class="w-5 h-5"></i
-						></a>
-						<a
-							href="#"
-							class="text-white/40 hover:text-gold transition-colors"
-							aria-label="Facebook"
-							><i data-lucide="facebook" class="w-5 h-5"></i
-						></a>
+					<h2 class="footer__brand-title">Araitea <span class="gold-italic">Cat's</span></h2>
+					<div class="footer__brand-rule"></div>
+					<p class="footer__brand-body">Criadero profesional de gatos persas. Llevamos más de 25 años uniendo familias con su compañero ideal en todo México.</p>
+					<a href="/manual-del-persa/" class="footer__manual-link">Manual de cuidados del persa</a>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+						<a href="#" class="footer__social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
 					</div>
 				</div>
 				<div>
-					<h4
-						class="font-sans text-lg font-medium uppercase tracking-widest text-gold mb-6"
-					>
-						Navegación
-					</h4>
-					<ul class="space-y-3">
-						<li>
-							<a
-								href="/#disponibles"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors"
-								>Gatitos Disponibles</a
-							>
-						</li>
-						<li>
-							<a
-								href="/#presencia"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors"
-								>Principales Ubicaciones</a
-							>
-						</li>
-						<li>
-							<a
-								href="/#envios"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors"
-								>Información de Envíos</a
-							>
-						</li>
-						<li>
-							<a
-								href="/#colores"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors"
-								>Conoce los Colores</a
-							>
-						</li>
-						<li class="pt-2">
-							<a
-								href="tel:+529992274376"
-								class="font-sans text-xl text-white hover:text-gold transition-colors flex items-center gap-2 font-medium"
-							>
-								<i data-lucide="phone" class="w-4 h-4"></i> +52 (999) 227 4376
-							</a>
-						</li>
+					<h4 class="footer__col-title">Navegación</h4>
+					<ul class="footer__list">
+						<li><a href="/#disponibles" class="footer__link">Gatitos Disponibles</a></li>
+						<li><a href="/#presencia" class="footer__link">Principales Ubicaciones</a></li>
+						<li><a href="/#envios" class="footer__link">Información de Envíos</a></li>
+						<li><a href="/#colores" class="footer__link">Conoce los Colores</a></li>
+						<li><a href="tel:+529992274376" class="footer__phone"><i data-lucide="phone"></i> +52 (999) 227 4376</a></li>
 					</ul>
 				</div>
 				<div>
-					<h4
-						class="font-sans text-lg font-medium uppercase tracking-widest text-gold mb-6"
-					>
-						Blog Educativo
-					</h4>
-					<ul class="space-y-4">
-						<li>
-							<a
-								href="/blog/antes-de-comprar"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors leading-snug block"
-								>Antes de comprar un gato persa: Todo lo que debes saber</a
-							>
-						</li>
-						<li>
-							<a
-								href="/blog/personalidad-persa"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors leading-snug block"
-								>La Personalidad Única del Gato Persa: ¿Qué Esperar?</a
-							>
-						</li>
-						<li>
-							<a
-								href="/blog/masaje-patas"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors leading-snug block"
-								>¿Tu Gatito te da masaje con sus patas?</a
-							>
-						</li>
-						<li>
-							<a
-								href="/blog/no-al-cascabel"
-								class="font-sans text-xl text-white/60 hover:text-gold transition-colors leading-snug block"
-								>¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a
-							>
-						</li>
+					<h4 class="footer__col-title">Blog Educativo</h4>
+					<ul class="footer__list">
+						<li><a href="/blog/antes-de-comprar" class="footer__link">Antes de comprar un gato persa: Todo lo que debes saber</a></li>
+						<li><a href="/blog/personalidad-persa" class="footer__link">La Personalidad Única del Gato Persa: ¿Qué Esperar?</a></li>
+						<li><a href="/blog/masaje-patas" class="footer__link">¿Tu Gatito te da masaje con sus patas?</a></li>
+						<li><a href="/blog/no-al-cascabel" class="footer__link">¿Tu Gato Persa usa Cascabel? Por Qué Decimos ¡No!</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="border-t border-white/10 py-5 text-center">
-				<p class="font-sans text-lg text-white/30">
-					&copy; <span id="year"></span> Araitea Cat's · Todos los derechos
-					reservados
-				</p>
-			</div>
+			<div class="footer__bar"><p>&copy; <span id="year"></span> Araitea Cat's · Todos los derechos reservados</p></div>
 		</footer>
 
-		<a
-			href="https://wa.me/529992274376"
-			target="_blank"
-			class="fixed bottom-6 right-6 p-3.5 rounded-full bg-navy text-white border-2 border-white shadow-xl z-50 hover:scale-110 hover:bg-gold hover:text-navy hover:border-navy transition-all duration-300 flex items-center justify-center"
-			aria-label="Contactar por WhatsApp"
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 24 24"
-				class="w-7 h-7 fill-current"
-			>
-				<path
-					d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-				/>
-			</svg>
+		<a href="https://wa.me/529992274376" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 		</a>
 
 		<script>
 			lucide.createIcons();
 			document.getElementById("year").textContent = new Date().getFullYear();
-			document
-				.getElementById("mobile-menu-btn")
-				.addEventListener("click", () => {
-					const m = document.getElementById("mobile-menu");
-					m.classList.toggle("hidden");
-					m.classList.toggle("flex");
-				});
+			document.getElementById("mobile-menu-btn").addEventListener("click", () => {
+				document.getElementById("mobile-menu").classList.toggle("is-open");
+			});
 		</script>
 	</body>
 </html>

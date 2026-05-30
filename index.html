@@ -60,7 +60,9 @@
 
 				<div class="navbar__menu">
 					<a href="#disponibles" class="nav-link">Gatitos</a>
-					<a href="#colores" class="nav-link">Razas y Colores</a>
+					<a href="#colores" class="nav-link">Colores del Persa</a>
+					<a href="#testimonios" class="nav-link">Familias Felices</a>
+					<a href="#envios" class="nav-link">Proceso de Compra</a>
 
 					<div class="nav-dropdown">
 						<button class="nav-link nav-link--has-icon">
@@ -113,28 +115,39 @@
 				</button>
 			</div>
 
-			<div id="mobile-menu" class="navbar__mobile">
-				<a href="#disponibles" class="navbar__mobile-link">Gatitos</a>
-				<a href="#colores" class="navbar__mobile-link">Razas y Colores</a>
-				<div class="navbar__mobile-group">
-					<span class="navbar__mobile-group-title">Ubicaciones</span>
-					<a href="/venta-de-gatos-persas-en-cdmx" class="navbar__mobile-sub"
-						>Ciudad de México</a
-					>
-					<a
-						href="/venta-de-gatos-persas-en-monterrey"
-						class="navbar__mobile-sub"
-						>Monterrey</a
-					>
-					<a href="/venta-de-gatos-persas-en-jalisco" class="navbar__mobile-sub"
-						>Guadalajara</a
+			<div id="mobile-menu" class="navbar__mobile" aria-hidden="true">
+				<div class="navbar__mobile-inner container">
+					<div class="navbar__mobile-top-rule"></div>
+					<nav class="navbar__mobile-links" aria-label="Menú móvil">
+						<a href="#disponibles" class="navbar__mobile-link">Gatitos</a>
+						<a href="#colores" class="navbar__mobile-link">Colores del Persa</a>
+						<a href="#testimonios" class="navbar__mobile-link">Familias Felices</a>
+						<a href="#envios" class="navbar__mobile-link">Proceso de Compra</a>
+						<div class="navbar__mobile-group">
+							<span class="navbar__mobile-group-title">Ubicaciones</span>
+							<a
+								href="/venta-de-gatos-persas-en-cdmx"
+								class="navbar__mobile-sub"
+								>Ciudad de México</a
+							>
+							<a
+								href="/venta-de-gatos-persas-en-monterrey"
+								class="navbar__mobile-sub"
+								>Monterrey</a
+							>
+							<a
+								href="/venta-de-gatos-persas-en-jalisco"
+								class="navbar__mobile-sub"
+								>Guadalajara</a
+							>
+						</div>
+						<a href="#envios" class="navbar__mobile-link">Envíos</a>
+						<a href="#blog" class="navbar__mobile-link">Blog</a>
+					</nav>
+					<a href="https://wa.me/529992274376" class="navbar__mobile-cta"
+						>Contacto</a
 					>
 				</div>
-				<a href="#envios" class="navbar__mobile-link">Envíos</a>
-				<a href="#blog" class="navbar__mobile-link">Blog</a>
-				<a href="https://wa.me/529992274376" class="navbar__mobile-cta"
-					>Contacto</a
-				>
 			</div>
 		</nav>
 
@@ -222,7 +235,7 @@
 							</a>
 							<a
 								href="https://wa.me/529992274376"
-								class="btn btn--outline-gold btn--lg"
+								class="btn btn--outline-whatsapp btn--lg"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -470,13 +483,16 @@
 						<div class="commitment__text">
 							<p class="commitment__eyebrow">Nuestro Compromiso Contigo</p>
 							<h2 class="commitment__title">
-								Cuidado, salud y<br />
-								crianza <span class="gold-italic">responsable</span>
+								Cuidado, salud y crianza
+								<span class="gold-italic">responsable</span>
 							</h2>
 							<div class="commitment__divider"></div>
 							<p class="commitment__description">
-								Brindamos la tranquilidad de recibir un gatito sano, equilibrado
-								y acompañado desde sus primeros días de vida.
+								Brindamos la tranquilidad de recibir un gatito
+								<span class="commitment__description-accent"
+									>sano, equilibrado y acompañado</span
+								>
+								desde sus primeros días de vida.
 							</p>
 						</div>
 						<img
@@ -490,7 +506,7 @@
 						<div class="commitment__row">
 							<div class="feature-card">
 								<div class="feature-card__icon">
-									<i data-lucide="shield-check"></i>
+									<i data-lucide="shield-check" width="54" height="54"></i>
 								</div>
 								<h3 class="feature-card__title">Libres de PKD</h3>
 								<div class="feature-card__rule"></div>
@@ -501,7 +517,9 @@
 							</div>
 
 							<div class="feature-card">
-								<div class="feature-card__icon"><i data-lucide="home"></i></div>
+								<div class="feature-card__icon">
+									<i data-lucide="home" width="54" height="54"></i>
+								</div>
 								<h3 class="feature-card__title">Socialización temprana</h3>
 								<div class="feature-card__rule"></div>
 								<p class="feature-card__body">
@@ -511,7 +529,7 @@
 							</div>
 
 							<div class="feature-card">
-								<div class="feature-card__icon feature-card__icon--badge">
+								<div class="feature-card__icon">
 									<img src="/assets/icons/cfa.svg" alt="CFA Logo" />
 								</div>
 								<h3 class="feature-card__title">Registro CFA</h3>
@@ -526,7 +544,7 @@
 						<div class="commitment__row commitment__row--centered">
 							<div class="feature-card">
 								<div class="feature-card__icon">
-									<i data-lucide="user-check"></i>
+									<i data-lucide="user-check" width="54" height="54"></i>
 								</div>
 								<h3 class="feature-card__title">Atención personalizada</h3>
 								<div class="feature-card__rule"></div>
@@ -538,7 +556,7 @@
 
 							<div class="feature-card">
 								<div class="feature-card__icon">
-									<i data-lucide="syringe"></i>
+									<i data-lucide="syringe" width="54" height="54"></i>
 								</div>
 								<h3 class="feature-card__title">
 									Vacunación y desparasitación
@@ -550,6 +568,115 @@
 								</p>
 							</div>
 						</div>
+					</div>
+				</div>
+
+				<!-- Carrusel mobile (oculto en desktop) -->
+				<div class="commitment__carousel" aria-label="Compromisos Araitea">
+					<div class="commitment__carousel__track">
+						<div class="commitment__carousel__slide is-active">
+							<div class="feature-card">
+								<div class="feature-card__icon">
+									<i data-lucide="shield-check" width="54" height="54"></i>
+								</div>
+								<h3 class="feature-card__title">Libres de PKD</h3>
+								<div class="feature-card__rule"></div>
+								<p class="feature-card__body">
+									Realizamos pruebas genéticas para garantizar líneas sanas y
+									seguras.
+								</p>
+							</div>
+						</div>
+						<div class="commitment__carousel__slide">
+							<div class="feature-card">
+								<div class="feature-card__icon">
+									<i data-lucide="home" width="54" height="54"></i>
+								</div>
+								<h3 class="feature-card__title">Socialización temprana</h3>
+								<div class="feature-card__rule"></div>
+								<p class="feature-card__body">
+									Crecen en un ambiente familiar que favorece un temperamento
+									equilibrado y sociable.
+								</p>
+							</div>
+						</div>
+						<div class="commitment__carousel__slide">
+							<div class="feature-card">
+								<div class="feature-card__icon">
+									<img src="/assets/icons/cfa.svg" alt="CFA Logo" />
+								</div>
+								<h3 class="feature-card__title">Registro CFA</h3>
+								<div class="feature-card__rule"></div>
+								<p class="feature-card__body">
+									Ejemplares con registro CFA, el organismo felino más
+									prestigioso del mundo.
+								</p>
+							</div>
+						</div>
+						<div class="commitment__carousel__slide">
+							<div class="feature-card">
+								<div class="feature-card__icon">
+									<i data-lucide="user-check" width="54" height="54"></i>
+								</div>
+								<h3 class="feature-card__title">Atención personalizada</h3>
+								<div class="feature-card__rule"></div>
+								<p class="feature-card__body">
+									Te acompañamos antes, durante y después de la llegada de tu
+									gatito.
+								</p>
+							</div>
+						</div>
+						<div class="commitment__carousel__slide">
+							<div class="feature-card">
+								<div class="feature-card__icon">
+									<i data-lucide="syringe" width="54" height="54"></i>
+								</div>
+								<h3 class="feature-card__title">
+									Vacunación y desparasitación
+								</h3>
+								<div class="feature-card__rule"></div>
+								<p class="feature-card__body">
+									Esquema preventivo acorde a su edad para proteger su
+									bienestar.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="commitment__carousel__controls">
+						<button
+							class="commitment__carousel__btn commitment__carousel__btn--prev"
+							aria-label="Anterior"
+						>
+							<i data-lucide="chevron-left"></i>
+						</button>
+						<div class="commitment__carousel__dots">
+							<button
+								class="commitment__carousel__dot is-active"
+								aria-label="Slide 1"
+							></button>
+							<button
+								class="commitment__carousel__dot"
+								aria-label="Slide 2"
+							></button>
+							<button
+								class="commitment__carousel__dot"
+								aria-label="Slide 3"
+							></button>
+							<button
+								class="commitment__carousel__dot"
+								aria-label="Slide 4"
+							></button>
+							<button
+								class="commitment__carousel__dot"
+								aria-label="Slide 5"
+							></button>
+						</div>
+						<button
+							class="commitment__carousel__btn commitment__carousel__btn--next"
+							aria-label="Siguiente"
+						>
+							<i data-lucide="chevron-right"></i>
+						</button>
 					</div>
 				</div>
 
@@ -636,34 +763,7 @@
 					</div>
 
 					<div class="process__banner">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 80 80"
-							class="process__banner-icon"
-							fill="none"
-						>
-							<path
-								d="M40 68 C40 68 8 48 8 26 C8 16 16 10 24 10 C30 10 36 14 40 20 C44 14 50 10 56 10 C64 10 72 16 72 26 C72 48 40 68 40 68 Z"
-								stroke="#CCA052"
-								stroke-width="2"
-								fill="none"
-							/>
-							<g
-								stroke="#CCA052"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								fill="none"
-							>
-								<ellipse cx="40" cy="46" rx="8" ry="10" />
-								<circle cx="40" cy="32" r="7" />
-								<polyline points="34,27 31,21 37,26" />
-								<polyline points="46,27 49,21 43,26" />
-								<circle cx="37.5" cy="31" r="1" fill="#CCA052" />
-								<circle cx="42.5" cy="31" r="1" fill="#CCA052" />
-								<path d="M48 54 Q56 54 56 46 Q56 40 52 40" />
-							</g>
-						</svg>
+						<img src="assets/icons/heart-cat.png" width="54" height="54" />
 						<div class="process__banner-divider"></div>
 						<p class="process__banner-text">
 							<strong>Acompañamiento y asesoría continua</strong><br />
@@ -679,9 +779,6 @@
 			<section id="colores" class="colors">
 				<div class="container">
 					<div class="colors__head">
-						<p class="eyebrow eyebrow--navy">
-							Un catálogo de belleza inigualable
-						</p>
 						<h2 class="section-title">
 							Los <span class="gold-italic">Colores</span> del Persa
 						</h2>
@@ -733,7 +830,15 @@
 								<h3 class="color-row__title">
 									<span class="gold-italic">Red</span>
 								</h3>
-								<div class="divider-gold divider-gold--md"></div>
+								<div class="color-row__accent">
+									<img
+										src="/assets/icons/star.svg"
+										class="color-row__accent-star"
+										alt=""
+										aria-hidden="true"
+									/>
+									<div class="color-row__accent-line"></div>
+								</div>
 								<p class="color-row__body">
 									Tonos cálidos e intensos que irradian energía y dulzura. Un
 									color vibrante imposible de ignorar.
@@ -742,8 +847,10 @@
 									<a
 										href="https://wa.me/529992274376"
 										class="btn btn--gold btn--sharp"
-										>Preguntar disponibilidad</a
-									>
+										style="gap: 0.75rem"
+										>Preguntar disponibilidad
+										<i data-lucide="arrow-right" class="btn__icon"></i
+									></a>
 								</div>
 							</div>
 						</div>
@@ -755,7 +862,15 @@
 								<h3 class="color-row__title">
 									<span class="gold-italic">Blue</span>
 								</h3>
-								<div class="divider-gold divider-gold--md"></div>
+								<div class="color-row__accent">
+									<img
+										src="/assets/icons/star.svg"
+										class="color-row__accent-star"
+										alt=""
+										aria-hidden="true"
+									/>
+									<div class="color-row__accent-line"></div>
+								</div>
 								<p class="color-row__body">
 									Elegancia en su máxima expresión. Su tono gris azulado
 									transmite serenidad y sofisticación atemporal.
@@ -764,8 +879,10 @@
 									<a
 										href="https://wa.me/529992274376"
 										class="btn btn--gold btn--sharp"
-										>Preguntar disponibilidad</a
-									>
+										style="gap: 0.75rem"
+										>Preguntar disponibilidad
+										<i data-lucide="arrow-right" class="btn__icon"></i
+									></a>
 								</div>
 							</div>
 							<div class="color-row__media" data-carousel="blue">
@@ -841,7 +958,15 @@
 								<h3 class="color-row__title">
 									<span class="gold-italic">Cream</span>
 								</h3>
-								<div class="divider-gold divider-gold--md"></div>
+								<div class="color-row__accent">
+									<img
+										src="/assets/icons/star.svg"
+										class="color-row__accent-star"
+										alt=""
+										aria-hidden="true"
+									/>
+									<div class="color-row__accent-line"></div>
+								</div>
 								<p class="color-row__body">
 									Suave, delicado y luminoso. Un color que transmite ternura,
 									armonía y calidez en cada detalle.
@@ -850,8 +975,10 @@
 									<a
 										href="https://wa.me/529992274376"
 										class="btn btn--gold btn--sharp"
-										>Preguntar disponibilidad</a
-									>
+										style="gap: 0.75rem"
+										>Preguntar disponibilidad
+										<i data-lucide="arrow-right" class="btn__icon"></i
+									></a>
 								</div>
 							</div>
 						</div>
@@ -863,7 +990,15 @@
 								<h3 class="color-row__title">
 									<span class="gold-italic">Black</span>
 								</h3>
-								<div class="divider-gold divider-gold--md"></div>
+								<div class="color-row__accent">
+									<img
+										src="/assets/icons/star.svg"
+										class="color-row__accent-star"
+										alt=""
+										aria-hidden="true"
+									/>
+									<div class="color-row__accent-line"></div>
+								</div>
 								<p class="color-row__body">
 									Profundo, enigmático y elegante. El negro del Persa es
 									sinónimo de distinción y misterio.
@@ -872,8 +1007,10 @@
 									<a
 										href="https://wa.me/529992274376"
 										class="btn btn--gold btn--sharp"
-										>Preguntar disponibilidad</a
-									>
+										style="gap: 0.75rem"
+										>Preguntar disponibilidad
+										<i data-lucide="arrow-right" class="btn__icon"></i
+									></a>
 								</div>
 							</div>
 							<div class="color-row__media" data-carousel="black">
@@ -949,7 +1086,15 @@
 								<h3 class="color-row__title">
 									Brown <span class="gold-italic">Tabby</span>
 								</h3>
-								<div class="divider-gold divider-gold--md"></div>
+								<div class="color-row__accent">
+									<img
+										src="/assets/icons/star.svg"
+										class="color-row__accent-star"
+										alt=""
+										aria-hidden="true"
+									/>
+									<div class="color-row__accent-line"></div>
+								</div>
 								<p class="color-row__body">
 									Rayas elegantes y tonos cálidos que resaltan la expresión
 									dulce y clásica del Persa.
@@ -958,8 +1103,10 @@
 									<a
 										href="https://wa.me/529992274376"
 										class="btn btn--gold btn--sharp"
-										>Preguntar disponibilidad</a
-									>
+										style="gap: 0.75rem"
+										>Preguntar disponibilidad
+										<i data-lucide="arrow-right" class="btn__icon"></i
+									></a>
 								</div>
 							</div>
 						</div>
@@ -971,7 +1118,15 @@
 								<h3 class="color-row__title">
 									<span class="gold-italic">Tortoiseshell</span>
 								</h3>
-								<div class="divider-gold divider-gold--md"></div>
+								<div class="color-row__accent">
+									<img
+										src="/assets/icons/star.svg"
+										class="color-row__accent-star"
+										alt=""
+										aria-hidden="true"
+									/>
+									<div class="color-row__accent-line"></div>
+								</div>
 								<p class="color-row__body">
 									Una mezcla única de colores que crea patrones irrepetibles y
 									llenos de carácter. Cada gatita es una obra de arte.
@@ -980,8 +1135,10 @@
 									<a
 										href="https://wa.me/529992274376"
 										class="btn btn--gold btn--sharp"
-										>Preguntar disponibilidad</a
-									>
+										style="gap: 0.75rem"
+										>Preguntar disponibilidad
+										<i data-lucide="arrow-right" class="btn__icon"></i
+									></a>
 								</div>
 							</div>
 							<div class="color-row__media" data-carousel="tortie">
@@ -1057,7 +1214,15 @@
 								<h3 class="color-row__title">
 									Bicolores / <span class="gold-italic">Calico</span>
 								</h3>
-								<div class="divider-gold divider-gold--md"></div>
+								<div class="color-row__accent">
+									<img
+										src="/assets/icons/star.svg"
+										class="color-row__accent-star"
+										alt=""
+										aria-hidden="true"
+									/>
+									<div class="color-row__accent-line"></div>
+								</div>
 								<p class="color-row__body">
 									Combinaciones armoniosas de dos o más colores que reflejan
 									dulzura, elegancia y un estilo inconfundible.
@@ -1066,8 +1231,10 @@
 									<a
 										href="https://wa.me/529992274376"
 										class="btn btn--gold btn--sharp"
-										>Preguntar disponibilidad</a
-									>
+										style="gap: 0.75rem"
+										>Preguntar disponibilidad
+										<i data-lucide="arrow-right" class="btn__icon"></i
+									></a>
 								</div>
 							</div>
 						</div>
@@ -1078,18 +1245,29 @@
 			<!-- ═══════════════════════════════════════════════════
 			     6. FAMILIAS FELICES
 			═══════════════════════════════════════════════════ -->
-			<section class="testimonials">
+			<section id="testimonios" class="testimonials">
 				<div class="testimonials__pattern"></div>
 				<div class="container testimonials__inner">
 					<div class="section-head">
-						<p class="eyebrow">Prueba Social</p>
 						<h2 class="section-title section-title--light">
 							<span class="gold-italic">Familias</span> Felices
 						</h2>
-						<div class="divider-gold divider-gold--center"></div>
-						<p class="section-lede section-lede--light">
-							Nuestra mejor garantía son los cientos de familias en todo México
-							que ya disfrutan de un Persa Araitea.
+						<div class="divider-star-row">
+							<div class="divider-gold"></div>
+							<img
+								src="assets/icons/star.svg"
+								alt=""
+								aria-hidden="true"
+								class="divider-star-row__icon"
+							/>
+							<div class="divider-gold"></div>
+						</div>
+						<p class="section-lede section-lede--cream">
+							Más que criar gatitos, creamos lazos que duran toda la vida
+						</p>
+						<p class="section-lede section-lede--cream">
+							Conoce algunas de las familias en todo México que ya disfrutan de
+							la experiencia <span class="gold-italic">Araitea Cats</span>
 						</p>
 					</div>
 
@@ -1168,10 +1346,18 @@
 				<div class="container">
 					<div class="presence__head">
 						<p class="eyebrow">Cobertura Nacional</p>
+						<div class="divider-star-row">
+							<div class="divider-gold"></div>
+							<img
+								src="/assets/icons/star.svg"
+								alt=""
+								class="divider-star-row__icon"
+								aria-hidden="true"
+							/>
+						</div>
 						<h2 class="section-title">
 							Nuestra <span class="gold-italic">Presencia</span> en México
 						</h2>
-						<div class="divider-gold"></div>
 					</div>
 				</div>
 
@@ -1186,10 +1372,18 @@
 						</div>
 						<div class="location-row__text">
 							<p class="location-row__eyebrow">Ciudad de México · EdoMex</p>
+							<div class="divider-star-row">
+								<div class="divider-gold divider-gold--md"></div>
+								<img
+									src="/assets/icons/star.svg"
+									alt=""
+									class="divider-star-row__icon"
+									aria-hidden="true"
+								/>
+							</div>
 							<h3 class="location-row__title">
 								Gatos Persas <span class="gold-italic">en CDMX</span>
 							</h3>
-							<div class="divider-gold divider-gold--md"></div>
 							<p class="location-row__body">
 								La Ciudad de México es nuestra principal plaza de entrega.
 								Trabajamos con transportadoras especializadas que garantizan un
@@ -1219,10 +1413,18 @@
 					<div class="location-row location-row--media-right">
 						<div class="location-row__text">
 							<p class="location-row__eyebrow">Jalisco · Guadalajara</p>
+							<div class="divider-star-row">
+								<div class="divider-gold divider-gold--md"></div>
+								<img
+									src="/assets/icons/star.svg"
+									alt=""
+									class="divider-star-row__icon"
+									aria-hidden="true"
+								/>
+							</div>
 							<h3 class="location-row__title">
 								Gatos Persas <span class="gold-italic">en Jalisco</span>
 							</h3>
-							<div class="divider-gold divider-gold--md"></div>
 							<p class="location-row__body">
 								Guadalajara y toda la zona metropolitana de Jalisco son destinos
 								frecuentes para nuestros gatitos. Coordinamos vuelos directos
@@ -1265,10 +1467,18 @@
 						</div>
 						<div class="location-row__text">
 							<p class="location-row__eyebrow">Monterrey · Nuevo León</p>
+							<div class="divider-star-row">
+								<div class="divider-gold divider-gold--md"></div>
+								<img
+									src="/assets/icons/star.svg"
+									alt=""
+									class="divider-star-row__icon"
+									aria-hidden="true"
+								/>
+							</div>
 							<h3 class="location-row__title">
 								Gatos Persas <span class="gold-italic">en Monterrey</span>
 							</h3>
-							<div class="divider-gold divider-gold--md"></div>
 							<p class="location-row__body">
 								Monterrey es uno de nuestros destinos con mayor demanda. Su
 								conexión aérea directa con Mérida nos permite coordinaciones
@@ -1304,27 +1514,95 @@
 			<section class="shipping">
 				<div class="shipping__pattern"></div>
 				<div class="container shipping__inner">
-					<div class="shipping__head">
-						<p class="eyebrow">Logística Nacional · Envíos Seguros</p>
-						<h3
-							class="section-title section-title--light"
-							style="font-size: clamp(2.25rem, 4vw, 3rem)"
-						>
-							Tu <span class="gold-italic">persa ideal</span> llega hasta donde
-							estás
-						</h3>
-						<div
-							class="divider-gold divider-gold--center divider-gold--md"
-						></div>
-						<p
-							class="section-lede section-lede--light"
-							style="font-size: 1.25rem; max-width: 36rem"
-						>
-							Coordinamos vuelos directos con aerolíneas certificadas en
-							traslado de mascotas. Tu gatito viaja en cabina climatizada con
-							transportadora aprobada por IATA y monitoreo en tiempo real hasta
-							el aeropuerto de tu ciudad.
-						</p>
+					<div class="shipping__hero">
+						<div class="shipping__head">
+							<p class="eyebrow">Logística Nacional · Envíos Seguros</p>
+							<h3
+								class="section-title section-title--light"
+								style="font-size: clamp(2.25rem, 4vw, 3rem)"
+							>
+								Tu <span class="gold-italic">persa ideal</span> llega hasta
+								donde estás
+							</h3>
+							<div class="divider-gold divider-gold--md"></div>
+							<p
+								class="section-lede section-lede--light"
+								style="font-size: 1.25rem; max-width: 36rem"
+							>
+								Coordinamos entregas seguras en toda la Repúplica Mexicana
+								mediante vuelos y transportistas especializados en mascotas.
+							</p>
+							<p
+								class="section-lede section-lede--light"
+								style="font-size: 1.25rem; max-width: 36rem"
+							>
+								Cada gatito viaja con seguimiento personalizado, transportadora
+								aprobada y acompañamiento durante todo el proceso hasta llegar a
+								su hogar.
+							</p>
+						</div>
+						<div class="shipping__map">
+							<img
+								src="/assets/map-removebg-preview.png"
+								alt="Cobertura nacional — República Mexicana"
+								class="shipping__map-img"
+							/>
+						</div>
+					</div>
+
+					<div class="shipping__cities">
+						<div class="city-card">
+							<h4 class="city-card__name">CDMX</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">
+								Envío de gatos persas a Ciudad de México
+							</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Guadalajara</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Guadalajara</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Nuevo León</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Nuevo León</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Puebla</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Puebla</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Querétaro</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Querétaro</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Mérida</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Mérida</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">León</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a León</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Chihuahua</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Chihuahua</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Tijuana</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Tijuana</p>
+						</div>
+						<div class="city-card">
+							<h4 class="city-card__name">Veracruz</h4>
+							<div class="city-card__rule"></div>
+							<p class="city-card__desc">Envío de gatos persas a Veracruz</p>
+						</div>
 					</div>
 
 					<div class="shipping__zones">
@@ -1484,11 +1762,26 @@
 						</div>
 					</div>
 
-					<p class="shipping__footnote">
-						¿Tu ciudad no aparece?
-						<a href="https://wa.me/529992274376">Escríbenos por WhatsApp</a>
-						— enviamos a todos los aeropuertos de la República Mexicana.
-					</p>
+					<div class="shipping__cta">
+						<p class="shipping__cta-title">¿Tu ciudad no aparece?</p>
+						<a href="https://wa.me/529992274376" class="shipping__cta-wa">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+							>
+								<path
+									d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+								/>
+							</svg>
+							Escríbenos por WhatsApp
+						</a>
+						<p class="shipping__cta-note">
+							Enviamos a todos los estados de la República Mexicana
+						</p>
+					</div>
 				</div>
 			</section>
 
@@ -1739,11 +2032,43 @@
 			document.getElementById("year").textContent = new Date().getFullYear();
 
 			// ── Menú móvil ──────────────────────────────────
-			document
-				.getElementById("mobile-menu-btn")
-				.addEventListener("click", () => {
-					document.getElementById("mobile-menu").classList.toggle("is-open");
+			(function () {
+				const btn = document.getElementById("mobile-menu-btn");
+				const menu = document.getElementById("mobile-menu");
+
+				function setIcon(name) {
+					// Re-query every time: lucide replaces the element on each createIcons call,
+					// so any cached reference becomes stale after the first render.
+					const icon = btn.querySelector(".navbar__toggle-icon");
+					icon.setAttribute("data-lucide", name);
+					lucide.createIcons({ nodes: [icon] });
+				}
+
+				function closeMenu() {
+					menu.classList.remove("is-open");
+					btn.setAttribute("aria-expanded", "false");
+					menu.setAttribute("aria-hidden", "true");
+					setIcon("menu");
+				}
+
+				btn.addEventListener("click", (e) => {
+					e.stopPropagation();
+					const isOpen = menu.classList.toggle("is-open");
+					btn.setAttribute("aria-expanded", isOpen);
+					menu.setAttribute("aria-hidden", !isOpen);
+					setIcon(isOpen ? "x" : "menu");
 				});
+
+				document.addEventListener("click", e => {
+					if (!btn.contains(e.target) && !menu.contains(e.target)) {
+						closeMenu();
+					}
+				});
+
+				menu.querySelectorAll("a").forEach(link => {
+					link.addEventListener("click", closeMenu);
+				});
+			})();
 
 			// ── Carruseles de gatitos disponibles ───────────
 			document.querySelectorAll("[data-cat-carousel]").forEach(card => {
@@ -1856,6 +2181,58 @@
 					) * 1100;
 				setTimeout(() => setInterval(() => goTo(cur + 1), 4500), offset);
 			});
+
+			// ── Carrusel commitment (mobile) ────────────────
+			(function () {
+				const carousel = document.querySelector(".commitment__carousel");
+				if (!carousel) return;
+
+				const slides = carousel.querySelectorAll(
+					".commitment__carousel__slide",
+				);
+				const dots = carousel.querySelectorAll(".commitment__carousel__dot");
+				const btnPrev = carousel.querySelector(
+					".commitment__carousel__btn--prev",
+				);
+				const btnNext = carousel.querySelector(
+					".commitment__carousel__btn--next",
+				);
+				let cur = 0;
+
+				function goTo(n) {
+					slides[cur].classList.remove("is-active");
+					dots[cur].classList.remove("is-active");
+					cur = ((n % slides.length) + slides.length) % slides.length;
+					slides[cur].classList.add("is-active");
+					dots[cur].classList.add("is-active");
+				}
+
+				btnPrev?.addEventListener("click", () => goTo(cur - 1));
+				btnNext?.addEventListener("click", () => goTo(cur + 1));
+				dots.forEach((dot, i) => dot.addEventListener("click", () => goTo(i)));
+
+				const track = carousel.querySelector(".commitment__carousel__track");
+				let startX = null;
+				const THRESHOLD = 40;
+				track.addEventListener(
+					"touchstart",
+					e => {
+						startX = e.touches[0].clientX;
+					},
+					{ passive: true },
+				);
+				track.addEventListener(
+					"touchend",
+					e => {
+						if (startX === null) return;
+						const delta = e.changedTouches[0].clientX - startX;
+						if (Math.abs(delta) >= THRESHOLD)
+							goTo(delta < 0 ? cur + 1 : cur - 1);
+						startX = null;
+					},
+					{ passive: true },
+				);
+			})();
 
 			// ── FAQ accordion ────────────────────────────────
 			document.querySelectorAll(".faq-item").forEach(item => {

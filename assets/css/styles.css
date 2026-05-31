@@ -173,7 +173,7 @@ p {
 }
 
 .divider-star-row {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
@@ -185,13 +185,15 @@ p {
 	flex-shrink: 0;
 }
 
-.location-row__text .divider-star-row {
+.location-row__text .divider-star-row,
+#presencia .divider-star-row,
+.shipping .divider-star-row {
 	justify-content: flex-start;
 }
 
 .divider-star-row__icon {
-	width: 24px;
-	height: 24px;
+	width: 20px;
+	height: 22px;
 	flex-shrink: 0;
 }
 
@@ -229,9 +231,6 @@ p {
 	margin-bottom: 1rem;
 }
 
-.section-head .divider-gold {
-	margin-inline: auto;
-}
 
 .section-head .section-lede {
 	margin-top: 1.5rem;
@@ -1110,14 +1109,12 @@ p {
 }
 
 .commitment__divider {
-	height: 2px;
-	width: 3rem;
-	background: var(--c-gold);
 	margin: 1.25rem auto 1.75rem;
 }
 
 @media (min-width: 1024px) {
 	.commitment__divider {
+		justify-content: flex-start;
 		margin-inline: 0;
 	}
 }
@@ -1763,7 +1760,7 @@ p {
 
 .color-row__accent-line {
 	width: 50px;
-	height: 1px;
+	height: 2px;
 	background: var(--c-gold);
 }
 
@@ -1788,12 +1785,31 @@ p {
 	border-bottom: 4px solid var(--c-gold);
 }
 
+.testimonials--light {
+	background: var(--c-cream);
+	border-top: 1px solid var(--c-mist);
+	border-bottom: 1px solid var(--c-mist);
+}
+
+.testimonials--light .section-title--light {
+	color: var(--c-navy);
+}
+
+.testimonials--light .section-lede--cream {
+	color: var(--c-charcoal);
+}
+
 .testimonials__pattern {
 	position: absolute;
 	inset: 0;
 	opacity: 0.2;
 	background-image: radial-gradient(#ffffff 1px, transparent 1px);
 	background-size: 30px 30px;
+}
+
+.testimonials--light .testimonials__pattern {
+	opacity: 0.06;
+	background-image: radial-gradient(var(--c-navy) 1px, transparent 1px);
 }
 
 .testimonials__inner {
@@ -2623,6 +2639,140 @@ p {
 	line-height: 1.6;
 }
 
+/* ── Infobox redesigned (CDMX) ───────────────────── */
+.infobox__header {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 0.875rem;
+}
+
+.infobox__building-icon {
+	width: 2.25rem;
+	height: 2.25rem;
+	color: #a08f61;
+	flex-shrink: 0;
+}
+
+.infobox__title {
+	font-family: var(--ff-sans);
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--c-navy);
+	margin: 0;
+	line-height: 1.2;
+}
+
+.infobox__rule {
+	height: 1px;
+	background: var(--c-mist);
+	margin-bottom: 1.5rem;
+}
+
+.infobox__star-divider {
+	display: flex;
+	align-items: center;
+	gap: 0.625rem;
+	margin-bottom: 1.5rem;
+	margin-left: calc(2.25rem + 0.75rem);
+}
+
+.infobox__star-line {
+	flex: 1;
+	height: 2px;
+	background: var(--c-gold);
+}
+
+.infobox__star-icon {
+	width: 20px;
+	height: 22px;
+	flex-shrink: 0;
+}
+
+.infobox__features {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin-bottom: 1.5rem;
+}
+
+.infobox__feature {
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.75rem;
+	padding: 0.75rem 0.5rem;
+}
+
+.infobox__sep {
+	display: none;
+}
+
+.infobox__icon-wrap {
+	width: 3.5rem;
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.infobox__icon-wrap svg,
+.infobox__icon-wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.infobox__feature-label {
+	font-family: var(--ff-sans);
+	font-size: 1.125rem;
+	color: var(--c-charcoal);
+	line-height: 1.5;
+	max-width: 10rem;
+}
+
+.infobox__body-wrap {
+	border-top: 1px solid var(--c-mist);
+	padding-top: 1.25rem;
+}
+
+.infobox__body {
+	font-family: var(--ff-sans);
+	font-size: 1.25rem;
+	color: var(--c-charcoal);
+	line-height: 1.7;
+	margin: 0;
+	max-width: 782px;
+}
+
+.infobox__body strong {
+	color: var(--c-navy);
+	font-weight: 500;
+}
+
+@media (min-width: 640px) {
+	.infobox__features {
+		flex-wrap: nowrap;
+		gap: 0;
+	}
+
+	.infobox__feature {
+		flex: 1;
+		padding: 0.75rem 1rem;
+	}
+
+	.infobox__sep {
+		display: block;
+		width: 1px;
+		background: var(--c-mist);
+		align-self: stretch;
+		flex-shrink: 0;
+	}
+}
+
 /* ── 22. LOGÍSTICA — SECCIÓN CON PATRÓN ──────────────────────── */
 .logistics {
 	position: relative;
@@ -2785,18 +2935,15 @@ p {
 
 .hero-split__ornament-line {
 	display: block;
-	height: 1px;
+	height: 2px;
 	width: 3rem;
 	background: var(--c-gold);
 	flex-shrink: 0;
 }
 
-.hero-split__ornament-diamond {
-	display: block;
-	width: 8px;
-	height: 8px;
-	background: var(--c-gold);
-	transform: rotate(45deg);
+.hero-split__ornament-star {
+	width: 20px;
+	height: 22px;
 	flex-shrink: 0;
 }
 
